@@ -4,6 +4,7 @@ import paramiko
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 import shutil
+import pickle
 
 def fetch_files(ssh_host, ssh_user, ssh_password, remote_folder, local_folder):
     ssh = paramiko.SSHClient()
