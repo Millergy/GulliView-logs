@@ -2,7 +2,7 @@
 from Data_class import Data
 
 #%% Command handler
-def runCommand(commands, filepath = "path: start", printFunction = None):
+def runCommand(commands, menupath = "path: start", printFunction = None):
     
     print("\n-----new command-----\n")
     
@@ -17,7 +17,8 @@ def runCommand(commands, filepath = "path: start", printFunction = None):
     for i in range(1,len(keys)):
         commandList = commandList + "\n\t" + keys[i]
     
-    commandText = f"\n{filepath}\n\nAvailable commands:\n{commandList}\n\n"
+    commandText = f"\n{menupath}\n\nAvailable commands:\n{commandList}\n\n"
+
     while True:
         
         userInput = input(commandText)
@@ -38,12 +39,12 @@ def runCommand(commands, filepath = "path: start", printFunction = None):
         
         #If dict, it is a submenu
         if type(commands[userInput]) == type(dict()):
-            runCommand(commands[userInput], filepath + "/" + userInput)
+            runCommand(commands[userInput], menupath + "/" + userInput)
         
         #If array, it is a submenu with a function before
         elif type(commands[userInput]) == type(list()):
             commands[userInput][0]()
-            runCommand(commands[userInput][1], filepath + "/" + userInput, 
+            runCommand(commands[userInput][1], menupath + "/" + userInput, 
                        commands[userInput][0])
         
         #Else it is a function
