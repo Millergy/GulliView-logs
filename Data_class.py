@@ -15,16 +15,25 @@ from Log_class import Log
 class Data:
 
     def __init__(self):
+        if __debug__:
+            print("\nDebug mode\n")
 
         # Init variables
-        self.ssh_host = "192.168.50.205"
-        self.ssh_user = "gulliview"
-        self.ssh_password = "Chalmers"
-        self.remote_folder = "/home/gulliview/advanced_mobility_model/build/output/"
-        self.local_input = "input"
-        self.archive_folder = "archive"
-        self.filename = "data"
+        self.ssh_host   = "192.168.50.205"
+        self.ssh_user   = "gulliview"
+        self.ssh_pwd    = "Chalmers"
+        self.ssh_folder = "/home/gulliview/advanced_mobility_model/build/output/"
+
         self.general_log_filename = "general.log"
+
+        self.data_folder = "data"
+        if __debug__:
+            self.data_folder = "debug_" + self.data_folder
+        
+        self.local_input    = os.path.join(self.data_folder, "input")
+        self.archive_folder = os.path.join(self.data_folder, "archive")
+        self.data_filename  = os.path.join(self.data_folder, "logs")
+        self.backup_folder  = os.path.join(self.data_folder, "backup")
 
         # Command lists
         self.commands = {"fetch"    : self.fetch_new_logs}
@@ -33,14 +42,7 @@ class Data:
                           "restore" : self.debug_restore,
                           "import"  : self.debug_import,
                           "save"    : self.saveFile}
-
         if __debug__:
-            print("\nDebug\n")
-
-            self.local_input = "input_debug"
-            self.archive_folder = "archive_debug"
-            self.filename = "data_debug"
-
             self.commands["debug"] = debug_commands
 
         # Open file, this also creates a backup
@@ -54,7 +56,7 @@ class Data:
 #%% Open and close file
     def openFile(self):
         try:
-            with open(self.filename, 'rb') as file:
+            with open(self.data_filename, 'rb') as file:
                 self.data = pickle.load(file)
         except:
             # If file could not be read, create new
@@ -67,18 +69,20 @@ class Data:
     def saveFile(self):
         
         # Filepath for backup
-        folderPath = "backup/"
         date = dt.datetime.today().strftime('%y%m%d_%H,%M')
-        backupFilepath = os.path.join(folderPath, self.filename + "_" + date)
 
-        os.makedirs(backupFilepath, exist_ok=True)  # Ensure local folder exists
+        # Ensure backup folder exists
+        os.makedirs(self.backup_folder, exist_ok=True)
         
         try:
-            with open(self.filename, 'rb') as file:
-                with open(backupFilepath, 'wb') as backupFile:
-                    pickle.dump(pickle.load(file), backupFile)
+            # Rename folder
+            os.rename(self.data_filename, date)
+
+            # Move input to backup folder
+            shutil.move(date, self.backup_folder)
         except: pass
-        with open(self.filename, 'wb') as file:
+
+        with open(self.data_filename, 'wb') as file:
             pickle.dump(self.data, file)
 
     # Copy files from ssh to local folder
@@ -94,7 +98,7 @@ class Data:
 
         try:
             print("Connecting...")
-            ssh.connect(self.ssh_host, username=self.ssh_user, password=self.ssh_password)
+            ssh.connect(self.ssh_host, username=self.ssh_user, password=self.ssh_pwd)
             print("Success!")
 
             sftp = ssh.open_sftp()
@@ -103,13 +107,13 @@ class Data:
             os.makedirs(self.local_input, exist_ok=True)
 
             # List files in the remote directory
-            remote_files = sftp.listdir(self.remote_folder)
+            remote_files = sftp.listdir(self.ssh_folder)
 
             if not remote_files:
                 print("No log files found")
 
             for log_file in tqdm(remote_files, desc="Downloading Logs"):
-                remote_path = os.path.join(self.remote_folder, log_file)
+                remote_path = os.path.join(self.ssh_folder, log_file)
                 local_path = os.path.join(self.local_input, log_file)
                 sftp.get(remote_path, local_path)
 
@@ -153,11 +157,8 @@ class Data:
 
         try:
             self.archive_logs(folder_name)
-            print(1)
             self.data.append(new_log)
-            print(2)
             self.saveFile()
-            print(3)
 
         # If file already exists, print this and do not save
         except Exception as e:
