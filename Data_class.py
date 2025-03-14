@@ -30,17 +30,17 @@ class Data:
         if __debug__:
             self.data_folder = "debug_" + self.data_folder
         
-        self.local_input    = os.path.join(self.data_folder, "input")
+        self.input_folder   = os.path.join(self.data_folder, "input")
         self.archive_folder = os.path.join(self.data_folder, "archive")
-        self.data_filename  = os.path.join(self.data_folder, "logs")
+        self.data_filepath  = os.path.join(self.data_folder, "logs")
         self.backup_folder  = os.path.join(self.data_folder, "backup")
 
         # Command lists
         self.commands = {"fetch"    : self.fetch_new_logs}
 
         debug_commands = {"ssl"     : self.copy_files_to_local,
-                          "restore" : self.debug_restore,
-                          "import"  : self.debug_import,
+                          "restore" : self.debug_restore_to_input,
+                          "import"  : self.debug_import_to_class,
                           "save"    : self.saveFile}
         if __debug__:
             self.commands["debug"] = debug_commands
@@ -56,7 +56,7 @@ class Data:
 #%% Open and close file
     def openFile(self):
         try:
-            with open(self.data_filename, 'rb') as file:
+            with open(self.data_filepath, 'rb') as file:
                 self.data = pickle.load(file)
         except:
             # If file could not be read, create new
@@ -76,13 +76,13 @@ class Data:
         
         try:
             # Rename folder
-            os.rename(self.data_filename, date)
+            os.rename(self.data_filepath, date)
 
             # Move input to backup folder
             shutil.move(date, self.backup_folder)
         except: pass
 
-        with open(self.data_filename, 'wb') as file:
+        with open(self.data_filepath, 'wb') as file:
             pickle.dump(self.data, file)
 
     # Copy files from ssh to local folder
@@ -104,7 +104,7 @@ class Data:
             sftp = ssh.open_sftp()
 
             # Ensure local folder exists
-            os.makedirs(self.local_input, exist_ok=True)
+            os.makedirs(self.input_folder, exist_ok=True)
 
             # List files in the remote directory
             remote_files = sftp.listdir(self.ssh_folder)
@@ -114,7 +114,7 @@ class Data:
 
             for log_file in tqdm(remote_files, desc="Downloading Logs"):
                 remote_path = os.path.join(self.ssh_folder, log_file)
-                local_path = os.path.join(self.local_input, log_file)
+                local_path = os.path.join(self.input_folder, log_file)
                 sftp.get(remote_path, local_path)
 
             sftp.close()
@@ -127,13 +127,26 @@ class Data:
             ssh.close()
 
     # Instead of fetching from ssl we can load from archive
-    def debug_restore(self):
+    def debug_restore_to_input(self):
         filename = os.listdir(self.archive_folder)[0]
-        shutil.rmtree(self.local_input)
-        shutil.move(filename, self.local_input)
+
+        # remove input folder and it's contents
+        try:
+            shutil.rmtree(self.local_input)
+        except:
+            pass
+        
+        # move to data folder
+        copy_from = os.path.join(self.archive_folder, filename)
+        shutil.copytree(copy_from, self.input_folder)
+
+        # rename as input folder
+        filepath = os.path.join(self.data_folder, filename)
+        os.rename(filepath, self.input_folder)
+
     
     # Creates new object with files in input folder
-    def debug_import(self):
+    def debug_import_to_class(self):
         new_log = Log(self.local_input, self.general_log_filename)
         self.data.append(new_log)
 
@@ -144,7 +157,7 @@ class Data:
         os.makedirs(self.archive_folder, exist_ok=True)
 
         # Rename folder
-        os.rename(self.local_input, new_name)
+        os.rename(self.input_folder, new_name)
 
         # Move input to archive
         shutil.move(new_name, self.archive_folder)
@@ -152,7 +165,7 @@ class Data:
     # copies files to local, creates new log object, archives logs
     def fetch_new_logs(self):
         self.copy_files_to_local()
-        new_log = Log(self.local_input, self.general_log_filename)
+        new_log = Log(self.input_folder, self.general_log_filename)
         folder_name = new_log.return_folder_name()
 
         try:
