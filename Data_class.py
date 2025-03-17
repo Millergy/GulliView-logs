@@ -9,6 +9,9 @@ import datetime as dt
 import subprocess
 from tabulate import tabulate
 
+#%% Custom modules
+from functions import user_acknowledge
+
 #%% Classes
 from Log_class import Log
 
@@ -42,8 +45,7 @@ class Data:
 
         debug_commands = {"ssl"     : self.copy_files_to_local,
                           "restore" : self.debug_restore_to_input,
-                          "import"  : self.debug_import_to_class,
-                          "save"    : self.saveFile}
+                          "import"  : self.read_data}
         if __debug__:
             self.commands["debug"] = debug_commands
 
@@ -97,10 +99,8 @@ class Data:
         wifi_data = wifi.decode('utf-8')
         
         if not "ROStig" in wifi_data:
-            print("Not connected to ROStig WiFi!")
-            print("Press any button to continue...")
-            input()  # Waits for user input before proceeding
-            return 0 # Return nothing to exit function
+            user_acknowledge("Not connected to ROStig WiFi!")
+            return # Return nothing to exit function
         
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -140,48 +140,42 @@ class Data:
         filename = os.listdir(self.archive_folder)[0]
 
         # remove contents of input folder
-        # if os.path.exists(self.input_folder) and os.path.isdir(self.input_folder):
-        #     shutil.rmtree(self.input_folder)
+        if os.path.exists(self.input_folder) and os.path.isdir(self.input_folder):
+            shutil.rmtree(self.input_folder)
 
         # move to input folder, this automatically renames folder as well
         copy_from = os.path.join(self.archive_folder, filename)
         shutil.copytree(copy_from, self.input_folder)
 
-        import time
-        time.sleep(5)
-
         if os.path.exists(self.input_folder) and os.path.isdir(self.input_folder):
             shutil.rmtree(self.input_folder)
 
-    # Creates new object with files in input folder
-    def debug_import_to_class(self):
-        new_log = Log(self.local_input, self.general_log_filename)
-        self.data.append(new_log)
-
-    # # Move contents from input to archive with timestamp as name
-    # def archive_logs(self, new_name):
-
-    #     # Ensure local folder exists and is empt
-    #     os.makedirs(self.archive_folder, exist_ok=True)
-
-    #     # Rename folder
-    #     os.rename(self.input_folder, new_name)
-
-    #     # Move input to archive
-    #     shutil.move(new_name, self.archive_folder)
-
-    # copies files to local, creates new log object, archives logs
-    def fetch_new_logs(self):
-        self.copy_files_to_local()
+    def read_data(self):
         new_log = Log(self.input_folder, self.general_log_filename)
 
-        # Rename folder
-        folder_name = new_log.return_folder_name()
-        os.rename(self.input_folder, folder_name)
+        # Rename folder to timestamp
+        timestamp = new_log.return_timestamp()
+        new_name = str(timestamp).replace(":",";")
+        new_path = os.path.join(self.archive_folder, new_name)
+
+        # Check if log already archived
+        if os.path.exists(new_path):# TODO Check if in array
+            user_acknowledge("Logs already imported, please delete input folder as that is not done automatically")
+            return
+        
+        # Rename and move
+        os.rename(self.input_folder, new_name)
+        shutil.move(new_name, self.archive_folder)
 
         # Add to file and save
         self.data.append(new_log)
         self.saveFile()
+
+    # copies files to local, creates new log object, archives logs
+    def fetch_new_logs(self):
+        self.copy_files_to_local()
+        self.read_data()
+        
 
 #%% Print data
     def print_all(self):

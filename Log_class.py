@@ -1,22 +1,20 @@
 #%% Standard modules
 from tqdm import tqdm
 import os
+import datetime as dt
 
 class Log:
 
     def __init__(self, filepath, general_log_filename):
+        self.data, self.general_data, self.other = self.text_to_dict(filepath, general_log_filename)
+        self.timestamp = dt.datetime.strptime(self.general_data["Time"], "%Y-%m-%d %H:%M:%S")
 
-        self.data, general_data, self.other = self.text_to_dict(filepath, general_log_filename)
-
-        # Get timestamp of log as string, happens to be a single element list for now
-        self.timestamp_string = self.data[self.general_log_filename]["Time"]
-
-    # name of folder with archived logs
-    def return_folder_name(self):
-        return self.timestamp_string.replace(":",";")
+    # name of folder with archived logs, it is the timestamp of the log
+    def return_timestamp(self):
+        return self.timestamp
     
     def return_attributes(self):
-        return self.data[self.general_log_filename]
+        return self.general_data
 
     # Convert text in files to dict
     def text_to_dict(self, filepath, general_log_filename):

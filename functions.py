@@ -56,15 +56,21 @@ def run_command(commands, menupath = "path: start", printFunction = None):
         if printFunction:
             printFunction()
 
-# Prints a dictionary in nicer format
-def tabulate_dict(data, headers = [], filter = None, tablefmt = 'rounded_grid'):
-    # Tabuelate wants an array to make a nice looking table
-    array = []
-    for key in data:
-        # filter = None means no filter, add all values to array
-        if filter == None or key in filter:
-            array.append([key, str(data[key])])
-    return tabulate(array, headers, tablefmt=tablefmt)
+# Press enter to continue
+def user_acknowledge(msg):
+    print(msg)
+    print("Press any button to continue...")
+    input()  # Waits for user input before proceeding
 
-def print_dict(data, filter = None):
-    return tabulate_dict(data, filter = filter, tablefmt = 'plain')
+# # Prints a dictionary in nicer format
+# def tabulate_dict(data, headers = [], filter = None, tablefmt = 'rounded_grid'):
+#     # Tabuelate wants an array to make a nice looking table
+#     array = []
+#     for key in data:
+#         # filter = None means no filter, add all values to array
+#         if filter == None or key in filter:
+#             array.append([key, str(data[key])])
+#     return tabulate(array, headers, tablefmt=tablefmt)
+
+# def print_dict(data, filter = None):
+#     return tabulate_dict(data, filter = filter, tablefmt = 'plain')
