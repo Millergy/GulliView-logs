@@ -10,8 +10,8 @@ class Log:
         self.timestamp = dt.datetime.strptime(self.general_data["Time"], "%Y-%m-%d %H:%M:%S")
 
     # name of folder with archived logs, it is the timestamp of the log
-    def return_timestamp(self):
-        return self.timestamp
+    def return_folder_name(self):
+        return str(self.timestamp).replace(":",";")
     
     def return_attributes(self):
         return self.general_data

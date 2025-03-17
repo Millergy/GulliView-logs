@@ -33,6 +33,7 @@ class Data:
         data_folder = "data"
         if __debug__:
             data_folder = "debug_" + data_folder
+            self.debug_backup   = "manual_copy_logs"
         
         self.input_folder   = os.path.join(data_folder, "input")
         self.archive_folder = os.path.join(data_folder, "archive")
@@ -44,8 +45,8 @@ class Data:
                          "list"     : self.print_all}
 
         debug_commands = {"ssl"     : self.copy_files_to_local,
-                          "restore" : self.debug_restore_to_input,
-                          "import"  : self.read_data}
+                          "import"  : self.read_data,
+                          "fetch"   : self.fetch_from_debug_backup}
         if __debug__:
             self.commands["debug"] = debug_commands
 
@@ -75,7 +76,7 @@ class Data:
     def saveFile(self):
         
         # Filepath for backup
-        date = dt.datetime.today().strftime('%y%m%d_%H,%M')
+        date = dt.datetime.today().strftime('%y-%m-%d_%H;%M;%S')
 
         # Ensure backup folder exists
         os.makedirs(self.backup_folder, exist_ok=True)
@@ -100,7 +101,7 @@ class Data:
         
         if not "ROStig" in wifi_data:
             user_acknowledge("Not connected to ROStig WiFi!")
-            return # Return nothing to exit function
+            return True # Return True to exit callin function as well
         
         ssh = paramiko.SSHClient()
         ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -135,32 +136,23 @@ class Data:
         finally:
             ssh.close()
 
-    # Instead of fetching from ssl we can load from archive
-    def debug_restore_to_input(self):
-        filename = os.listdir(self.archive_folder)[0]
-
-        # remove contents of input folder
-        if os.path.exists(self.input_folder) and os.path.isdir(self.input_folder):
-            shutil.rmtree(self.input_folder)
-
-        # move to input folder, this automatically renames folder as well
-        copy_from = os.path.join(self.archive_folder, filename)
-        shutil.copytree(copy_from, self.input_folder)
-
-        if os.path.exists(self.input_folder) and os.path.isdir(self.input_folder):
-            shutil.rmtree(self.input_folder)
-
+    # Import log data
     def read_data(self):
         new_log = Log(self.input_folder, self.general_log_filename)
 
         # Rename folder to timestamp
-        timestamp = new_log.return_timestamp()
-        new_name = str(timestamp).replace(":",";")
+        new_name = new_log.return_folder_name()
         new_path = os.path.join(self.archive_folder, new_name)
 
+        # Check for timestamp in all imported logs
+        exists_flag = False
+        for log_object in self.data:
+            if log_object.return_folder_name() == new_name:
+                exists_flag = True
+
         # Check if log already archived
-        if os.path.exists(new_path):# TODO Check if in array
-            user_acknowledge("Logs already imported, please delete input folder as that is not done automatically")
+        if exists_flag or os.path.exists(new_path):
+            user_acknowledge("Logs already imported, please delete input folder as this is not done automatically")
             return
         
         # Rename and move
@@ -173,9 +165,14 @@ class Data:
 
     # copies files to local, creates new log object, archives logs
     def fetch_new_logs(self):
-        self.copy_files_to_local()
+        if self.copy_files_to_local():
+            return
         self.read_data()
-        
+    
+    # copies logs from debug_backup folder to test everything when ssl not available
+    def fetch_from_debug_backup(self):
+        shutil.copytree(self.debug_backup, self.input_folder)
+        self.read_data()
 
 #%% Print data
     def print_all(self):
