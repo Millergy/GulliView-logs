@@ -7,6 +7,7 @@ from tqdm import tqdm
 import shutil
 import datetime as dt
 import subprocess
+from tabulate import tabulate
 
 #%% Classes
 from Log_class import Log
@@ -26,17 +27,18 @@ class Data:
 
         self.general_log_filename = "general.log"
 
-        self.data_folder = "data"
+        data_folder = "data"
         if __debug__:
-            self.data_folder = "debug_" + self.data_folder
+            data_folder = "debug_" + data_folder
         
-        self.input_folder   = os.path.join(self.data_folder, "input")
-        self.archive_folder = os.path.join(self.data_folder, "archive")
-        self.data_filepath  = os.path.join(self.data_folder, "logs")
-        self.backup_folder  = os.path.join(self.data_folder, "backup")
+        self.input_folder   = os.path.join(data_folder, "input")
+        self.archive_folder = os.path.join(data_folder, "archive")
+        self.data_filepath  = os.path.join(data_folder, "logs")
+        self.backup_folder  = os.path.join(data_folder, "backup")
 
         # Command lists
-        self.commands = {"fetch"    : self.fetch_new_logs}
+        self.commands = {"fetch"    : self.fetch_new_logs,
+                         "list"     : self.print_all}
 
         debug_commands = {"ssl"     : self.copy_files_to_local,
                           "restore" : self.debug_restore_to_input,
@@ -45,6 +47,7 @@ class Data:
         if __debug__:
             self.commands["debug"] = debug_commands
 
+        print("Working directory:", os.path.abspath(data_folder), "\n")
         # Open file, this also creates a backup
         self.openFile()
             
@@ -52,8 +55,9 @@ class Data:
 
     def returnCommands(self):
         return self.commands
-    
-#%% Open and close file
+
+#%% Data handling
+    # Open and close file
     def openFile(self):
         try:
             with open(self.data_filepath, 'rb') as file:
@@ -87,14 +91,19 @@ class Data:
 
     # Copy files from ssh to local folder
     def copy_files_to_local(self):
-        ssh = paramiko.SSHClient()
-        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-
+        
+        # Checks if connected to right network
         wifi = subprocess.check_output(['netsh', 'WLAN', 'show', 'interfaces'])
         wifi_data = wifi.decode('utf-8')
+        
         if not "ROStig" in wifi_data:
             print("Not connected to ROStig WiFi!")
-            return 0
+            print("Press any button to continue...")
+            input()  # Waits for user input before proceeding
+            return 0 # Return nothing to exit function
+        
+        ssh = paramiko.SSHClient()
+        ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
         try:
             print("Connecting...")
@@ -130,49 +139,61 @@ class Data:
     def debug_restore_to_input(self):
         filename = os.listdir(self.archive_folder)[0]
 
-        # remove input folder and it's contents
-        try:
-            shutil.rmtree(self.local_input)
-        except:
-            pass
-        
-        # move to data folder
+        # remove contents of input folder
+        # if os.path.exists(self.input_folder) and os.path.isdir(self.input_folder):
+        #     shutil.rmtree(self.input_folder)
+
+        # move to input folder, this automatically renames folder as well
         copy_from = os.path.join(self.archive_folder, filename)
         shutil.copytree(copy_from, self.input_folder)
 
-        # rename as input folder
-        filepath = os.path.join(self.data_folder, filename)
-        os.rename(filepath, self.input_folder)
+        import time
+        time.sleep(5)
 
-    
+        if os.path.exists(self.input_folder) and os.path.isdir(self.input_folder):
+            shutil.rmtree(self.input_folder)
+
     # Creates new object with files in input folder
     def debug_import_to_class(self):
         new_log = Log(self.local_input, self.general_log_filename)
         self.data.append(new_log)
 
-    # Move contents from input to archive with timestamp as name
-    def archive_logs(self, new_name):
+    # # Move contents from input to archive with timestamp as name
+    # def archive_logs(self, new_name):
 
-        # Ensure local folder exists
-        os.makedirs(self.archive_folder, exist_ok=True)
+    #     # Ensure local folder exists and is empt
+    #     os.makedirs(self.archive_folder, exist_ok=True)
 
-        # Rename folder
-        os.rename(self.input_folder, new_name)
+    #     # Rename folder
+    #     os.rename(self.input_folder, new_name)
 
-        # Move input to archive
-        shutil.move(new_name, self.archive_folder)
+    #     # Move input to archive
+    #     shutil.move(new_name, self.archive_folder)
 
     # copies files to local, creates new log object, archives logs
     def fetch_new_logs(self):
         self.copy_files_to_local()
         new_log = Log(self.input_folder, self.general_log_filename)
+
+        # Rename folder
         folder_name = new_log.return_folder_name()
+        os.rename(self.input_folder, folder_name)
 
-        try:
-            self.archive_logs(folder_name)
-            self.data.append(new_log)
-            self.saveFile()
+        # Add to file and save
+        self.data.append(new_log)
+        self.saveFile()
 
-        # If file already exists, print this and do not save
-        except Exception as e:
-            print(f"An unexpected error occurred: {e}")
+#%% Print data
+    def print_all(self):
+        grid = []
+        headers = ["ID", "Time", "LIVE_FEED", "RECORDING_FOLDER"]
+        for log_object in self.data:
+            general_log = log_object.return_attributes()
+            line = []
+            for attribute in headers:
+                try:
+                    line.append(general_log[attribute])
+                except:
+                    line.append("")
+            grid.append(line)
+        print(tabulate(grid, headers, tablefmt='rounded_grid'))
