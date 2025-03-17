@@ -156,7 +156,7 @@ class Data:
 
         # Check if log already archived
         if exists_flag or os.path.exists(new_path):
-            user_acknowledge("Logs already imported, please delete input folder as this is not done automatically")
+            user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
             return
         
         # Rename and move

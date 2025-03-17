@@ -7,11 +7,13 @@ class Log:
 
     def __init__(self, filepath, general_log_filename):
         self.data, self.general_data, self.other = self.text_to_dict(filepath, general_log_filename)
-        self.timestamp = dt.datetime.strptime(self.general_data["Time"], "%Y-%m-%d %H:%M:%S")
+        
+
+        self.format_general()
 
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
-        return str(self.timestamp).replace(":",";")
+        return str(self.general_data["TIME"]).replace(":",";")
     
     def return_attributes(self):
         return self.general_data
@@ -53,5 +55,26 @@ class Log:
 
         return data, general_data, other
 
+    def format_general(self):
+        self.general_data["TIME"] = dt.datetime.strptime(self.general_data["TIME"], "%Y-%m-%d %H:%M:%S")
 
-    
+        for key in self.general_data:
+            # Change string to int or float
+            try:
+                self.general_data[key] = int(self.general_data[key])
+            except:
+                try:
+                    self.general_data[key] = float(self.general_data[key])
+                except:
+                    pass
+            
+            # If 0/1 change to True/False
+            if self.general_data[key] == 0:
+                self.general_data[key] = False
+            elif self.general_data[key] == 1:
+                self.general_data[key] = True
+
+# Testing class object creation
+if __name__ == "__main__":
+    new_log = Log("manual_copy_logs", "general.log")
+    print(new_log.general_data)
