@@ -138,6 +138,10 @@ class Data:
 
     # Import log data
     def read_data(self):
+        if not os.path.exists(self.input_folder):
+            user_acknowledge("Input folder not found, this message should only be present in debug mode")
+            return
+
         new_log = Log(self.input_folder, self.general_log_filename)
 
         # Rename folder to timestamp
