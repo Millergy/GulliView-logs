@@ -8,8 +8,13 @@ class Log:
     def __init__(self, filepath, general_log_filename):
         self.data, self.general_data, self.other = self.text_to_dict(filepath, general_log_filename)
         
-
         self.format_general()
+
+        # For testing
+        self.format_data(self.data["camera_0_output-fast.log"])
+
+        # for i in self.data:
+        #     self.format_data(self.data[i])
 
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
@@ -30,8 +35,8 @@ class Log:
         for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
             log_filepath = os.path.join(filepath, log_filename)
 
-            # Init dict for logs, 'other' is for general log outputs, used to debug functionality
-            data[log_filename] = {}
+            # If log data does not follow expected fomrat it is put in "other"
+            # Used for debugging
             other[log_filename] = []
 
             with open(log_filepath, "r", encoding="utf-8") as file:
@@ -48,7 +53,7 @@ class Log:
                         # Group data by key, the key is the string before the first ':'
                         # For every key there is a list with the values
                         key, value = line.strip().split(":", 1)
-                        data[log_filename].setdefault(key, []).append(value.strip())
+                        data.setdefault(log_filename, {}).setdefault(key, []).append(value.strip())
 
                     elif not line in other[log_filename]:
                         other[log_filename].append(line)
@@ -66,20 +71,44 @@ class Log:
             else:
                 try:
                     if "." in self.general_data[key]:
-                        print(self.general_data[key])
                         self.general_data[key] = float(self.general_data[key])
                     else:
                         self.general_data[key] = int(self.general_data[key])
                 except ValueError:
                     pass
-            
-            
-        
+
         # Change TIME to datetime object
         self.general_data["TIME"] = dt.datetime.strptime(self.general_data["TIME"], "%Y-%m-%d %H:%M:%S")
 
+    def convert_units_to_float(self, array, unit = "ms"):
+        time_list = []
+        for value in array:
+            sep = value.split(" ")
+        
+            if len(sep) == 2 and sep[1] == unit:
+                try:
+                    time = float(sep[0])
+                    time_list.append(time)
+                except ValueError:
+                    print(sep[0], " could not be converted to float")
+        return time_list
+
+    def format_data(self, data_dict):
+        for category in data_dict:
+            array = data_dict[category]
+            # print(array,"\n")
+
+            # If value is alone we just flatten list, possibly not needed 
+            if len(array) == 1:
+                data_dict[category] = array[0]
+            else:
+                data_dict[category] = self.convert_units_to_float(array)
+
+            print(data_dict[category])
+
+
 # Testing class object creation
 if __name__ == "__main__":
-    new_log = Log("manual_copy_logs", "general.log")
+    new_log = Log("manual_copy_logs_short", "general.log")
     from functions import tabulate_dict
-    print(tabulate_dict(new_log.return_attributes(), ["Type", "Value"]))
+    # print(tabulate_dict(new_log.return_attributes(), ["Type", "Value"]))
