@@ -143,7 +143,7 @@ class Data:
         if not os.path.exists(self.input_folder):
             user_acknowledge("Input folder not found, this message should only be present in debug mode")
             return
-
+        
         new_log = Log(self.input_folder, self.general_log_filename)
 
         # Get new folder name, it's path and it's archive path to be moved to
@@ -161,9 +161,9 @@ class Data:
         if exists_flag or os.path.exists(new_archive_path):
             user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
             return
-        
+
         # Rename and move
-        os.rename(self.input_folder, new_name)
+        os.rename(self.input_folder, new_input_path)
         shutil.move(new_input_path, new_archive_path)
 
         # Add to file and save
