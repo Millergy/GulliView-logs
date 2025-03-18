@@ -36,8 +36,6 @@ class Log:
 
         for i in tqdm(self.data, desc="Formatting data"):
             self.format_data(i)
-        
-        self.box_plot_all()
 
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
@@ -134,8 +132,8 @@ class Log:
                 time_dict[category] = self.convert_units_to_float(array, 1000)
                 del self.data[key][category]
 
-            else:
-                print(category, data_dict[category])
+            # else:
+            #     print(category, data_dict[category])
             
             self.time_data[key] = time_dict
 

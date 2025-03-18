@@ -224,3 +224,5 @@ class Data:
         # Get attributes if log with inputted ID and print
         attributes = self.data[ID-1].return_attributes()
         print(tabulate_dict(attributes, ["Type", "Value"]))
+
+        self.data[ID-1].box_plot_all()
