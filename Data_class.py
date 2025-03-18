@@ -31,12 +31,16 @@ class Data:
         self.ssh_folder = "/home/gulliview/advanced_mobility_model/build/output/"
 
         self.general_log_filename = "general.log"
-
+        
         self.data_folder = "data"
         if __debug__:
             self.data_folder = "debug_" + self.data_folder
             self.debug_backup   = "manual_copy_logs"
         
+        filepath = os.path.realpath(__file__)
+        folderpath = os.path.dirname(filepath)
+        self.data_folder = os.path.join(folderpath, self.data_folder)
+
         self.input_folder   = os.path.join(self.data_folder, "input")
         self.archive_folder = os.path.join(self.data_folder, "archive")
         self.data_filepath  = os.path.join(self.data_folder, "logs")

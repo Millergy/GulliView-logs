@@ -149,8 +149,9 @@ class Log:
         # Iterate over the dictionary and plot
         for ax, (title, plot_data) in zip(axes, self.time_data.items()):
             sns.boxplot(data=list(plot_data.values()), ax=ax)
-            ax.set_xticklabels(plot_data.keys())  # Set labels for x-axis
+            # ax.set_xticklabels(plot_data.keys())  # Set labels for x-axis
             ax.set_title(title)  # Set plot title
+            ax.set_ylim(0,100)  # Set custom y-axis limits
 
         # Adjust layout
         plt.tight_layout()
