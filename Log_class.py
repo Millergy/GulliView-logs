@@ -2,19 +2,42 @@
 from tqdm import tqdm
 import os
 import datetime as dt
+import matplotlib.pyplot as plt
+import seaborn as sns
+import numpy as np
+import pandas as pd
+
+#%% Custom modules
+from functions import try_int_float_convert
+from functions import tabulate_dict
 
 class Log:
 
     def __init__(self, filepath, general_log_filename):
-        self.data, self.general_data, self.other = self.text_to_dict(filepath, general_log_filename)
+        # Init dicts for data import
+        self.data = {}      # Log data
+        self.other = {}     # Data not useful at this time
+        self.time_data = {} # Time stats
+        self.lables = [""]
         
-        self.format_general()
+        # Go through all files in folder
+        for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
+            self.import_file(filepath, log_filename)
 
         # For testing
-        self.format_data(self.data["camera_0_output-fast.log"])
+        # self.import_file(filepath, general_log_filename)
+        # self.import_file(filepath, "camera_0_output-fast.log", 150)
 
-        # for i in self.data:
-        #     self.format_data(self.data[i])
+        
+        # Put general data in seperate dict
+        self.general_data = self.data[general_log_filename]
+        del self.data[general_log_filename]
+        self.format_general()
+
+        for i in tqdm(self.data, desc="Formatting data"):
+            self.format_data(i)
+        
+        self.box_plot_all()
 
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
@@ -24,44 +47,35 @@ class Log:
         return self.general_data
 
     # Convert text in files to dict
-    def text_to_dict(self, filepath, general_log_filename):
+    def import_file(self, folder_filepath, filename, limit = None):
+        # If log data does not follow expected fomrat it is put in "other"
+        # Used for debugging
+        self.other[filename] = []
 
-        # Init dict
-        data = {}
-        general_data = {}
-        other = {}
+        filepath = os.path.join(folder_filepath, filename)
+        with open(filepath, "r", encoding="utf-8") as file:
+            for i,line in enumerate(file):
+                
+                # Get limit first lines of file for debugging
+                if limit and i >= limit:
+                    return
 
-        # Go through all files in folder
-        for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
-            log_filepath = os.path.join(filepath, log_filename)
+                # ':' represents data, otherwise it is just info and is put in 'other'
+                if ':' in line:
+                    # Group data by key, the key is the string before the first ':'
+                    # For every key there is a list with the values
+                    key, value = line.strip().split(":", 1)
+                    self.data.setdefault(filename, {}).setdefault(key, []).append(value.strip())
 
-            # If log data does not follow expected fomrat it is put in "other"
-            # Used for debugging
-            other[log_filename] = []
-
-            with open(log_filepath, "r", encoding="utf-8") as file:
-                for line in file:
-
-                    # general_log values not put in arrays
-                    if log_filename == general_log_filename:
-                        key, value = line.strip().split(":", 1)
-                        general_data[key] = value.strip()
-
-                    # ':' represents data, otherwise it is just info and is put in 'other'
-                    elif ':' in line:
-
-                        # Group data by key, the key is the string before the first ':'
-                        # For every key there is a list with the values
-                        key, value = line.strip().split(":", 1)
-                        data.setdefault(log_filename, {}).setdefault(key, []).append(value.strip())
-
-                    elif not line in other[log_filename]:
-                        other[log_filename].append(line)
-
-        return data, general_data, other
+                elif not line in self.other[filename]:
+                    self.other[filename].append(line)
 
     def format_general(self):
+        
         for key in self.general_data:
+            
+            # The data is in a nested list, this removes this list
+            self.general_data[key] = self.general_data[key][0]
 
             # If 0/1 change to True/False, else convert to int or float
             if self.general_data[key] == "0":
@@ -69,46 +83,84 @@ class Log:
             elif self.general_data[key] == "1":
                 self.general_data[key] = True
             else:
-                try:
-                    if "." in self.general_data[key]:
-                        self.general_data[key] = float(self.general_data[key])
-                    else:
-                        self.general_data[key] = int(self.general_data[key])
-                except ValueError:
-                    pass
+                self.general_data[key] = try_int_float_convert(self.general_data[key])
 
         # Change TIME to datetime object
         self.general_data["TIME"] = dt.datetime.strptime(self.general_data["TIME"], "%Y-%m-%d %H:%M:%S")
 
-    def convert_units_to_float(self, array, unit = "ms"):
+    def convert_units_to_float(self, array, factor = 1):
         time_list = []
         for value in array:
-            sep = value.split(" ")
-        
-            if len(sep) == 2 and sep[1] == unit:
-                try:
-                    time = float(sep[0])
-                    time_list.append(time)
-                except ValueError:
-                    print(sep[0], " could not be converted to float")
+            split = value.split(" ")
+
+            # Assumes 'xxx ms' is the last two values
+            try:
+                time = float(split[-2])
+                time_list.append(time*factor)
+            except ValueError:
+                # Used to debug formatting, should not be printed
+                print("Could not convert to float:", split[-2], "in", value)
+
         return time_list
 
-    def format_data(self, data_dict):
+    def format_data(self, key):
+        data_dict = self.data[key].copy()
+        time_dict = {}
+
         for category in data_dict:
             array = data_dict[category]
-            # print(array,"\n")
+
+            # Assume all values follow same format
+            first_split_space = array[0].split(" ")
 
             # If value is alone we just flatten list, possibly not needed 
             if len(array) == 1:
                 data_dict[category] = array[0]
-            else:
-                data_dict[category] = self.convert_units_to_float(array)
 
-            print(data_dict[category])
+            # Value cannot be split
+            elif len(first_split_space) == 1:
+                new_array = []
+                for i in array:
+                    new_array.append(try_int_float_convert(i))
+                data_dict[category] = new_array
+
+            # Format: xxx ms
+            elif len(first_split_space) == 2 and first_split_space[1] == "ms":
+                time_dict[category] = self.convert_units_to_float(array)
+                del self.data[key][category]
+            
+            # Format: xxx us
+            elif len(first_split_space) == 2 and first_split_space[1] == "us":
+                time_dict[category] = self.convert_units_to_float(array, 1000)
+                del self.data[key][category]
+
+            else:
+                print(category, data_dict[category])
+            
+            self.time_data[key] = time_dict
+
+    def box_plot_all(self):
+        
+
+        # Create a 2x2 grid for plotting
+        fig, axes = plt.subplots(2, 2, figsize=(12, 10))
+
+        # Flatten axes array for easy iteration
+        axes = axes.flatten()
+
+        # Iterate over the dictionary and plot
+        for ax, (title, plot_data) in zip(axes, self.time_data.items()):
+            sns.boxplot(data=list(plot_data.values()), ax=ax)
+            ax.set_xticklabels(plot_data.keys())  # Set labels for x-axis
+            ax.set_title(title)  # Set plot title
+
+        # Adjust layout
+        plt.tight_layout()
+        plt.show()
 
 
 # Testing class object creation
 if __name__ == "__main__":
-    new_log = Log("manual_copy_logs_short", "general.log")
+    new_log = Log("manual_copy_logs", "general.log")
     from functions import tabulate_dict
     # print(tabulate_dict(new_log.return_attributes(), ["Type", "Value"]))

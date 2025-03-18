@@ -87,3 +87,12 @@ def tabulate_dict(data, headers = [], tablefmt = 'rounded_grid'):
     for key in data:
         array.append([key, data[key]])
     return tabulate(array, headers, tablefmt=tablefmt)
+
+def try_int_float_convert(value):
+    try:
+        if "." in value:
+            return float(value)
+        else:
+            return int(value)
+    except ValueError:
+        return value
