@@ -144,7 +144,7 @@ class Data:
 
         new_log = Log(self.input_folder, self.general_log_filename)
 
-        # Rename folder to timestamp
+        # Rename folder to timestamp, get new path
         new_name = new_log.return_folder_name()
         new_path = os.path.join(self.archive_folder, new_name)
 
@@ -161,7 +161,7 @@ class Data:
         
         # Rename and move
         os.rename(self.input_folder, new_name)
-        shutil.move(new_name, self.archive_folder)
+        shutil.move(new_name, new_path)
 
         # Add to file and save
         self.data.append(new_log)
