@@ -56,23 +56,26 @@ class Log:
         return data, general_data, other
 
     def format_general(self):
-        self.general_data["TIME"] = dt.datetime.strptime(self.general_data["TIME"], "%Y-%m-%d %H:%M:%S")
-
         for key in self.general_data:
-            # Change string to int or float
-            try:
-                self.general_data[key] = int(self.general_data[key])
-            except:
+
+            # If 0/1 change to True/False, else convert to int or float
+            if self.general_data[key] == "0":
+                self.general_data[key] = False
+            elif self.general_data[key] == "1":
+                self.general_data[key] = True
+            else:
                 try:
-                    self.general_data[key] = float(self.general_data[key])
-                except:
+                    if "." in self.general_data[key]:
+                        self.general_data[key] = float(self.general_data[key])
+                    else:
+                        self.general_data[key] = int(self.general_data[key])
+                except ValueError:
                     pass
             
-            # If 0/1 change to True/False
-            if self.general_data[key] == 0:
-                self.general_data[key] = False
-            elif self.general_data[key] == 1:
-                self.general_data[key] = True
+            
+        
+        # Change TIME to datetime object
+        self.general_data["TIME"] = dt.datetime.strptime(self.general_data["TIME"], "%Y-%m-%d %H:%M:%S")
 
 # Testing class object creation
 if __name__ == "__main__":

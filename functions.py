@@ -17,7 +17,7 @@ def run_command(commands, menupath = "path: start", printFunction = None):
     for i in range(1,len(keys)):
         commandList = commandList + "\n\t" + keys[i]
     
-    commandText = f"\n{menupath}\n\navailable commands:\n{commandList}\n\n"
+    commandText = f"\n{menupath}\npress enter to return/close\n\navailable commands:\n{commandList}\n\n"
 
     while True:
         
@@ -62,15 +62,37 @@ def user_acknowledge(msg):
     print("Press any button to continue...")
     input()  # Waits for user input before proceeding
 
-# # Prints a dictionary in nicer format
-# def tabulate_dict(data, headers = [], filter = None, tablefmt = 'rounded_grid'):
-#     # Tabuelate wants an array to make a nice looking table
-#     array = []
-#     for key in data:
-#         # filter = None means no filter, add all values to array
-#         if filter == None or key in filter:
-#             array.append([key, str(data[key])])
-#     return tabulate(array, headers, tablefmt=tablefmt)
+# Handles input of integer from 0 to "high"
+def input_number(high, prompt):
+    while True:
+        userInput = input(prompt)
+        if userInput == "":
+            return None
+        try:
+            number = int(userInput)
+        except:
+            print("-----invalid number-----")
+            continue
+        
+        if number > high or number <= 0:
+            print("-----number not in range-----")
+            continue
+        
+        break
+    return number
 
-# def print_dict(data, filter = None):
-#     return tabulate_dict(data, filter = filter, tablefmt = 'plain')
+# Returns dict as a string looking like a table
+def tabulate_dict(data, headers = [], tablefmt = 'rounded_grid'):
+    newLine = ""
+    if tablefmt != 'rounded_grid':
+        newLine = "\n"
+    array = []
+    for key in data:
+        try:
+            value = float(data[key])
+            if abs(value) < 1:
+                continue
+        except:
+            value = data[key]
+        array.append([key, str(value) + newLine])
+    return tabulate(array, headers, tablefmt=tablefmt)

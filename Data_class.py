@@ -11,6 +11,8 @@ from tabulate import tabulate
 
 #%% Custom modules
 from functions import user_acknowledge
+from functions import input_number
+from functions import tabulate_dict
 
 #%% Classes
 from Log_class import Log
@@ -30,19 +32,19 @@ class Data:
 
         self.general_log_filename = "general.log"
 
-        data_folder = "data"
+        self.data_folder = "data"
         if __debug__:
-            data_folder = "debug_" + data_folder
+            self.data_folder = "debug_" + self.data_folder
             self.debug_backup   = "manual_copy_logs"
         
-        self.input_folder   = os.path.join(data_folder, "input")
-        self.archive_folder = os.path.join(data_folder, "archive")
-        self.data_filepath  = os.path.join(data_folder, "logs")
-        self.backup_folder  = os.path.join(data_folder, "backup")
+        self.input_folder   = os.path.join(self.data_folder, "input")
+        self.archive_folder = os.path.join(self.data_folder, "archive")
+        self.data_filepath  = os.path.join(self.data_folder, "logs")
+        self.backup_folder  = os.path.join(self.data_folder, "backup")
 
         # Command lists
         self.commands = {"fetch"    : self.fetch_new_logs,
-                         "list"     : self.print_all}
+                         "list"     : self.display_data}
 
         debug_commands = {"ssl"     : self.copy_files_to_local,
                           "import"  : self.read_data,
@@ -50,7 +52,7 @@ class Data:
         if __debug__:
             self.commands["debug"] = debug_commands
 
-        print("Working directory:", os.path.abspath(data_folder), "\n")
+        print("Working directory:", os.path.abspath(self.data_folder), "\n")
         # Open file, this also creates a backup
         self.openFile()
             
@@ -144,9 +146,10 @@ class Data:
 
         new_log = Log(self.input_folder, self.general_log_filename)
 
-        # Rename folder to timestamp, get new path
+        # Get new folder name, it's path and it's archive path to be moved to
         new_name = new_log.return_folder_name()
-        new_path = os.path.join(self.archive_folder, new_name)
+        new_input_path = os.path.join(self.data_folder, new_name)
+        new_archive_path = os.path.join(self.archive_folder, new_name)
 
         # Check for timestamp in all imported logs
         exists_flag = False
@@ -155,13 +158,13 @@ class Data:
                 exists_flag = True
 
         # Check if log already archived
-        if exists_flag or os.path.exists(new_path):
+        if exists_flag or os.path.exists(new_archive_path):
             user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
             return
         
         # Rename and move
         os.rename(self.input_folder, new_name)
-        shutil.move(new_name, new_path)
+        shutil.move(new_input_path, new_archive_path)
 
         # Add to file and save
         self.data.append(new_log)
@@ -172,23 +175,51 @@ class Data:
         if self.copy_files_to_local():
             return
         self.read_data()
-    
+
     # copies logs from debug_backup folder to test everything when ssl not available
     def fetch_from_debug_backup(self):
         shutil.copytree(self.debug_backup, self.input_folder)
         self.read_data()
 
 #%% Print data
+    def display_data(self):
+        self.print_all()
+
+        # If there are no logs return
+        if len(self.data) == 0:
+            return
+        
+        # Get ID for log to view
+        prompt = "Input ID of log you wish to view: "
+        ID = input_number(len(self.data), prompt)
+        if not ID:
+            return
+        
+        # Get attributes if log with inputted ID and print
+        attributes = self.data[ID-1].return_attributes()
+        print(tabulate_dict(attributes, ["Type", "Value"]))
+
     def print_all(self):
         grid = []
-        headers = ["ID", "Time", "LIVE_FEED", "RECORDING_FOLDER"]
-        for log_object in self.data:
+        headers = ["ID", "TIME", "VERSION", "COMMENT", "LIVE_FEED", "RECORDING_FOLDER"]
+        for i,log_object in enumerate(self.data):
+
             general_log = log_object.return_attributes()
-            line = []
-            for attribute in headers:
-                try:
+
+            # Add id to first index in output list
+            line = [i+1]
+
+            # Adds data to list except ID
+            for attribute in headers[1:]:
+
+                # If attribute exists and is in string, concatinate, elif just add it, else add empty string
+                if attribute in general_log.keys() and type(general_log[attribute]) == type(""):
+                    line.append(general_log[attribute][:30])
+                elif attribute in general_log.keys():
                     line.append(general_log[attribute])
-                except:
+                else:
                     line.append("")
+                    
             grid.append(line)
+        
         print(tabulate(grid, headers, tablefmt='rounded_grid'))
