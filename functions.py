@@ -83,16 +83,7 @@ def input_number(high, prompt):
 
 # Returns dict as a string looking like a table
 def tabulate_dict(data, headers = [], tablefmt = 'rounded_grid'):
-    newLine = ""
-    if tablefmt != 'rounded_grid':
-        newLine = "\n"
     array = []
     for key in data:
-        try:
-            value = float(data[key])
-            if abs(value) < 1:
-                continue
-        except:
-            value = data[key]
-        array.append([key, str(value) + newLine])
+        array.append([key, data[key]])
     return tabulate(array, headers, tablefmt=tablefmt)

@@ -66,6 +66,7 @@ class Log:
             else:
                 try:
                     if "." in self.general_data[key]:
+                        print(self.general_data[key])
                         self.general_data[key] = float(self.general_data[key])
                     else:
                         self.general_data[key] = int(self.general_data[key])
@@ -80,4 +81,5 @@ class Log:
 # Testing class object creation
 if __name__ == "__main__":
     new_log = Log("manual_copy_logs", "general.log")
-    print(new_log.general_data)
+    from functions import tabulate_dict
+    print(tabulate_dict(new_log.return_attributes(), ["Type", "Value"]))

@@ -182,22 +182,6 @@ class Data:
         self.read_data()
 
 #%% Print data
-    def display_data(self):
-        self.print_all()
-
-        # If there are no logs return
-        if len(self.data) == 0:
-            return
-        
-        # Get ID for log to view
-        prompt = "Input ID of log you wish to view: "
-        ID = input_number(len(self.data), prompt)
-        if not ID:
-            return
-        
-        # Get attributes if log with inputted ID and print
-        attributes = self.data[ID-1].return_attributes()
-        print(tabulate_dict(attributes, ["Type", "Value"]))
 
     def print_all(self):
         grid = []
@@ -223,3 +207,20 @@ class Data:
             grid.append(line)
         
         print(tabulate(grid, headers, tablefmt='rounded_grid'))
+
+    def display_data(self):
+        self.print_all()
+
+        # If there are no logs return
+        if len(self.data) == 0:
+            return
+        
+        # Get ID for log to view
+        prompt = "Input ID of log you wish to view: "
+        ID = input_number(len(self.data), prompt)
+        if not ID:
+            return
+        
+        # Get attributes if log with inputted ID and print
+        attributes = self.data[ID-1].return_attributes()
+        print(tabulate_dict(attributes, ["Type", "Value"]))
