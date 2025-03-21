@@ -18,7 +18,6 @@ class Log:
         self.data = {}      # Log data
         self.other = {}     # Data not useful at this time
         self.time_data = {} # Time stats
-        self.lables = [""]
         
         # Go through all files in folder
         for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
@@ -41,8 +40,14 @@ class Log:
     def return_folder_name(self):
         return str(self.general_data["TIME"]).replace(":",";")
     
+    # general log attributes
     def return_attributes(self):
         return self.general_data
+    
+    # keys for time data
+    def return_keys(self):
+        filename = list(self.time_data.keys())[0]
+        return list(self.time_data[filename].keys())
 
     # Convert text in files to dict
     def import_file(self, folder_filepath, filename, limit = None):
@@ -101,6 +106,7 @@ class Log:
 
         return time_list
 
+    # formats data into dicts for plotting
     def format_data(self, key):
         data_dict = self.data[key].copy()
         time_dict = {}
@@ -149,9 +155,9 @@ class Log:
         # Iterate over the dictionary and plot
         for ax, (title, plot_data) in zip(axes, self.time_data.items()):
             sns.boxplot(data=list(plot_data.values()), ax=ax)
-            # ax.set_xticklabels(plot_data.keys())  # Set labels for x-axis
+            ax.set_xticklabels(plot_data.keys())  # Set labels for x-axis
             ax.set_title(title)  # Set plot title
-            ax.set_ylim(0,100)  # Set custom y-axis limits
+            # ax.set_ylim(0,100)  # Set custom y-axis limits
 
         # Adjust layout
         plt.tight_layout()

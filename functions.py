@@ -55,12 +55,31 @@ def run_command(commands, menupath = "path: start", printFunction = None):
         
         if printFunction:
             printFunction()
-
-# Press enter to continue
-def user_acknowledge(msg):
-    print(msg)
-    print("Press any button to continue...")
-    input()  # Waits for user input before proceeding
+    
+#Only allows commands in allowedInputs and returns the input
+#If noneAllowed is true then empty strings can be returned
+def input_str(allowedInputs, noneAllowed = True):
+    
+    commandList = f"\t{allowedInputs[0]}"
+    for i in range(1,len(allowedInputs)):
+        commandList = commandList + "\n\t" + allowedInputs[i]
+        
+    commandText = f"\npossible inputs:\n{commandList}\n\n"
+    while True:
+        
+        userInput = input(commandText)
+        
+        print("\n")
+        
+        exitInput = noneAllowed and userInput == ""
+        regularInput = userInput in allowedInputs
+        capitalInput = userInput.capitalize() in allowedInputs
+        if regularInput or capitalInput or exitInput:
+            break
+        
+        print("\n-----invalid command, try again-----\n")
+        
+    return userInput
 
 # Handles input of integer from 0 to "high"
 def input_number(high, prompt):
@@ -80,6 +99,12 @@ def input_number(high, prompt):
         
         break
     return number
+
+# Press enter to continue
+def user_acknowledge(msg):
+    print(msg)
+    print("Press enter to continue...")
+    input()  # Waits for user input before proceeding
 
 # Returns dict as a string looking like a table
 def tabulate_dict(data, headers = [], tablefmt = 'rounded_grid'):

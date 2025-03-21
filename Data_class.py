@@ -8,10 +8,14 @@ import shutil
 import datetime as dt
 import subprocess
 from tabulate import tabulate
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
 
 #%% Custom modules
 from functions import user_acknowledge
 from functions import input_number
+from functions import input_str
 from functions import tabulate_dict
 
 #%% Classes
@@ -77,7 +81,7 @@ class Data:
             # If file could not be read, create new
             if input("Could not read file, create new? (y/n): ") == "y":
                 self.logs = []
-                self.properties = {}
+                self.properties = {"keys": []}
                 self.saveFile()
                 print("\n")
             else: 
@@ -169,6 +173,12 @@ class Data:
         if exists_flag or os.path.exists(new_archive_path):
             user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
             return
+        
+        # Get keys for time data
+        keys = new_log.return_keys()
+        for key in keys:
+            if not key in self.properties["keys"]:
+                self.properties["keys"].append(key)
 
         # Rename and move
         os.rename(self.input_folder, new_input_path)
@@ -190,11 +200,15 @@ class Data:
         self.read_data()
 
 #%% Print data
-
-    def print_all(self):
+    # Prints all imported logs with some attributes displayed
+    def print_all(self, exclude = []):
         grid = []
         headers = ["ID", "TIME", "VERSION", "COMMENT", "LIVE_FEED", "RECORDING_FOLDER"]
         for i,log_object in enumerate(self.logs):
+            
+            # exclude IDs in exclude list
+            if i in exclude:
+                continue
 
             general_log = log_object.return_attributes()
 
@@ -216,6 +230,7 @@ class Data:
         
         print(tabulate(grid, headers, tablefmt='rounded_grid'))
 
+    # Can get more info from a specific log
     def display_data(self):
         self.print_all()
 
@@ -224,13 +239,71 @@ class Data:
             return
         
         # Get ID for log to view
-        prompt = "Input ID of log you wish to view: "
-        ID = input_number(len(self.logs), prompt)
-        if not ID:
-            return
-        
-        # Get attributes if log with inputted ID and print
-        attributes = self.logs[ID-1].return_attributes()
-        print(tabulate_dict(attributes, ["Type", "Value"]))
+        comp = []
+        while True:
+            prompt = "Input ID to add to comparison (leave empty when done): "
+            ID = input_number(len(self.logs), prompt)
+            if not ID:
+                break
 
-        self.logs[ID-1].box_plot_all()
+            # Testing
+            self.logs[ID-1].box_plot_all()
+            
+            # Get attributes if log with inputted ID and print
+            attributes = self.logs[ID-1].return_attributes()
+            print(tabulate_dict(attributes, ["Type", "Value"]))
+
+            if ID in comp:
+                print("ID already added!")
+            
+            elif not input("Confirm? (n for abort): ") == "n":
+                comp.append(ID)
+                print(ID, "added to comparision!")
+        
+        keys = []
+        while True:
+            prompt = "Input keys to add to comparison (leave empty when done): "
+            key = input_str(self.properties["keys"])
+            if not key:
+                break
+
+            if not input("Confirm? (n for abort): ") == "n":
+                keys.append(key)
+                print(key, "added to comparision!")
+        
+        if input("Combine data from alla cameras? (y/n):"):
+            self.display_combined(comp, keys)
+        else:
+            print("Not implemented yet!")
+
+    # Combine data from all cameras and display box diagram
+    def display_combined(self, comp, keys):
+        data = []
+        for i in tqdm(comp, desc="Reformatting data"):
+            print(i)
+            obj = comp[i]
+            log_data = []
+            for key in keys:
+                datapoints = []
+                for file in obj.time_data.keys():
+                    datapoints = datapoints + obj.time_data[file][key]
+                log_data.append(datapoints)
+            data.append()
+        
+
+        # Create subplots
+        fig, axes = plt.subplots(1, len(data), figsize=(5 * len(data), 6), sharey=True)
+
+        # If only one diagram, axes is not an array, so make it one for consistency
+        if len(data) == 1:
+            axes = [axes]
+
+        # Plot each dictionary as a separate box plot
+        for i, dataset in enumerate(data):
+            df = pd.DataFrame(dataset)  # Convert dict to DataFrame
+            sns.boxplot(data=df, ax=axes[i])
+            axes[i].set_title(f"Diagram {i+1}")
+
+        # Adjust layout
+        plt.tight_layout()
+        plt.show()
