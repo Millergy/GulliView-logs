@@ -43,12 +43,13 @@ class Data:
         
         filepath = os.path.realpath(__file__)
         folderpath = os.path.dirname(filepath)
+        # folderpath = "C:/GulliView"
         self.data_folder = os.path.join(folderpath, self.data_folder)
 
-        self.input_folder   = os.path.join(self.data_folder, "input")
         self.archive_folder = os.path.join(self.data_folder, "archive")
         self.data_filepath  = os.path.join(self.data_folder, "logs")
         self.backup_folder  = os.path.join(self.data_folder, "backup")
+        self.input_folder   = os.path.join(self.archive_folder, "input")
 
         # Command lists
         self.commands = {"fetch"    : self.fetch_new_logs,
@@ -160,8 +161,7 @@ class Data:
 
         # Get new folder name, it's path and it's archive path to be moved to
         new_name = new_log.return_folder_name()
-        new_input_path = os.path.join(self.data_folder, new_name)
-        new_archive_path = os.path.join(self.archive_folder, new_name)
+        new_path = os.path.join(self.archive_folder, new_name)
 
         # Check for timestamp in all imported logs
         exists_flag = False
@@ -170,7 +170,7 @@ class Data:
                 exists_flag = True
 
         # Check if log already archived
-        if exists_flag or os.path.exists(new_archive_path):
+        if exists_flag or os.path.exists(new_path):
             user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
             return
         
@@ -181,8 +181,7 @@ class Data:
                 self.properties["keys"].append(key)
 
         # Rename and move
-        os.rename(self.input_folder, new_input_path)
-        shutil.move(new_input_path, new_archive_path)
+        os.rename(self.input_folder, new_path)
 
         # Add to file and save
         self.logs.append(new_log)
@@ -205,15 +204,14 @@ class Data:
         grid = []
         headers = ["ID", "TIME", "VERSION", "COMMENT", "LIVE_FEED", "RECORDING_FOLDER"]
         for i,log_object in enumerate(self.logs):
-            
-            # exclude IDs in exclude list
-            if i in exclude:
-                continue
 
             general_log = log_object.return_attributes()
 
-            # Add id to first index in output list
-            line = [i+1]
+            # Add id to first index in output list if it should not be excluded
+            if i+1 in exclude:
+                line = [""]
+            else:
+                line = [i+1]
 
             # Adds data to list except ID
             for attribute in headers[1:]:
@@ -232,7 +230,6 @@ class Data:
 
     # Can get more info from a specific log
     def display_data(self):
-        self.print_all()
 
         # If there are no logs return
         if len(self.logs) == 0:
@@ -241,22 +238,19 @@ class Data:
         # Get ID for log to view
         comp = []
         while True:
+            self.print_all(comp)
             prompt = "Input ID to add to comparison (leave empty when done): "
             ID = input_number(len(self.logs), prompt)
             if not ID:
                 break
 
             # Testing
-            self.logs[ID-1].box_plot_all()
-            
-            # Get attributes if log with inputted ID and print
-            attributes = self.logs[ID-1].return_attributes()
-            print(tabulate_dict(attributes, ["Type", "Value"]))
+            # self.logs[ID-1].box_plot_all()
 
             if ID in comp:
                 print("ID already added!")
             
-            elif not input("Confirm? (n for abort): ") == "n":
+            else:
                 comp.append(ID)
                 print(ID, "added to comparision!")
         
@@ -266,12 +260,11 @@ class Data:
             key = input_str(self.properties["keys"])
             if not key:
                 break
-
-            if not input("Confirm? (n for abort): ") == "n":
-                keys.append(key)
-                print(key, "added to comparision!")
+            
+            keys.append(key)
+            print(key, "added to comparision!")
         
-        if input("Combine data from alla cameras? (y/n):"):
+        if input("Combine data from alla cameras? (y/n): ") != "n":
             self.display_combined(comp, keys)
         else:
             print("Not implemented yet!")

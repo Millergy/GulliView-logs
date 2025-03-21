@@ -1,8 +1,46 @@
 #%% Standard modules
+import pick
 from tabulate import tabulate
 
 #%% Command handler
 def run_command(commands, menupath = "path: start", printFunction = None):
+    
+    print("\n-----new command-----\n")
+    
+    if type(commands) == type(list()):
+        commands[0]()
+        commands = commands[1]
+    
+    print(list(commands.keys()))
+    options = list(commands.keys())
+    options.append("exit")
+    
+    option, index = pick.pick(options, "Choose action")
+    
+    #If "exit", break
+    if option == "exit":
+        return True
+    
+    #If dict, it is a submenu
+    if type(commands[option]) == type(dict()):
+        run_command(commands[option], menupath + "/" + option)
+    
+    #If array, it is a submenu with a function before
+    elif type(commands[option]) == type(list()):
+        commands[option][0]()
+        run_command(commands[option][1], menupath + "/" + option, 
+                    commands[option][0])
+    
+    #Else it is a function
+    else:
+        commands[option]()
+        
+    print("\n-----back-----\n")
+    
+    if printFunction:
+        printFunction()
+
+def run_command_old(commands, menupath = "path: start", printFunction = None):
     
     print("\n-----new command-----\n")
     

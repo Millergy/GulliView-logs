@@ -94,12 +94,16 @@ class Log:
     def convert_units_to_float(self, array, factor = 1):
         time_list = []
         for value in array:
-            split = value.split(" ")
+            if "=" in value:
+                split = value.split("=")
+                split = split[-1].split(" ")
+            else:
+                split = value.split(" ")
 
             # Assumes 'xxx ms' is the last two values
             try:
                 time = float(split[-2])
-                time_list.append(time*factor)
+                time_list.append(time/factor)
             except ValueError:
                 # Used to debug formatting, should not be printed
                 print("Could not convert to float:", split[-2], "in", value)
@@ -116,6 +120,8 @@ class Log:
 
             # Assume all values follow same format
             first_split_space = array[0].split(" ")
+            first_split_equal = array[0].split("=")
+            first_split_equal_space = first_split_equal[-1].split(" ")
 
             # If value is alone we just flatten list, possibly not needed 
             if len(array) == 1:
@@ -128,15 +134,21 @@ class Log:
                     new_array.append(try_int_float_convert(i))
                 data_dict[category] = new_array
 
-            # Format: xxx ms
+            # key: xxx ms
             elif len(first_split_space) == 2 and first_split_space[1] == "ms":
                 time_dict[category] = self.convert_units_to_float(array)
-                del self.data[key][category]
             
-            # Format: xxx us
+            # key: xxx us
             elif len(first_split_space) == 2 and first_split_space[1] == "us":
                 time_dict[category] = self.convert_units_to_float(array, 1000)
-                del self.data[key][category]
+            
+            # key: value=xxx ms
+            elif len(first_split_equal) >= 2 and first_split_equal_space[1] == "ms":
+                time_dict[category] = self.convert_units_to_float(array)
+            
+            # key: value=xxx us
+            elif len(first_split_equal) >= 2 and first_split_equal_space[1] == "us":
+                time_dict[category] = self.convert_units_to_float(array, 1000)
 
             # else:
             #     print(category, data_dict[category])
