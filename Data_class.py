@@ -60,7 +60,7 @@ class Data:
         # Open file, this also creates a backup
         self.openFile()
             
-        print(f"{len(self.data)} logs imported\n")
+        print(f"{len(self.logs)} logs imported\n")
 
     def returnCommands(self):
         return self.commands
@@ -70,11 +70,14 @@ class Data:
     def openFile(self):
         try:
             with open(self.data_filepath, 'rb') as file:
-                self.data = pickle.load(file)
+                data = pickle.load(file)
+                self.logs = data[0]
+                self.properties = data[1]
         except:
             # If file could not be read, create new
             if input("Could not read file, create new? (y/n): ") == "y":
-                self.data = []
+                self.logs = []
+                self.properties = {}
                 self.saveFile()
                 print("\n")
             else: 
@@ -95,8 +98,9 @@ class Data:
             shutil.move(date, self.backup_folder)
         except: pass
 
+        data = [self.logs, self.properties]
         with open(self.data_filepath, 'wb') as file:
-            pickle.dump(self.data, file)
+            pickle.dump(data, file)
 
     # Copy files from ssh to local folder
     def copy_files_to_local(self):
@@ -157,7 +161,7 @@ class Data:
 
         # Check for timestamp in all imported logs
         exists_flag = False
-        for log_object in self.data:
+        for log_object in self.logs:
             if log_object.return_folder_name() == new_name:
                 exists_flag = True
 
@@ -171,7 +175,7 @@ class Data:
         shutil.move(new_input_path, new_archive_path)
 
         # Add to file and save
-        self.data.append(new_log)
+        self.logs.append(new_log)
         self.saveFile()
 
     # copies files to local, creates new log object, archives logs
@@ -190,7 +194,7 @@ class Data:
     def print_all(self):
         grid = []
         headers = ["ID", "TIME", "VERSION", "COMMENT", "LIVE_FEED", "RECORDING_FOLDER"]
-        for i,log_object in enumerate(self.data):
+        for i,log_object in enumerate(self.logs):
 
             general_log = log_object.return_attributes()
 
@@ -216,17 +220,17 @@ class Data:
         self.print_all()
 
         # If there are no logs return
-        if len(self.data) == 0:
+        if len(self.logs) == 0:
             return
         
         # Get ID for log to view
         prompt = "Input ID of log you wish to view: "
-        ID = input_number(len(self.data), prompt)
+        ID = input_number(len(self.logs), prompt)
         if not ID:
             return
         
         # Get attributes if log with inputted ID and print
-        attributes = self.data[ID-1].return_attributes()
+        attributes = self.logs[ID-1].return_attributes()
         print(tabulate_dict(attributes, ["Type", "Value"]))
 
-        self.data[ID-1].box_plot_all()
+        self.logs[ID-1].box_plot_all()
