@@ -214,7 +214,7 @@ class Data:
 
     # imports all data from archive folder, if something has been updated
     def reimport_all(self):
-        self.clear_memory
+        self.clear_memory()
         filenames = os.listdir(self.archive_folder)
         for folder_name in tqdm(filenames, desc="Importing files"):
             filepath = os.path.join(self.archive_folder, folder_name)
