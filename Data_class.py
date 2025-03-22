@@ -301,43 +301,6 @@ class Data:
             print("Not implemented yet!")
 
     # Combine data from all cameras and display box diagram
-    def display_combined_old(self, comp, keys):
-        data = []
-
-        # Go through all objects in comp
-        for log in tqdm(comp, desc="Reformatting data"):
-        # for log in (comp):
-            log_data = []
-            # For each object in comp go through all chosen keys
-            for key in keys:
-                datapoints = []
-                # Get data for keys from all files
-                for file in log.time_data.keys():
-                    # Some files might not have a specific key, in this case the data is empty
-                    if key in log.time_data[file].keys():
-                        datapoints = datapoints + log.time_data[file][key]
-                log_data.append(datapoints)
-            data.append(log_data)
-        
-
-        # Create subplots
-        fig, axes = plt.subplots(1, len(data), figsize=(5 * len(data), 6), sharey=True)
-
-        # If only one diagram, axes is not an array, so make it one for consistency
-        if len(data) == 1:
-            axes = [axes]
-
-        # Plot each dictionary as a separate box plot
-        for i, dataset in tqdm(enumerate(data), desc="Do some shit"):
-            df = pd.DataFrame(dataset)  # Convert dict to DataFrame
-            sns.boxplot(data=df, ax=axes[i])
-            axes[i].set_title(f"Diagram {i+1}")
-
-        # Adjust layout
-        plt.tight_layout()
-        plt.show()
-
-
     def display_combined(self, comp, keys):
         key_data = {key: [] for key in keys}
         labels = []  # Store log version labels
@@ -358,13 +321,12 @@ class Data:
         if len(keys) == 1:  
             axes = [axes]  # Ensure iterable axes for single key
 
-        for ax, (key, values) in zip(axes, key_data.items()):
+        for ax, (key, values) in tqdm(zip(axes, key_data.items()), desc="Creating plots"):
             sns.boxplot(data=values, ax=ax)
             ax.set_title(f"Box Plot for {key}")
             ax.set_xticks(range(len(labels)))  # Set tick positions correctly
             ax.set_xticklabels(labels, rotation=30, ha="right")  # Set log version labels
-            ax.set_xlabel("Log Versions")
-            ax.set_ylabel("Values")
+            ax.set_ylabel("Time (ms)")
             ax.grid(True)
 
         plt.tight_layout()
