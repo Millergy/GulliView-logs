@@ -13,15 +13,19 @@ from functions import tabulate_dict
 
 class Log:
 
-    def __init__(self, filepath, general_log_filename):
+    def __init__(self, filepath, general_log_filename, show_progress = True):
         # Init dicts for data import
         self.data = {}      # Log data
         self.other = {}     # Data not useful at this time
         self.time_data = {} # Time stats
         
         # Go through all files in folder
-        for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
-            self.import_file(filepath, log_filename)
+        if show_progress:
+            for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
+                self.import_file(filepath, log_filename)
+        else:
+            for log_filename in os.listdir(filepath):
+                self.import_file(filepath, log_filename)
 
         # For testing
         # self.import_file(filepath, general_log_filename)
@@ -33,8 +37,12 @@ class Log:
         del self.data[general_log_filename]
         self.format_general()
 
-        for i in tqdm(self.data, desc="Formatting data"):
-            self.format_data(i)
+        if show_progress:
+            for i in tqdm(self.data, desc="Formatting data"):
+                self.format_data(i)
+        else:
+            for i in self.data:
+                self.format_data(i)
 
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):

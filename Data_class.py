@@ -20,6 +20,8 @@ from functions import input_str
 #%% Classes
 from Log_class import Log
 
+#%% Init properties
+init_properties = {"keys": []}
 
 class Data:
 
@@ -56,7 +58,9 @@ class Data:
 
         debug_commands = {"ssl"     : self.copy_files_to_local,
                           "import"  : self.read_data,
-                          "fetch"   : self.fetch_from_debug_backup}
+                          "fetch"   : self.fetch_from_debug_backup,
+                          "reset"   : self.clear_memory,
+                          "reimport": self.reimport_all}
         if __debug__:
             self.commands["debug"] = debug_commands
 
@@ -81,7 +85,7 @@ class Data:
             # If file could not be read, create new
             if input("Could not read file, create new? (y/n): ") == "y":
                 self.logs = []
-                self.properties = {"keys": []}
+                self.properties = init_properties
                 self.saveFile()
                 print("\n")
             else: 
@@ -151,27 +155,30 @@ class Data:
             ssh.close()
 
     # Import log data
-    def read_data(self):
-        if not os.path.exists(self.input_folder):
-            user_acknowledge("Input folder not found, this message should only be present in debug mode")
-            return
+    def read_data(self, other_input_folder = None):
         
-        new_log = Log(self.input_folder, self.general_log_filename)
+        # other input folder only used in reimport_all, so we check archive folder
+        if other_input_folder:
+            input_folder = other_input_folder
+        else:
+            input_folder = self.input_folder
+
+            if not os.path.exists(self.input_folder):
+                user_acknowledge("Input folder not found, this message should only be present in debug mode")
+                return
+        
+        new_log = Log(input_folder, self.general_log_filename, False)
 
         # Get new folder name, it's path and it's archive path to be moved to
         new_name = new_log.return_folder_name()
         new_path = os.path.join(self.archive_folder, new_name)
 
-        # Check for timestamp in all imported logs
-        exists_flag = False
-        for log_object in self.logs:
-            if log_object.return_folder_name() == new_name:
-                exists_flag = True
-
-        # Check if log already archived
-        if exists_flag or os.path.exists(new_path):
-            user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
-            return
+        # other input folder only used in reimport_all, so all files are already there så ignore this
+        if not other_input_folder:
+            # Check if log exists in archive
+            if os.path.exists(new_path):
+                user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
+                return
         
         # Get keys for time data
         keys = new_log.return_keys()
@@ -180,8 +187,9 @@ class Data:
                 self.properties["keys"].append(key)
         self.properties["keys"].sort()
 
-        # Rename and move
-        os.rename(self.input_folder, new_path)
+        # Rename and move if not called by reimport_all
+        if not other_input_folder:
+            os.rename(self.input_folder, new_path)
 
         # Add to file and save
         self.logs.append(new_log)
@@ -197,6 +205,20 @@ class Data:
     def fetch_from_debug_backup(self):
         shutil.copytree(self.debug_backup, self.input_folder)
         self.read_data()
+
+    # resets save file
+    def clear_memory(self):
+        self.logs = []
+        self.properties = init_properties
+        self.saveFile()
+
+    # imports all data from archive folder, if something has been updated
+    def reimport_all(self):
+        self.clear_memory
+        filenames = os.listdir(self.archive_folder)
+        for folder_name in tqdm(filenames, desc="Importing files"):
+            filepath = os.path.join(self.archive_folder, folder_name)
+            self.read_data(filepath)
 
 #%% Print data
     # Prints all imported logs with some attributes displayed
