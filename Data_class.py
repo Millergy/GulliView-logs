@@ -295,28 +295,49 @@ class Data:
             keys.append(key)
             print(key, "added to comparision!")
         
-        if input("Combine data from alla cameras? (y/n): ") != "n":
-            self.display_combined(comp, keys)
-        else:
-            print("Not implemented yet!")
+        self.display_combined(comp, keys)
 
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):
+
+        # init key data with empty arrays for all keys
         key_data = {key: [] for key in keys}
         labels = []  # Store log version labels
 
-        for log in tqdm(comp, desc="Reformatting data"):
-            log_label = log.return_version()  # Get the version label
-            labels.append(log_label)
-
+        for log in tqdm(comp, desc="Reformatting data for plots"):
+            # Get the version label for x axis
+            labels.append(log.return_version())
+            
+            # Get datapoints for each key from all files in object
             for key in keys:
                 datapoints = []
                 for file in log.time_data.keys():
                     if key in log.time_data[file].keys():
                         datapoints += log.time_data[file][key]
                 key_data[key].append(datapoints)
+        
+        plot_count = len(keys)
 
-        fig, axes = plt.subplots(1, len(keys), figsize=(6 * len(keys), 5))
+        # side = 1
+        # while True:
+        #     if pow(side,2) >= plot_count:
+        #         break
+        #     side += 1
+        
+        # if side * side-1 >= plot_count:
+        #     columns = side
+        #     rows = side - 1
+        # else:
+        #     columns = rows = side
+        
+        # print(rows, columns)
+
+        columns = plot_count
+        rows = 1
+
+        width = 6 * plot_count
+        height = 5
+        fig, axes = plt.subplots(rows, columns, figsize=(width, height))
 
         if len(keys) == 1:  
             axes = [axes]  # Ensure iterable axes for single key
