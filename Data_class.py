@@ -323,7 +323,7 @@ class Data:
 
         for ax, (key, values) in tqdm(zip(axes, key_data.items()), desc="Creating plots"):
             sns.boxplot(data=values, ax=ax)
-            ax.set_title(f"Box Plot for {key}")
+            ax.set_title(key)
             ax.set_xticks(range(len(labels)))  # Set tick positions correctly
             ax.set_xticklabels(labels, rotation=30, ha="right")  # Set log version labels
             ax.set_ylabel("Time (ms)")
