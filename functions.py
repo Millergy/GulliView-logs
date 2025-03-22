@@ -1,25 +1,24 @@
 #%% Standard modules
-import pick
 from tabulate import tabulate
 
 #%% Command handler
-def run_command(commands, menupath = "path: start", printFunction = None):
-    
-    print("\n-----new command-----\n")
-    
+def run_command(commands, menupath = "path: start"):
+
     if type(commands) == type(list()):
         commands[0]()
         commands = commands[1]
     
-    print(list(commands.keys()))
     options = list(commands.keys())
-    options.append("exit")
+
+    print("","-"*20)
+    print(menupath)
+    print("leave empty to return/close")
+
+    option = input_str(options)
     
-    option, index = pick.pick(options, "Choose action")
-    
-    #If "exit", break
-    if option == "exit":
-        return True
+    #If empty, return to parent
+    if option == "":
+        return True # This breaks main loop
     
     #If dict, it is a submenu
     if type(commands[option]) == type(dict()):
@@ -34,90 +33,58 @@ def run_command(commands, menupath = "path: start", printFunction = None):
     #Else it is a function
     else:
         commands[option]()
-        
-    print("\n-----back-----\n")
     
-    if printFunction:
-        printFunction()
+# Only allows commands in allowedInputs and returns the input
+# If noneAllowed is true then empty strings can be returned
+def input_str(allowed_inputs, exclude = [], noneAllowed = True, number = True):
 
-def run_command_old(commands, menupath = "path: start", printFunction = None):
-    
-    print("\n-----new command-----\n")
-    
-    if type(commands) == type(list()):
-        commands[0]()
-        commands = commands[1]
-    
-    keys = list(commands.keys())
-    
-    #Format available commands
-    commandList = f"\t{keys[0]}"
-    for i in range(1,len(keys)):
-        commandList = commandList + "\n\t" + keys[i]
-    
-    commandText = f"\n{menupath}\npress enter to return/close\n\navailable commands:\n{commandList}\n\n"
+    # title
+    input_list = f"\ninput number to choose:"
 
-    while True:
-        
-        userInput = input(commandText)
-        
-        print("\n")
-        
-        #Is input valid?
-        exitInput = userInput == ""
-        regularInput = userInput in keys
-        capitalInput = userInput.capitalize() in keys
-        if not (regularInput or capitalInput or exitInput):
-            print("\n-----unvalid command, try again-----\n")
+    # add optios to title so it becomes one long string
+    for i in range(len(allowed_inputs)):
+
+        # If number is True add number or X before each line
+        if number and i not in exclude:
+            indent = f"  {i+1} - "
+        elif number:
+            indent = "  X - "
+
+        # If number is false we remove line if exclude
+        elif i not in exclude:
+            indent = " "*6
+        else:
             continue
         
-        #If empty, break
-        if userInput == "":
-            return True
-        
-        #If dict, it is a submenu
-        if type(commands[userInput]) == type(dict()):
-            run_command(commands[userInput], menupath + "/" + userInput)
-        
-        #If array, it is a submenu with a function before
-        elif type(commands[userInput]) == type(list()):
-            commands[userInput][0]()
-            run_command(commands[userInput][1], menupath + "/" + userInput, 
-                       commands[userInput][0])
-        
-        #Else it is a function
-        else:
-            commands[userInput]()
-            
-        print("\n-----back-----\n")
-        
-        if printFunction:
-            printFunction()
+        # add option to string
+        input_list = f"{input_list}\n{indent}{allowed_inputs[i]}"
     
-#Only allows commands in allowedInputs and returns the input
-#If noneAllowed is true then empty strings can be returned
-def input_str(allowedInputs, noneAllowed = True):
+    # add 2 linebreaks
+    input_list = input_list + "\n\n"
     
-    commandList = f"\t{allowedInputs[0]}"
-    for i in range(1,len(allowedInputs)):
-        commandList = commandList + "\n\t" + allowedInputs[i]
-        
-    commandText = f"\npossible inputs:\n{commandList}\n\n"
     while True:
         
-        userInput = input(commandText)
+        option = input(input_list)
+
+        if noneAllowed and option == "":
+            return ""
+
+        # Check if number
+        try:
+            option = int(option)
+        except:
+            print("\n-----not a number, try again-----\n")
+            continue
         
-        print("\n")
+        # covert to corresponding string
+        option = allowed_inputs[option-1]
         
-        exitInput = noneAllowed and userInput == ""
-        regularInput = userInput in allowedInputs
-        capitalInput = userInput.capitalize() in allowedInputs
-        if regularInput or capitalInput or exitInput:
-            break
+        # check if in exclude
+        if option in exclude:
+            print("\n-----already selected, try again-----\n")
+            continue
         
-        print("\n-----invalid command, try again-----\n")
-        
-    return userInput
+        return option
 
 # Handles input of integer from 0 to "high"
 def input_number(high, prompt):

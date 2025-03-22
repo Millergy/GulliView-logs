@@ -16,7 +16,6 @@ import pandas as pd
 from functions import user_acknowledge
 from functions import input_number
 from functions import input_str
-from functions import tabulate_dict
 
 #%% Classes
 from Log_class import Log
