@@ -14,7 +14,7 @@ import pandas as pd
 
 #%% Custom modules
 from functions import user_acknowledge
-from functions import input_number
+from functions import input_int
 from functions import input_str
 
 #%% Classes
@@ -178,6 +178,7 @@ class Data:
         for key in keys:
             if not key in self.properties["keys"]:
                 self.properties["keys"].append(key)
+        self.properties["keys"].sort()
 
         # Rename and move
         os.rename(self.input_folder, new_path)
@@ -239,7 +240,7 @@ class Data:
         while True:
             self.print_all(comp)
             prompt = "Input ID to add to comparison (leave empty when done): "
-            ID = input_number(len(self.logs), prompt)
+            ID = input_int(len(self.logs), prompt)
             if not ID:
                 break
 
@@ -253,10 +254,14 @@ class Data:
                 comp.append(ID)
                 print(ID, "added to comparision!")
         
+        # if no logs added to comparison, return
+        if comp == []:
+            return
+
         keys = []
         while True:
             prompt = "Input keys to add to comparison (leave empty when done): "
-            key = input_str(self.properties["keys"])
+            key = input_str(self.properties["keys"], keys)
             if not key:
                 break
             

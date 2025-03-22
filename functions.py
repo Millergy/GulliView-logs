@@ -45,14 +45,14 @@ def input_str(allowed_inputs, exclude = [], noneAllowed = True, number = True):
     for i in range(len(allowed_inputs)):
 
         # If number is True add number or X before each line
-        if number and i not in exclude:
-            indent = f"  {i+1} - "
+        if number and allowed_inputs[i] not in exclude:
+            indent = f"  {i+1}) "
         elif number:
-            indent = "  X - "
+            indent = "  -) "
 
         # If number is false we remove line if exclude
         elif i not in exclude:
-            indent = " "*6
+            indent = " "*5
         else:
             continue
         
@@ -76,6 +76,10 @@ def input_str(allowed_inputs, exclude = [], noneAllowed = True, number = True):
             print("\n-----not a number, try again-----\n")
             continue
         
+        if option > len(allowed_inputs) or option <= 0:
+            print("\n-----number not in range, try again-----\n")
+            continue
+        
         # covert to corresponding string
         option = allowed_inputs[option-1]
         
@@ -87,7 +91,7 @@ def input_str(allowed_inputs, exclude = [], noneAllowed = True, number = True):
         return option
 
 # Handles input of integer from 0 to "high"
-def input_number(high, prompt):
+def input_int(high, prompt):
     while True:
         userInput = input(prompt)
         if userInput == "":
