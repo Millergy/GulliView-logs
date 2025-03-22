@@ -9,7 +9,6 @@ import pandas as pd
 
 #%% Custom modules
 from functions import try_int_float_convert
-from functions import tabulate_dict
 
 class Log:
 
@@ -44,6 +43,7 @@ class Log:
             for i in self.data:
                 self.format_data(i)
 
+#%% return data
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
         return str(self.general_data["TIME"]).replace(":",";")
@@ -57,6 +57,11 @@ class Log:
         filename = list(self.time_data.keys())[0]
         return list(self.time_data[filename].keys())
 
+    # version of code as identifier
+    def return_version(self):
+        return self.version
+
+#%% used for __init__
     # Convert text in files to dict
     def import_file(self, folder_filepath, filename, limit = None):
         # If log data does not follow expected fomrat it is put in "other"
@@ -98,6 +103,7 @@ class Log:
 
         # Change TIME to datetime object
         self.general_data["TIME"] = dt.datetime.strptime(self.general_data["TIME"], "%Y-%m-%d %H:%M:%S")
+        self.version = self.general_data["VERSION"]
 
     def convert_units_to_float(self, array, factor = 1):
         time_list = []
@@ -163,6 +169,7 @@ class Log:
             
             self.time_data[key] = time_dict
 
+#%% debug
     def box_plot_all(self):
         
 
