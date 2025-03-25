@@ -304,7 +304,7 @@ class Data:
 
         for log in tqdm(comp, desc="Reformatting data for plots"):
             # Get the version label for x axis
-            labels.append(log.return_version())
+            labels.append(log.return_identifier())
             
             # Get datapoints for each key from all files in object
             for key in keys:

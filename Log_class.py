@@ -54,8 +54,8 @@ class Log:
         return list(self.time_data[filename].keys())
 
     # version of code as identifier
-    def return_version(self):
-        return self.version
+    def return_identifier(self):
+        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"])
 
 #%% used for __init__
     # Convert text in files to dict
@@ -99,7 +99,6 @@ class Log:
 
         # Change TIME to datetime object
         self.general_data["TIME"] = dt.datetime.strptime(self.general_data["TIME"], "%Y-%m-%d %H:%M:%S")
-        self.version = self.general_data["VERSION"]
 
     def convert_units_to_float(self, array, factor = 1):
         time_list = []
