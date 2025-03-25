@@ -2,10 +2,6 @@
 from tqdm import tqdm
 import os
 import datetime as dt
-import matplotlib.pyplot as plt
-import seaborn as sns
-import numpy as np
-import pandas as pd
 
 #%% Custom modules
 from functions import try_int_float_convert
@@ -168,31 +164,3 @@ class Log:
             #     print(category, data_dict[category])
             
             self.time_data[key] = time_dict
-
-#%% debug
-    def box_plot_all(self):
-        
-
-        # Create a 2x2 grid for plotting
-        fig, axes = plt.subplots(2, 2, figsize=(12, 10))
-
-        # Flatten axes array for easy iteration
-        axes = axes.flatten()
-
-        # Iterate over the dictionary and plot
-        for ax, (title, plot_data) in zip(axes, self.time_data.items()):
-            sns.boxplot(data=list(plot_data.values()), ax=ax)
-            ax.set_xticklabels(plot_data.keys())  # Set labels for x-axis
-            ax.set_title(title)  # Set plot title
-            # ax.set_ylim(0,100)  # Set custom y-axis limits
-
-        # Adjust layout
-        plt.tight_layout()
-        plt.show()
-
-
-# Testing class object creation
-if __name__ == "__main__":
-    new_log = Log("manual_copy_logs", "general.log")
-    from functions import tabulate_dict
-    # print(tabulate_dict(new_log.return_attributes(), ["Type", "Value"]))

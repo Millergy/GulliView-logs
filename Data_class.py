@@ -5,12 +5,10 @@ import paramiko
 import os
 from tqdm import tqdm
 import shutil
-import datetime as dt
 import subprocess
 from tabulate import tabulate
 import seaborn as sns
 import matplotlib.pyplot as plt
-import pandas as pd
 
 #%% Custom modules
 from functions import user_acknowledge
