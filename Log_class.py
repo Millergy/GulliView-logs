@@ -50,8 +50,10 @@ class Log:
     
     # keys for time data
     def return_keys(self):
-        filename = list(self.time_data.keys())[0]
-        return list(self.time_data[filename].keys())
+        all_keys = []
+        for filename in self.time_data.keys():
+            all_keys += list(self.time_data[filename].keys())
+        return all_keys
 
     # version of code as identifier
     def return_identifier(self):

@@ -293,7 +293,8 @@ class Data:
             keys.append(key)
             print(key, "added to comparision!")
         
-        self.display_combined(comp, keys)
+        if keys != []:
+            self.display_combined(comp, keys)
 
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):
