@@ -96,7 +96,7 @@ class Data:
                 data = pickle.load(file)
                 self.logs = data[0]
                 self.properties = data[1]
-        except:
+        except FileNotFoundError:
             # If file could not be read, create new
             if input("Could not read file, create new? (y/n): ") == "y":
                 self.logs = []
