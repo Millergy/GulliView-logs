@@ -1,1 +1,1 @@
-python -O visualize_GulliView_log.py
+python -O main.py
