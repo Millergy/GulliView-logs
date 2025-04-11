@@ -295,10 +295,17 @@ class Data:
         if comp == []:
             return
 
+        available_keys = []
+        for i in comp:
+            for key in i.return_keys():
+                if not key in available_keys:
+                    available_keys.append(key)
+            available_keys.sort()
+
         keys = []
         while True:
             prompt = "Input keys to add to comparison (leave empty when done): "
-            key = input_str(self.properties["keys"], keys)
+            key = input_str(available_keys, keys)
             if not key:
                 break
             
@@ -328,20 +335,6 @@ class Data:
                 key_data[key].append(datapoints)
         
         plot_count = len(keys)
-
-        # side = 1
-        # while True:
-        #     if pow(side,2) >= plot_count:
-        #         break
-        #     side += 1
-        
-        # if side * side-1 >= plot_count:
-        #     columns = side
-        #     rows = side - 1
-        # else:
-        #     columns = rows = side
-        
-        # print(rows, columns)
 
         columns = plot_count
         rows = 1
