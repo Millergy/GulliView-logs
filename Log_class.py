@@ -26,6 +26,37 @@ from functions import try_int_float_convert
 class Log:
 
     def __init__(self, filepath, general_log_filename, show_progress = True):
+        # Init dicts for data import
+        self.data = {}      # Log data
+        self.other = {}     # Data not useful at this time
+        self.time_data = {} # Time stats
+        
+        # Go through all files in folder
+        if show_progress:
+            for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
+                self.import_file(filepath, log_filename)
+        else:
+            for log_filename in os.listdir(filepath):
+                self.import_file(filepath, log_filename)
+
+        # For testing
+        # self.import_file(filepath, general_log_filename)
+        # self.import_file(filepath, "camera_0_output-fast.log", 150)
+
+        
+        # Put general data in seperate dict
+        self.general_data = self.data[general_log_filename]
+        del self.data[general_log_filename]
+        self.format_general()
+
+        if show_progress:
+            for i in tqdm(self.data, desc="Formatting data"):
+                self.format_data(i)
+        else:
+            for i in self.data:
+                self.format_data(i)
+
+    def __init__new(self, filepath, general_log_filename, show_progress = True):
 
         # Go through all files in folder
         if show_progress:
@@ -40,8 +71,10 @@ class Log:
         del data[general_log_filename]
         self.format_general()
 
+        # Init variables for formatting
+        self.data = {}      # Only important values
         self.other = {}     # Data not useful at this time
-        
+
         # Format data
         if show_progress:
             for i in tqdm(self.data.keys(), desc="Formatting data"):
@@ -195,60 +228,4 @@ class Log:
 
     # formats data into dicts for plotting
     def format_data_new(self, key):
-        formatted_data = {}
 
-        for category in self.data[key]:
-            array = self.data[key][category]
-
-            # Assume all values follow same format
-            first_split_space = array[0].split(" ")
-            first_split_equal = array[0].split("=")
-            first_split_equal_space = first_split_equal[-1].split(" ")
-
-            # If value is alone we just flatten list, possibly not needed 
-            if len(array) == 1:
-                array = array[0]
-
-            # Value cannot be split
-            elif len(first_split_space) == 1:
-                new_array = []
-                for i in array:
-                    new_array.append(try_int_float_convert(i))
-                array = new_array
-
-            # key: xxx ms
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "ms":
-                formatted_data[category + " (ms)"] = self.convert_units_to_float(array)
-            
-            # key: xxx us
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "us":
-                formatted_data[category + " (us)"] = self.convert_units_to_float(array)
-            
-            # key: xxx ns
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "ns":
-                formatted_data[category + " (ns)"] = self.convert_units_to_float(array)
-            
-            # key: xxx Hz
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "Hz":
-                formatted_data[category + " (Hz)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx ms
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "ms":
-                formatted_data[category + " (ms)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx us
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "us":
-                formatted_data[category + " (us)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx ns
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "ns":
-                formatted_data[category + " (ns)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx Hz
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "Hz":
-                formatted_data[category + " (Hz)"] = self.convert_units_to_float(array)
-
-            # else:
-            #     print(category, data_dict[category])
-            
-            self.data[key] = formatted_data
