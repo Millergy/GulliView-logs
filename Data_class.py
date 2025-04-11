@@ -155,6 +155,8 @@ class Data:
                 print("No log files found")
 
             for log_file in tqdm(remote_files, desc="Downloading Logs"):
+                if "exclude" in log_file:
+                    continue
                 remote_path = os.path.join(self.ssh_folder, log_file)
                 local_path = os.path.join(self.input_folder, log_file)
                 sftp.get(remote_path, local_path)
@@ -312,8 +314,10 @@ class Data:
             keys.append(key)
             print(key, "added to comparision!")
         
-        if keys != []:
-            self.display_combined(comp, keys)
+        if keys == []:
+            return
+        
+        self.display_combined(comp, keys)
 
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):

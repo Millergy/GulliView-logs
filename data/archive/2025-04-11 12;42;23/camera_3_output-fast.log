@@ -1,0 +1,369 @@
+Core number: 7
+Execution time for the consumer: 0.00 ms
+Remap: 0.00 ms
+Transform color: 2.16 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=0, trial=1, Duration=9002.83 us
+Core number: 7
+Execution time for the consumer: 187.47 ms
+Remap: 0.00 ms
+Transform color: 3.50 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=1, trial=1, Duration=294574.35 us
+Core number: 7
+Execution time for the consumer: 0.01 ms
+Remap: 0.00 ms
+Transform color: 1.96 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=2, trial=1, Duration=52446.35 us
+Core number: 7
+Execution time for the consumer: 0.00 ms
+Remap: 0.00 ms
+Transform color: 2.99 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=3, trial=1, Duration=37277.29 us
+Core number: 7
+Execution time for the consumer: 223.23 ms
+Remap: 0.00 ms
+Transform color: 2.09 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=4, trial=1, Duration=412196.85 us
+Core number: 7
+Execution time for the consumer: 0.00 ms
+Remap: 0.00 ms
+Transform color: 14.74 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=5, trial=1, Duration=115426.67 us
+Core number: 7
+Execution time for the consumer: 0.00 ms
+Remap: 0.00 ms
+Transform color: 2.41 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=6, trial=1, Duration=4490.12 us
+Core number: 7
+Execution time for the consumer: 10.22 ms
+Remap: 0.00 ms
+Transform color: 6.07 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=7, trial=1, Duration=19600.78 us
+Core number: 7
+Execution time for the consumer: 35.71 ms
+Remap: 0.00 ms
+Transform color: 2.73 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=8, trial=1, Duration=40420.71 us
+Core number: 7
+Execution time for the consumer: 35.23 ms
+Remap: 0.00 ms
+Transform color: 2.78 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=9, trial=1, Duration=103893.94 us
+Core number: 7
+Execution time for the consumer: 80.55 ms
+Remap: 0.00 ms
+Transform color: 5.40 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=10, trial=1, Duration=88906.57 us
+Core number: 7
+Execution time for the consumer: 167.60 ms
+Remap: 0.00 ms
+Transform color: 4.28 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=11, trial=1, Duration=174068.80 us
+Core number: 7
+Execution time for the consumer: 35.08 ms
+Remap: 0.00 ms
+Transform color: 3.22 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=12, trial=1, Duration=40912.94 us
+Core number: 7
+Execution time for the consumer: 35.53 ms
+Remap: 0.00 ms
+Transform color: 1.74 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=13, trial=1, Duration=38915.46 us
+Core number: 7
+Execution time for the consumer: 35.06 ms
+Remap: 0.00 ms
+Transform color: 6.09 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=14, trial=1, Duration=43487.53 us
+Core number: 7
+Execution time for the consumer: 35.06 ms
+Remap: 0.00 ms
+Transform color: 2.64 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+CAM#0 Using GLOBAL SEARCH ##############################################
+CAM#0 GLOBAL SEARCH time: 0.00 ms
+Loop: count=15, trial=1, Duration=40531.45 us
+Core number: 7
+Execution time for the consumer: 40.08 ms
+Remap: 0.00 ms
+Transform color: 5.21 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=16, trial=1, Duration=47406.95 us
+Core number: 7
+Execution time for the consumer: 130.13 ms
+Remap: 0.00 ms
+Transform color: 6.08 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=17, trial=1, Duration=138976.38 us
+Core number: 7
+Execution time for the consumer: 178.46 ms
+Remap: 0.00 ms
+Transform color: 2.08 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=18, trial=1, Duration=182859.04 us
+Core number: 7
+Execution time for the consumer: 35.05 ms
+Remap: 0.00 ms
+Transform color: 1.79 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=19, trial=1, Duration=38558.14 us
+Core number: 7
+Execution time for the consumer: 30.05 ms
+Remap: 0.00 ms
+Transform color: 5.22 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=20, trial=1, Duration=38060.04 us
+Core number: 7
+Execution time for the consumer: 35.63 ms
+Remap: 0.00 ms
+Transform color: 4.95 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=21, trial=1, Duration=42406.91 us
+Core number: 7
+Execution time for the consumer: 35.70 ms
+Remap: 0.00 ms
+Transform color: 5.88 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=22, trial=1, Duration=43779.51 us
+Core number: 7
+Execution time for the consumer: 35.66 ms
+Remap: 0.00 ms
+Transform color: 5.33 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=23, trial=1, Duration=42605.84 us
+Core number: 7
+Execution time for the consumer: 35.05 ms
+Remap: 0.00 ms
+Transform color: 4.18 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=24, trial=1, Duration=42184.03 us
+Core number: 7
+Execution time for the consumer: 96.93 ms
+Remap: 0.00 ms
+Transform color: 5.71 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=25, trial=1, Duration=105415.44 us
+Core number: 7
+Execution time for the consumer: 175.14 ms
+Remap: 0.00 ms
+Transform color: 5.13 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=26, trial=1, Duration=183604.89 us
+Core number: 7
+Execution time for the consumer: 30.05 ms
+Remap: 0.00 ms
+Transform color: 7.66 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=27, trial=1, Duration=40896.25 us
+Core number: 7
+Execution time for the consumer: 30.05 ms
+Remap: 0.00 ms
+Transform color: 3.46 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=28, trial=1, Duration=55695.85 us
+Core number: 7
+Execution time for the consumer: 15.25 ms
+Remap: 0.00 ms
+Transform color: 4.40 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=29, trial=1, Duration=22343.21 us
+Core number: 7
+Execution time for the consumer: 35.58 ms
+Remap: 0.00 ms
+Transform color: 5.40 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=30, trial=1, Duration=44579.82 us
+Core number: 7
+Execution time for the consumer: 30.08 ms
+Remap: 0.00 ms
+Transform color: 3.86 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+CAM#0 Using GLOBAL SEARCH ##############################################
+CAM#0 GLOBAL SEARCH time: 0.00 ms
+Loop: count=31, trial=1, Duration=36505.45 us
+Core number: 7
+Execution time for the consumer: 35.05 ms
+Remap: 0.00 ms
+Transform color: 3.65 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=32, trial=1, Duration=41485.46 us
+Core number: 7
+Execution time for the consumer: 35.06 ms
+Remap: 0.00 ms
+Transform color: 3.64 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=33, trial=1, Duration=41468.39 us
+Core number: 7
+Execution time for the consumer: 35.06 ms
+Remap: 0.00 ms
+Transform color: 3.57 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=34, trial=1, Duration=41241.15 us
+Core number: 7
+Execution time for the consumer: 91.72 ms
+Remap: 0.00 ms
+Transform color: 1.82 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=35, trial=1, Duration=96278.05 us
+Core number: 7
+Execution time for the consumer: 157.35 ms
+Remap: 0.00 ms
+Transform color: 1.70 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=36, trial=1, Duration=160903.05 us
+Core number: 7
+Execution time for the consumer: 40.06 ms
+Remap: 0.00 ms
+Transform color: 1.54 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=37, trial=1, Duration=43836.48 us
+Core number: 7
+Execution time for the consumer: 40.49 ms
+Remap: 0.00 ms
+Transform color: 5.39 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=38, trial=1, Duration=47771.21 us
+Core number: 7
+Execution time for the consumer: 35.49 ms
+Remap: 0.00 ms
+Transform color: 1.82 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=39, trial=1, Duration=39172.06 us
+Core number: 7
+Execution time for the consumer: 40.47 ms
+Remap: 0.00 ms
+Transform color: 4.45 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=40, trial=1, Duration=47845.46 us
+Core number: 7
+Execution time for the consumer: 35.60 ms
+Remap: 0.00 ms
+Transform color: 5.87 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=41, trial=1, Duration=43453.23 us
+Core number: 7
+Execution time for the consumer: 35.08 ms
+Remap: 0.00 ms
+Transform color: 1.69 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=42, trial=1, Duration=38491.31 us
+Core number: 7
+Execution time for the consumer: 40.62 ms
+Remap: 0.00 ms
+Transform color: 4.53 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=43, trial=1, Duration=46959.72 us
+Core number: 7
+Execution time for the consumer: 35.09 ms
+Remap: 0.00 ms
+Transform color: 1.92 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=44, trial=1, Duration=38763.53 us
+Core number: 7
+Execution time for the consumer: 101.63 ms
+Remap: 0.00 ms
+Transform color: 1.72 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=45, trial=1, Duration=104990.26 us
+Core number: 7
+Execution time for the consumer: 127.33 ms
+Remap: 0.00 ms
+Transform color: 1.73 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=46, trial=1, Duration=131220.76 us
+Core number: 7
+Execution time for the consumer: 35.05 ms
+Remap: 0.00 ms
+Transform color: 2.08 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+CAM#0 Using GLOBAL SEARCH ##############################################
+CAM#0 GLOBAL SEARCH time: 0.00 ms
+Loop: count=47, trial=1, Duration=47173.44 us
+Core number: 7
+Execution time for the consumer: 30.05 ms
+Remap: 0.00 ms
+Transform color: 3.62 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=48, trial=1, Duration=60580.10 us
+Core number: 7
+Execution time for the consumer: 10.02 ms
+Remap: 0.00 ms
+Transform color: 3.72 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=49, trial=1, Duration=15625.17 us
+Core number: 7
+Execution time for the consumer: 35.07 ms
+Remap: 0.00 ms
+Transform color: 2.02 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
+Loop: count=50, trial=1, Duration=38956.68 us
+Core number: 7
+Execution time for the consumer: 40.12 ms
+Remap: 0.00 ms
+Transform color: 2.07 ms
+CAM#0 PART SEARCH time: 0.00 ms
+Process time: 0.00 ms
