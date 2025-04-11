@@ -26,9 +26,11 @@ from functions import try_int_float_convert
 class Log:
 
     def __init__(self, filepath, general_log_filename, show_progress = True):
+        self.other = {}     # Data not useful at this time
         
         # If in optimized mode, run prod code
         if not __debug__:
+            print("hoho")
             self.init_old(filepath, general_log_filename, show_progress)
             return
 
@@ -47,7 +49,6 @@ class Log:
 
         # Init variables for formatting
         self.data = {}      # Only important values
-        self.other = {}     # Data not useful at this time
 
         # Format data
         if show_progress:
@@ -252,11 +253,32 @@ class Log:
     def format_data(self, data): # data is values from one file as a dict
         formatted_data = {}
 
-        for i,key in enumerate(data):
-            sub_data = data[i]  # List of all elements
+        import time
+        sub_data = data[4]
 
-            split_array = list(map(lambda item: item.split(","), sub_data))
-            print(split_array)
+        start_time = time.time()
+        split_array = list(map(lambda item: item.split(","), sub_data))
+        end_time = time.time()
+
+        execution_time = end_time - start_time
+        print(f"Execution time lambda: {execution_time:.2f} seconds")
+        print(split_array[:4])
+
+        start_time = time.time()
+        split_array = []
+        for i in sub_data:
+            split_array.append(i.split(","))
+        end_time = time.time()
+
+        execution_time = end_time - start_time
+        print(f"Execution time for loop: {execution_time:.2f} seconds")
+        print(split_array[:4])
+
+        # for i,key in enumerate(data):
+        #     sub_data = data[i]  # List of all elements
+            
+
+            
 
 
         return formatted_data
