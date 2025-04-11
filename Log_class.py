@@ -141,7 +141,7 @@ class Log:
     # formats data into dicts for plotting
     def format_data(self, key):
         data_dict = self.data[key].copy()
-        time_dict = {}
+        value_dict = {}
 
         for category in data_dict:
             array = data_dict[category]
@@ -164,37 +164,37 @@ class Log:
 
             # key: xxx ms
             elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "ms":
-                time_dict[category] = self.convert_units_to_float(array)
+                value_dict[category + " (ms)"] = self.convert_units_to_float(array)
             
             # key: xxx us
             elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "us":
-                time_dict[category] = self.convert_units_to_float(array, 1000)
+                value_dict[category + " (us)"] = self.convert_units_to_float(array)
             
             # key: xxx ns
             elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "ns":
-                time_dict[category] = self.convert_units_to_float(array, 1000000)
+                value_dict[category + " (ns)"] = self.convert_units_to_float(array)
             
             # key: xxx Hz
             elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "Hz":
-                time_dict[category] = self.convert_units_to_float(array)
+                value_dict[category + " (Hz)"] = self.convert_units_to_float(array)
             
             # key: value=xxx ms
             elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "ms":
-                time_dict[category] = self.convert_units_to_float(array)
+                value_dict[category + " (ms)"] = self.convert_units_to_float(array)
             
             # key: value=xxx us
             elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "us":
-                time_dict[category] = self.convert_units_to_float(array, 1000)
+                value_dict[category + " (us)"] = self.convert_units_to_float(array)
             
             # key: value=xxx ns
             elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "ns":
-                time_dict[category] = self.convert_units_to_float(array, 1000000)
+                value_dict[category + " (ns)"] = self.convert_units_to_float(array)
             
             # key: value=xxx Hz
             elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "Hz":
-                time_dict[category] = self.convert_units_to_float(array)
+                value_dict[category + " (Hz)"] = self.convert_units_to_float(array)
 
             # else:
             #     print(category, data_dict[category])
             
-            self.time_data[key] = time_dict
+            self.time_data[key] = value_dict

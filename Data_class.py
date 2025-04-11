@@ -347,12 +347,29 @@ class Data:
             axes = [axes]  # Ensure iterable axes for single key
 
         for ax, (key, values) in tqdm(zip(axes, key_data.items()), desc="Creating plots"):
+            
             sns.boxplot(data=values, ax=ax)
-            ax.set_title(key)
+            
+            if "(" in key:
+                title = key.split("(")[0].strip()
+                ax.set_title(title)
+            else:
+                ax.set_title(key)
+
             ax.set_xticks(range(len(labels)))  # Set tick positions correctly
             ax.set_xticklabels(labels, rotation=30, ha="right")  # Set log version labels
-            ax.set_ylabel("Time (ms)")
             ax.grid(True)
+
+            try:
+                label = key.split("(")[-1][:-1]
+            except IndexError:
+                continue
+
+            if label[-1] == "s":
+                label = f"Time ({label})"
+            elif label == "Hz":
+                label = f"Frequency ({label})"
+            ax.set_ylabel(label)
 
         plt.tight_layout()
         plt.show()
