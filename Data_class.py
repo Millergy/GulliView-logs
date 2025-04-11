@@ -74,8 +74,7 @@ class Data:
 
         debug_commands = {"ssl"     : self.copy_files_to_local,
                           "import"  : self.read_data,
-                          "fetch"   : self.fetch_from_debug_backup,
-                          "reset"   : self.clear_memory}
+                          "fetch"   : self.fetch_from_debug_backup}
         if __debug__:
             self.commands["debug"] = debug_commands
 
@@ -208,7 +207,8 @@ class Data:
 
         # Add to file and save
         self.logs.append(new_log)
-        self.saveFile()
+        if not other_input_folder:
+            self.saveFile()
 
     # copies files to local, creates new log object, archives logs
     def fetch_new_logs(self):
@@ -221,20 +221,15 @@ class Data:
         shutil.copytree(self.debug_backup, self.input_folder)
         self.read_data()
 
-    # resets save file
-    def clear_memory(self):
-        self.logs = []
-        self.properties = init_properties
-        self.saveFile()
-        print("\nall data cleared!\n")
-
     # imports all data from archive folder, if something has been updated
     def reimport_all(self):
-        self.clear_memory()
+        self.logs = []
+        self.properties = init_properties
         filenames = os.listdir(self.archive_folder)
         for folder_name in tqdm(filenames, desc="Importing files"):
             filepath = os.path.join(self.archive_folder, folder_name)
             self.read_data(filepath)
+        self.saveFile()
         print(f"\n\n{len(self.logs)} logs reimported\n")
 
 #%% Print data
