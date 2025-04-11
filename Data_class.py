@@ -105,21 +105,6 @@ class Data:
             else: 
                 raise SystemExit()
     def saveFile(self):
-        
-        # Filepath for backup
-        date = dt.datetime.today().strftime('%y-%m-%d_%H;%M;%S')
-
-        # Ensure backup folder exists
-        os.makedirs(self.backup_folder, exist_ok=True)
-        
-        try:
-            # Rename folder
-            os.rename(self.data_filepath, date)
-
-            # Move input to backup folder
-            shutil.move(date, self.backup_folder)
-        except: pass
-
         data = [self.logs, self.properties]
         with open(self.data_filepath, 'wb') as file:
             pickle.dump(data, file)
