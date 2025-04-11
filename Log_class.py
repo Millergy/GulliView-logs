@@ -170,6 +170,10 @@ class Log:
             elif len(first_split_space) == 2 and first_split_space[1] == "us":
                 time_dict[category] = self.convert_units_to_float(array, 1000)
             
+            # key: xxx ns
+            elif len(first_split_space) == 2 and first_split_space[1] == "ns":
+                time_dict[category] = self.convert_units_to_float(array, 1000000)
+            
             # key: value=xxx ms
             elif len(first_split_equal) >= 2 and first_split_equal_space[1] == "ms":
                 time_dict[category] = self.convert_units_to_float(array)
@@ -177,6 +181,10 @@ class Log:
             # key: value=xxx us
             elif len(first_split_equal) >= 2 and first_split_equal_space[1] == "us":
                 time_dict[category] = self.convert_units_to_float(array, 1000)
+            
+            # key: value=xxx ns
+            elif len(first_split_equal) >= 2 and first_split_equal_space[1] == "ns":
+                time_dict[category] = self.convert_units_to_float(array, 1000000)
 
             # else:
             #     print(category, data_dict[category])
