@@ -38,11 +38,6 @@ class Log:
         else:
             for log_filename in os.listdir(filepath):
                 self.import_file(filepath, log_filename)
-
-        # For testing
-        # self.import_file(filepath, general_log_filename)
-        # self.import_file(filepath, "camera_0_output-fast.log", 150)
-
         
         # Put general data in seperate dict
         self.general_data = self.data[general_log_filename]
@@ -54,33 +49,6 @@ class Log:
                 self.format_data(i)
         else:
             for i in self.data:
-                self.format_data(i)
-
-    def __init__new(self, filepath, general_log_filename, show_progress = True):
-
-        # Go through all files in folder
-        if show_progress:
-            for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
-                data = self.import_file(filepath, log_filename)
-        else:
-            for log_filename in os.listdir(filepath):
-                data = self.import_file(filepath, log_filename)
-        
-        # Put general data in seperate dict
-        self.general_data = data[general_log_filename]
-        del data[general_log_filename]
-        self.format_general()
-
-        # Init variables for formatting
-        self.data = {}      # Only important values
-        self.other = {}     # Data not useful at this time
-
-        # Format data
-        if show_progress:
-            for i in tqdm(self.data.keys(), desc="Formatting data"):
-                self.format_data(i)
-        else:
-            for i in self.data.keys():
                 self.format_data(i)
 
 #%% return data
@@ -225,7 +193,3 @@ class Log:
             #     print(category, data_dict[category])
             
             self.time_data[key] = value_dict
-
-    # formats data into dicts for plotting
-    def format_data_new(self, key):
-

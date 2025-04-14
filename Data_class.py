@@ -33,7 +33,11 @@ from functions import input_int
 from functions import input_str
 
 #%% Classes
-from Log_class import Log
+if __debug__:
+    from Log_class_new import Log
+    print(Log)
+else:
+    from Log_class import Log
 
 #%% Init properties
 init_properties = {"keys": []}
@@ -180,13 +184,14 @@ class Data:
             if os.path.exists(new_path):
                 user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
                 return
-        
-        # Get keys for time data
-        keys = new_log.return_keys()
-        for key in keys:
-            if not key in self.properties["keys"]:
-                self.properties["keys"].append(key)
-        self.properties["keys"].sort()
+            
+        if not __debug__:
+            # Get keys for time data
+            keys = new_log.return_keys()
+            for key in keys:
+                if not key in self.properties["keys"]:
+                    self.properties["keys"].append(key)
+            self.properties["keys"].sort()
 
         # Rename and move if not called by reimport_all
         if not other_input_folder:
