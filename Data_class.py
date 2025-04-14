@@ -165,14 +165,14 @@ class Data:
         # other input folder only used in reimport_all, so we check archive folder
         if other_input_folder:
             input_folder = other_input_folder
-            new_log = Log(input_folder, self.general_log_filename)
+            new_log = Log(input_folder, self.general_log_filename, False)
         else:
             input_folder = self.input_folder
 
             if not os.path.exists(self.input_folder):
                 user_acknowledge("Input folder not found, this message should only be present in debug mode")
                 return
-            new_log = Log(input_folder, self.general_log_filename, False)
+            new_log = Log(input_folder, self.general_log_filename)
         
         
 
