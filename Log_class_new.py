@@ -28,10 +28,8 @@ class Log:
 
     def __init__(self, folderpath, general_log_filename, show_progress = True):
         self.general_data = {}  # Data denoting version, timestamp, etc
-        self.other = {}         # Data not useful at this time
-        self.data = {}          # Useful stats
-        self.values = {}        # Numbers that can be used in plotting
-        self.agg_data = {}        # Aggregated data for plotting
+        self.agg_data = {}      # Aggregated data for plotting
+        self.all_agg_data = {}  # The data from all files combined
 
         # List of filepaths for files
         filenames = os.listdir(folderpath)
@@ -43,47 +41,72 @@ class Log:
             self.format_general()
             filenames.remove(general_log_filename)
 
-        # Go through all files in folder
+        # If we want progress bar or not for importing data
         if show_progress:
-            for i in tqdm(filenames, "Importing data"):
-                filepath = os.path.join(folderpath, i)
-                self.import_file(filepath)
-                self.format_data(i)
-                self.agg_data[i] = self.aggregate(self.values[i])
+            iterator = tqdm(filenames, "Importing data")
         else:
-            for i in filenames:
-                filepath = os.path.join(folderpath, i)
-                self.import_file(filepath)
-                self.format_data(i)
-                self.agg_data[i] = self.aggregate(self.values[i])
+            iterator = filenames
+
+        # Go through all files in folder
+        values = {}
+        for filename in iterator:
+            filepath = os.path.join(folderpath, filename)
+            data, _ = self.import_file(filepath)
+            values[filename] = self.format_data(data)
+            self.agg_data[filename] = self.aggregate(values[filename])
         
+        # Save all available keys
+        self.keys = []
+        for filename in self.agg_data.keys():
+            self.keys += list(self.agg_data[filename].keys())
+        self.keys = list(dict.fromkeys(self.keys))
+
+        # If we want progress bar or not for aggregating all
+        if show_progress:
+            iterator = tqdm(self.keys, "Aggrigating")
+        else:
+            iterator = self.keys
+
+        # Combine all data into one dict and aggregate all
+        combined_values = {}
+        for key in iterator:
+            combined_values[key] = []
+            for filename in values:
+                if key in values[filename].keys():
+                    combined_values[key] += values[filename][key]
+        self.all_agg_data = self.aggregate(combined_values)
+
 
 #%% return data
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
         return str(self.general_data["TIME"]).replace(":",";")
     
+    # version of code as identifier
+    def return_identifier(self):
+        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"])
+
     # general log attributes
     def return_attributes(self):
         return self.general_data
     
     # keys for time data
     def return_keys(self):
-        all_keys = []
-        for filename in self.time_data.keys():
-            all_keys += list(self.time_data[filename].keys())
-        return all_keys
+        return self.keys
 
-    # version of code as identifier
-    def return_identifier(self):
-        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"])
+    # data for plotting from individual files
+    def return_agg_data(self, filename, key):
+        return self.agg_data[filename][key]
+    
+    # data for plotting from all files
+    def return_all_agg_data(self, key):
+        return self.all_agg_data[key]
 
 #%% used for __init__
     # Convert text in files to dict
     def import_file(self, filepath, general = False):
-        if not general:
-            filename = filepath.split("\\")[-1]
-            self.other[filename] = []
+        other = []
+        data = {}
 
         with open(filepath, "r", encoding="utf-8") as file:
             for i,line in enumerate(file):
@@ -98,12 +121,14 @@ class Log:
                     # Group data by key, the key is the string before the first ':'
                     # For every key there is a list with the values
                     key, value = line.strip().split(":", 1)
-                    self.data.setdefault(filename, {}).setdefault(key, []).append(value.strip())
+                    data.setdefault(key, []).append(value.strip())
 
                 # If log data does not follow expected fomrat it is put in "other"
                 # Used for debugging
-                elif not line in self.other[filename]:
-                    self.other[filename].append(line)
+                elif not line in other:
+                    other.append(line)
+        
+        return data, other
 
     def format_general(self):
         
@@ -134,10 +159,9 @@ class Log:
         return time_list
 
     # formats data into dicts for plotting
-    def format_data(self, filename):
+    def format_data(self, data):
 
         # If data is {"key" : ["aaa=bb, ccc=dd"]} split into {"key, aaa" : "bb", "key, ccc" : "dd"}
-        data = self.data[filename]
         keys = list(data.keys())
         for key in keys:
             if "=" in data[key][0]:
@@ -150,27 +174,23 @@ class Log:
                 del data[key]
         
         # Convert elements to usable values for plotting
-        self.values[filename] = {}
+        values = {}
         keys = list(data.keys())
         for key in keys:
-            value_list = self.data[filename][key]
-
             # Assume all values follow same format
-            first_split_space = value_list[0].split(" ")
+            first_split_space = data[key][0].split(" ")
 
             # Value cannot be split so we try to convert to int or float
             if len(first_split_space) == 1:
-                for i in value_list:
-                    self.values[filename].setdefault(key, []).append(try_int_float_convert(i))
+                for i in data[key]:
+                    values.setdefault(key, []).append(try_int_float_convert(i))
 
             # Assume the second is a unit
             elif len(first_split_space) == 2:
                 unit = first_split_space[1]
-                self.values[filename][f"{key} ({unit})"] = self.convert_units_to_float(value_list)
-            
-            # # For debugging
-            # else:
-            #     print(key, self.data[filename][key])
+                values[f"{key} ({unit})"] = self.convert_units_to_float(data[key])
+        
+        return values
 
     # Aggregate data (calculate percentiles)
     def aggregate(self, data):
