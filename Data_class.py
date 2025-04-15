@@ -33,11 +33,7 @@ from functions import input_int
 from functions import input_str
 
 #%% Classes
-if __debug__:
-    from Log_class_new import Log
-    print(Log)
-else:
-    from Log_class import Log
+from Log_class import Log
 
 #%% Init properties
 init_properties = {"keys": []}

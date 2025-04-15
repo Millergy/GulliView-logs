@@ -19,38 +19,44 @@
 from tqdm import tqdm
 import os
 import datetime as dt
+import numpy as np
 
 #%% Custom modules
 from functions import try_int_float_convert
 
 class Log:
 
-    def __init__(self, filepath, general_log_filename, show_progress = True):
-        self.other = {}     # Data not useful at this time
+    def __init__(self, folderpath, general_log_filename, show_progress = True):
+        self.general_data = {}  # Data denoting version, timestamp, etc
+        self.other = {}         # Data not useful at this time
+        self.data = {}          # Useful stats
+        self.values = {}        # Numbers that can be used in plotting
+        self.agg_data = {}        # Aggregated data for plotting
+
+        # List of filepaths for files
+        filenames = os.listdir(folderpath)
+
+        # Import general
+        if general_log_filename in filenames:
+            filepath = os.path.join(folderpath, general_log_filename)
+            self.import_file(filepath, True)
+            self.format_general()
+            filenames.remove(general_log_filename)
 
         # Go through all files in folder
         if show_progress:
-            for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
-                data = self.import_file(filepath, log_filename)
+            for i in tqdm(filenames, "Importing data"):
+                filepath = os.path.join(folderpath, i)
+                self.import_file(filepath)
+                self.format_data(i)
+                self.agg_data[i] = self.aggregate(self.values[i])
         else:
-            for log_filename in os.listdir(filepath):
-                data = self.import_file(filepath, log_filename)
+            for i in filenames:
+                filepath = os.path.join(folderpath, i)
+                self.import_file(filepath)
+                self.format_data(i)
+                self.agg_data[i] = self.aggregate(self.values[i])
         
-        # Put general data in seperate dict
-        self.general_data = data[general_log_filename]
-        del data[general_log_filename]
-        self.format_general()
-
-        # Init variables for formatting
-        self.data = {}      # Only important values
-
-        # Format data
-        if show_progress:
-            for i in tqdm(self.data.keys(), desc="Formatting data"):
-                self.data[i] = self.format_data(data[i])
-        else:
-            for i in self.data.keys():
-                self.data[i] = self.format_data(data[i])
 
 #%% return data
     # name of folder with archived logs, it is the timestamp of the log
@@ -74,34 +80,34 @@ class Log:
 
 #%% used for __init__
     # Convert text in files to dict
-    def import_file(self, folder_filepath, filename):
-        # If log data does not follow expected fomrat it is put in "other"
-        # Used for debugging
-        self.other[filename] = []
-        data = {}
+    def import_file(self, filepath, general = False):
+        if not general:
+            filename = filepath.split("\\")[-1]
+            self.other[filename] = []
 
-        filepath = os.path.join(folder_filepath, filename)
         with open(filepath, "r", encoding="utf-8") as file:
             for i,line in enumerate(file):
 
+                # If it is general log file we import a little differently
+                if general:
+                    key, value = line.strip().split(":", 1)
+                    self.general_data[key] = value.strip()
+                
                 # ':' represents data, otherwise it is just info and is put in 'other'
-                if ':' in line:
+                elif ':' in line:
                     # Group data by key, the key is the string before the first ':'
                     # For every key there is a list with the values
                     key, value = line.strip().split(":", 1)
-                    data.setdefault(filename, {}).setdefault(key, []).append(value.strip())
+                    self.data.setdefault(filename, {}).setdefault(key, []).append(value.strip())
 
+                # If log data does not follow expected fomrat it is put in "other"
+                # Used for debugging
                 elif not line in self.other[filename]:
                     self.other[filename].append(line)
-        
-        return data
 
     def format_general(self):
         
         for key in self.general_data:
-            
-            # The data is in a nested list, this removes this list
-            self.general_data[key] = self.general_data[key][0]
 
             # If 0/1 change to True/False, else convert to int or float
             if self.general_data[key] == "0":
@@ -117,52 +123,58 @@ class Log:
     def convert_units_to_float(self, array, factor = 1):
         time_list = []
         for value in array:
-            if "=" in value:
-                split = value.split("=")
-                split = split[-1].split(" ")
-            else:
-                split = value.split(" ")
-
-            # Assumes 'xxx ms' is the last two values
+            split = value.split(" ")
             try:
-                time = float(split[-2])
+                time = float(split[0])
                 time_list.append(time/factor)
             except ValueError:
-                # Used to debug formatting, should not be printed
-                print("Could not convert to float:", split[-2], "in", value)
+                # Used to debug formatting, should never be printed in real world use case
+                print("Could not convert to float:", split[0], "in", value)
 
         return time_list
 
     # formats data into dicts for plotting
-    def format_data(self, data): # data is values from one file as a dict
-        formatted_data = {}
+    def format_data(self, filename):
 
-        import time
-        sub_data = data[4]
+        # If data is {"key" : ["aaa=bb, ccc=dd"]} split into {"key, aaa" : "bb", "key, ccc" : "dd"}
+        data = self.data[filename]
+        keys = list(data.keys())
+        for key in keys:
+            if "=" in data[key][0]:
+                split_lists = list(map(lambda item: item.split(","), data[key]))
+                for sublist in split_lists:
+                    for item in sublist:
+                        subkey, value = item.split("=")
+                        subkey = subkey.strip()
+                        data.setdefault(key + ", " + subkey, []).append(value)
+                del data[key]
+        
+        # Convert elements to usable values for plotting
+        self.values[filename] = {}
+        keys = list(data.keys())
+        for key in keys:
+            value_list = self.data[filename][key]
 
-        start_time = time.time()
-        split_array = list(map(lambda item: item.split(","), sub_data))
-        end_time = time.time()
+            # Assume all values follow same format
+            first_split_space = value_list[0].split(" ")
 
-        execution_time = end_time - start_time
-        print(f"Execution time lambda: {execution_time:.2f} seconds")
-        print(split_array[:4])
+            # Value cannot be split so we try to convert to int or float
+            if len(first_split_space) == 1:
+                for i in value_list:
+                    self.values[filename].setdefault(key, []).append(try_int_float_convert(i))
 
-        start_time = time.time()
-        split_array = []
-        for i in sub_data:
-            split_array.append(i.split(","))
-        end_time = time.time()
-
-        execution_time = end_time - start_time
-        print(f"Execution time for loop: {execution_time:.2f} seconds")
-        print(split_array[:4])
-
-        # for i,key in enumerate(data):
-        #     sub_data = data[i]  # List of all elements
+            # Assume the second is a unit
+            elif len(first_split_space) == 2:
+                unit = first_split_space[1]
+                self.values[filename][f"{key} ({unit})"] = self.convert_units_to_float(value_list)
             
+            # # For debugging
+            # else:
+            #     print(key, self.data[filename][key])
 
-            
-
-
-        return formatted_data
+    # Aggregate data (calculate percentiles)
+    def aggregate(self, data):
+        aggregated_values = {}
+        for key in data:
+            aggregated_values[key] = list(np.percentile(data[key], [0, 25, 50, 75, 100]))
+        return aggregated_values
