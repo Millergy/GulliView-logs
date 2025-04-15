@@ -26,6 +26,7 @@ import subprocess
 from tabulate import tabulate
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 
 #%% Custom modules
 from functions import user_acknowledge
@@ -299,4 +300,51 @@ class Data:
 
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):
-        pass
+        # Prepare data for plotting
+        data_to_plot = {key: [] for key in keys}
+        for key in keys:
+            for obj in comp:
+                try:
+                    # Get aggregated data for the key
+                    data_to_plot[key].append(obj.return_all_agg_data(key))
+                except KeyError:
+                    # Handle missing data for the key
+                    print(f"Warning: Key '{key}' not found in one of the objects.")
+                    data_to_plot[key].append([None, None, None, None, None])
+
+        # Create box plots
+        fig, ax = plt.subplots(figsize=(10, 6))
+        x_positions = np.arange(1, len(keys) + 1)
+
+        for i, key in enumerate(keys):
+            # Extract aggregated statistics
+            aggregated_data = np.array(data_to_plot[key])
+            mins = aggregated_data[:, 0]
+            q1s = aggregated_data[:, 1]
+            medians = aggregated_data[:, 2]
+            q3s = aggregated_data[:, 3]
+            maxs = aggregated_data[:, 4]
+
+            # Plot box for each key
+            for j, (min_val, q1, median, q3, max_val) in enumerate(zip(mins, q1s, medians, q3s, maxs)):
+                offset = (j - len(comp) / 2) * 0.2  # Offset for side-by-side boxes
+                x_pos = x_positions[i] + offset
+
+                # Draw the box
+                ax.plot([x_pos, x_pos], [q1, q3], color="blue", linewidth=10, alpha=0.5)  # Box
+                # Draw the median
+                ax.plot([x_pos - 0.1, x_pos + 0.1], [median, median], color="red", linewidth=2)  # Median
+                # Draw the whiskers
+                ax.plot([x_pos, x_pos], [min_val, q1], color="black", linestyle="--")  # Lower whisker
+                ax.plot([x_pos, x_pos], [q3, max_val], color="black", linestyle="--")  # Upper whisker
+
+        # Customize the plot
+        ax.set_xticks(x_positions)
+        ax.set_xticklabels(keys)
+        ax.set_title("Comparison of Aggregated Data")
+        ax.set_ylabel("Values")
+        ax.grid(True)
+
+        # Show the plot
+        plt.tight_layout()
+        plt.show()

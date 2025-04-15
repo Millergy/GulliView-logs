@@ -347,7 +347,7 @@ Core number: 3
 Remap: 0 ms
 Transform color: 1.883 ms
 Core number: 3
-d: 498.19 ms
+d: 498.19ms
 Reason: consumer time, Value: 0.00, Counter: 125, Timestamp: 1744637430
 Reason: transform time, Value: 0.00, Counter: 125, Timestamp: 1744637430
 Reason: global search time, Value: 495.72, Counter: 125, Timestamp: 1744637430

@@ -196,5 +196,9 @@ class Log:
     def aggregate(self, data):
         aggregated_values = {}
         for key in data:
-            aggregated_values[key] = list(np.percentile(data[key], [0, 25, 50, 75, 100]))
+            try:
+                # Throws an exception for TypeError if data in wrong format, just skip these datapoints then
+                aggregated_values[key] = list(np.percentile(data[key], [0, 25, 50, 75, 100]))
+            except TypeError as e:
+                continue
         return aggregated_values
