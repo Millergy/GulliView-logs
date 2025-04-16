@@ -301,49 +301,87 @@ class Data:
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):
         # Prepare data for plotting
-        data_to_plot = {key: [] for key in keys}
-        for key in keys:
-            for obj in comp:
+        data = {key: [] for key in keys}
+        outliers = {key: [] for key in keys}
+
+        labels = []  # Store log version labels
+        for log in comp:
+            # Get the version label for x axis
+            labels.append(log.return_identifier())
+        
+        for key in tqdm(keys, "Reformatting data for plots"):
+            for log in comp:
                 try:
-                    # Get aggregated data for the key
-                    data_to_plot[key].append(obj.return_all_agg_data(key))
+                    # Get aggregated data and outliers for the key
+                    data[key].append(log.return_all_agg_data(key))
+                    outliers[key].append(log.return_all_outliers(key))
                 except KeyError:
                     # Handle missing data for the key
-                    print(f"Warning: Key '{key}' not found in one of the objects.")
-                    data_to_plot[key].append([None, None, None, None, None])
+                    data[key].append([None, None, None, None, None])
+                    outliers[key].append([])
+            
 
-        # Create box plots
-        fig, ax = plt.subplots(figsize=(10, 6))
-        x_positions = np.arange(1, len(keys) + 1)
+        plot_count = len(keys)
 
-        for i, key in enumerate(keys):
+        columns = plot_count
+        rows = 1
+
+        width = 6 * plot_count
+        height = 5
+        fig, axes = plt.subplots(rows, columns, figsize=(width, height))
+
+        if len(keys) == 1:  
+            axes = [axes]  # Ensure iterable axes for single key
+
+        for i, (ax, key) in tqdm(enumerate(zip(axes, keys)), "Creating plots"):
+
             # Extract aggregated statistics
-            aggregated_data = np.array(data_to_plot[key])
+            aggregated_data = np.array(data[key])
             mins = aggregated_data[:, 0]
             q1s = aggregated_data[:, 1]
             medians = aggregated_data[:, 2]
             q3s = aggregated_data[:, 3]
             maxs = aggregated_data[:, 4]
 
+            plot_data = zip(mins, q1s, medians, q3s, maxs, outliers[key])
+
             # Plot box for each key
-            for j, (min_val, q1, median, q3, max_val) in enumerate(zip(mins, q1s, medians, q3s, maxs)):
-                offset = (j - len(comp) / 2) * 0.2  # Offset for side-by-side boxes
-                x_pos = x_positions[i] + offset
+            for j, (min_val, q1, median, q3, max_val, log_outliers) in enumerate(plot_data):
+
+                x_pos = j
 
                 # Draw the box
                 ax.plot([x_pos, x_pos], [q1, q3], color="blue", linewidth=10, alpha=0.5)  # Box
                 # Draw the median
                 ax.plot([x_pos - 0.1, x_pos + 0.1], [median, median], color="red", linewidth=2)  # Median
                 # Draw the whiskers
-                ax.plot([x_pos, x_pos], [min_val, q1], color="black", linestyle="--")  # Lower whisker
-                ax.plot([x_pos, x_pos], [q3, max_val], color="black", linestyle="--")  # Upper whisker
+                ax.plot([x_pos, x_pos], [min_val, q1], color="black", linestyle="-")  # Lower whisker
+                ax.plot([x_pos, x_pos], [q3, max_val], color="black", linestyle="-")  # Upper whisker
 
-        # Customize the plot
-        ax.set_xticks(x_positions)
-        ax.set_xticklabels(keys)
-        ax.set_title("Comparison of Aggregated Data")
-        ax.set_ylabel("Values")
-        ax.grid(True)
+                # Plot outliers as individual points
+                ax.scatter([x_pos] * len(log_outliers), log_outliers, color="orange", label="Outliers" if i == 0 and j == 0 else "")
+            
+            # Tidying plots
+            if "(" in key:
+                title = key.split("(")[0].strip()
+                ax.set_title(title)
+            else:
+                ax.set_title(key)
+
+            ax.set_xticks(range(len(labels)))  # Set tick positions correctly
+            ax.set_xticklabels(labels, rotation=30, ha="right")  # Set log version labels
+            ax.grid(True)
+
+            try:
+                label = key.split("(")[-1][:-1]
+            except IndexError:
+                continue
+
+            if label[-1] == "s":
+                label = f"Time ({label})"
+            elif label == "Hz":
+                label = f"Frequency ({label})"
+            ax.set_ylabel(label)
 
         # Show the plot
         plt.tight_layout()

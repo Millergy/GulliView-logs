@@ -184,6 +184,8 @@ class Log:
         for key in keys:
             # Assume all values follow same format
             first_split_space = data[key][0].split(" ")
+            first_split_space_value = try_int_float_convert(first_split_space[0])
+            is_int_or_float = isinstance(first_split_space_value, (int, float))
 
             # Value cannot be split so we try to convert to int or float
             if len(first_split_space) == 1:
@@ -191,7 +193,7 @@ class Log:
                     values.setdefault(key, []).append(try_int_float_convert(i))
 
             # Assume the second is a unit
-            elif len(first_split_space) == 2:
+            elif len(first_split_space) == 2 and is_int_or_float:
                 unit = first_split_space[1]
                 values[f"{key} ({unit})"] = self.convert_units_to_float(data[key])
         
@@ -206,6 +208,9 @@ class Log:
                 # Throws an exception for TypeError if data in wrong format, just skip these datapoints then
                 aggregated_values[key] = list(np.percentile(data[key], [0, 25, 50, 75, 100]))
             except TypeError as e:
+                # Only important when debugging
+                if __debug__:
+                    print(f"Error processing key '{key}' with example value '{data[key][0]}': {type(e).__name__}: {e}")
                 continue
 
             data[key].sort()
