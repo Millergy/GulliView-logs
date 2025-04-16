@@ -20,6 +20,7 @@ from tqdm import tqdm
 import os
 import datetime as dt
 import numpy as np
+import bisect
 
 #%% Custom modules
 from functions import try_int_float_convert
@@ -27,14 +28,12 @@ from functions import try_int_float_convert
 class Log:
 
     def __init__(self, folderpath, general_log_filename, show_progress = True):
-        self.general_data = {}  # Data denoting version, timestamp, etc
-        self.agg_data = {}      # Aggregated data for plotting
-        self.all_agg_data = {}  # The data from all files combined
 
         # List of filepaths for files
         filenames = os.listdir(folderpath)
 
         # Import general
+        self.general_data = {}  # Data denoting version, timestamp, etc
         if general_log_filename in filenames:
             filepath = os.path.join(folderpath, general_log_filename)
             self.import_file(filepath, True)
@@ -47,13 +46,15 @@ class Log:
         else:
             iterator = filenames
 
-        # Go through all files in folder
+        # Go through all files in folder and format
         values = {}
+        self.agg_data = {} # Aggregated data for plotting
+        self.outliers = {} # Outliers not > 1.5 * IQR
         for filename in iterator:
             filepath = os.path.join(folderpath, filename)
             data, _ = self.import_file(filepath)
             values[filename] = self.format_data(data)
-            self.agg_data[filename] = self.aggregate(values[filename])
+            self.agg_data[filename], self.outliers[filename] = self.aggregate(values[filename])
         
         # Save all available keys
         self.keys = []
@@ -74,7 +75,7 @@ class Log:
             for filename in values:
                 if key in values[filename].keys():
                     combined_values[key] += values[filename][key]
-        self.all_agg_data = self.aggregate(combined_values)
+        self.all_agg_data, self.all_outliers = self.aggregate(combined_values)
 
 
 #%% return data
@@ -97,10 +98,14 @@ class Log:
     # data for plotting from individual files
     def return_agg_data(self, filename, key):
         return self.agg_data[filename][key]
+    def return_outliers(self, filename, key):
+        return self.outliers[filename][key]
     
     # data for plotting from all files
     def return_all_agg_data(self, key):
         return self.all_agg_data[key]
+    def return_all_outliers(self, key):
+        return self.all_outliers[key]
 
 #%% used for __init__
     # Convert text in files to dict
@@ -195,10 +200,39 @@ class Log:
     # Aggregate data (calculate percentiles)
     def aggregate(self, data):
         aggregated_values = {}
+        outliers = {}
         for key in data:
             try:
                 # Throws an exception for TypeError if data in wrong format, just skip these datapoints then
                 aggregated_values[key] = list(np.percentile(data[key], [0, 25, 50, 75, 100]))
             except TypeError as e:
                 continue
-        return aggregated_values
+
+            data[key].sort()
+            outliers[key] = []
+
+            min = aggregated_values[key][0]
+            Q1 = aggregated_values[key][1]
+            Q3 = aggregated_values[key][3]
+            max = aggregated_values[key][4]
+
+            IQR = Q3 - Q1
+
+            # Outliers as defined by seaborn library for python
+            min_limit = Q1 - 1.5 * IQR
+            if min < min_limit:
+                aggregated_values[key][0] = min_limit
+
+                # Add outliers to dict
+                lower_index = bisect.bisect_left(data[key], min_limit)
+                outliers[key].extend(data[key][:lower_index])
+            
+            max_limit = Q3 + 1.5 * IQR
+            if max > max_limit:
+                aggregated_values[key][4] = max_limit
+
+                # Add outliers to dict
+                upper_index = bisect.bisect_right(data[key], max_limit)
+                outliers[key].extend(data[key][upper_index:])
+
+        return aggregated_values, outliers
