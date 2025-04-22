@@ -353,10 +353,13 @@ class Data:
                 # Draw the box
                 ax.plot([x_pos, x_pos], [q1, q3], color="blue", linewidth=10, alpha=0.5)  # Box
                 # Draw the median
-                ax.plot([x_pos - 0.1, x_pos + 0.1], [median, median], color="red", linewidth=2)  # Median
+                ax.plot([x_pos - 0.45, x_pos + 0.45], [median, median], color="red", linewidth=2)  # Median
                 # Draw the whiskers
                 ax.plot([x_pos, x_pos], [min_val, q1], color="black", linestyle="-")  # Lower whisker
+                ax.plot([x_pos - 0.3, x_pos + 0.3], [min_val, min_val], color="black", linestyle="-")
+
                 ax.plot([x_pos, x_pos], [q3, max_val], color="black", linestyle="-")  # Upper whisker
+                ax.plot([x_pos - 0.3, x_pos + 0.3], [max_val, max_val], color="black", linestyle="-")
 
                 # Plot outliers as individual points
                 ax.scatter([x_pos] * len(log_outliers), log_outliers, color="orange", label="Outliers" if i == 0 and j == 0 else "")
