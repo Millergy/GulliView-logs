@@ -108,7 +108,12 @@ def input_str(allowed_inputs, exclude = [], noneAllowed = True, number = True):
         return option
 
 # Handles input of integer from 0 to "high"
-def input_int(high, prompt):
+def input_int(high, prompt, allow_zero = False):
+    if allow_zero:
+        lower_limit = 0
+    else:
+        lower_limit = 1
+
     while True:
         userInput = input(prompt)
         if userInput == "":
@@ -119,7 +124,7 @@ def input_int(high, prompt):
             print("-----invalid number-----")
             continue
         
-        if number > high or number <= 0:
+        if number > high or number < lower_limit:
             print("-----number not in range-----")
             continue
         

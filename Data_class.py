@@ -261,9 +261,6 @@ class Data:
             if not ID:
                 break
 
-            # Testing
-            # self.logs[ID-1].box_plot_all()
-
             if ID in comp_ID:
                 print("ID already added!")
             
@@ -285,7 +282,6 @@ class Data:
 
         keys = []
         while True:
-            prompt = "Input keys to add to comparison (leave empty when done): "
             key = input_str(available_keys, keys)
             if not key:
                 break
@@ -296,7 +292,13 @@ class Data:
         if keys == []:
             return
         
-        self.display_combined(comp, keys)
+        modes = ["Box-plot", "Timeline"]
+        mode = input_str(modes)
+        
+        if mode == modes[0]:
+            self.display_combined(comp, keys)
+        elif mode == modes[1]:
+            self.display_timeline(comp, keys)
 
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):
@@ -360,7 +362,7 @@ class Data:
                 ax.plot([j - 0.3, j + 0.3], [max_val, max_val], color="black", linestyle="-")
 
                 # Plot outliers as individual points
-                ax.scatter([x_pos] * len(log_outliers), log_outliers, color="orange", label="Outliers" if i == 0 and j == 0 else "")
+                ax.scatter([j] * len(log_outliers), log_outliers, color="orange", label="Outliers" if i == 0 and j == 0 else "")
             
             # Tidying plots
             if "(" in key:
@@ -387,3 +389,46 @@ class Data:
         # Show the plot
         plt.tight_layout()
         plt.show()
+
+    def display_timeline(self, comp, keys):
+        filenames = []
+        for log in comp:
+            data = log.return_filenames()
+            for filename in data:
+                if not filename in filenames:
+                    filenames.append(filename)
+        filenames.sort()
+        
+        while True:
+            print("Choose file to plot")
+            filename = input_str(filenames)
+            if not filename:
+                break
+
+            data = []
+            for i in comp:
+                data.append(i.return_timeline(keys, filename))
+            
+            plot_count = len(comp)
+
+            columns = plot_count
+            rows = 1
+
+            width = 6 * plot_count
+            height = 5
+            fig, axes = plt.subplots(rows, columns, figsize=(width, height))
+
+            if plot_count == 1:  
+                axes = [axes]  # Ensure iterable axes for single key
+
+            for i, (ax, log, dict) in tqdm(enumerate(zip(axes, comp, data)), "Creating plots"):
+                for j, key in enumerate(dict):
+                    ax.plot(range(len(dict[key])), dict[key], label=key)
+                
+                ax.set_title(log.return_identifier())
+                ax.set_xlabel("Log entry timeline (not same as elapsed time)")
+                ax.legend()
+
+            # Show the plot
+            plt.tight_layout()
+            plt.show()

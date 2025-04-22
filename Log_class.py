@@ -27,24 +27,26 @@ from functions import try_int_float_convert
 
 class Log:
 
-    def __init__(self, folderpath, general_log_filename, show_progress = True):
+    def __init__(self, folderpath, general_filename, show_progress = True):
 
         # List of filepaths for files
-        filenames = os.listdir(folderpath)
+        self.folderpath = folderpath
+        self.general_filename = general_filename
+        self.filenames = os.listdir(folderpath)
 
         # Import general
         self.general_data = {}  # Data denoting version, timestamp, etc
-        if general_log_filename in filenames:
-            filepath = os.path.join(folderpath, general_log_filename)
+        if self.general_filename in self.filenames:
+            filepath = os.path.join(folderpath, self.general_filename)
             self.import_file(filepath, True)
             self.format_general()
-            filenames.remove(general_log_filename)
+            self.filenames.remove(self.general_filename)
 
         # If we want progress bar or not for importing data
         if show_progress:
-            iterator = tqdm(filenames, "Importing data")
+            iterator = tqdm(self.filenames, "Importing data")
         else:
-            iterator = filenames
+            iterator = self.filenames
 
         # Go through all files in folder and format
         values = {}
@@ -83,6 +85,10 @@ class Log:
     def return_folder_name(self):
         return str(self.general_data["TIME"]).replace(":",";")
     
+    # all filenames in folder
+    def return_filenames(self):
+        return self.filenames
+
     # version of code as identifier
     def return_identifier(self):
         return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"]) + "\n" + self.general_data["COMMENT"]
@@ -126,11 +132,13 @@ class Log:
                     # Group data by key, the key is the string before the first ':'
                     # For every key there is a list with the values
                     key, value = line.strip().split(":", 1)
+
+                    # If filter is used only add keys from filter
                     data.setdefault(key, []).append(value.strip())
 
                 # If log data does not follow expected fomrat it is put in "other"
                 # Used for debugging
-                elif not line in other:
+                elif not line in other and filter == None:
                     other.append(line)
         
         return data, other
@@ -241,3 +249,19 @@ class Log:
                 outliers[key].extend(data[key][upper_index:])
 
         return aggregated_values, outliers
+    
+    def return_timeline(self, filter, filename):
+
+        filepath = os.path.join(self.folderpath, filename)
+        try:
+            data, _ = self.import_file(filepath)
+        except FileNotFoundError as e:
+            return {}
+        data = self.format_data(data)
+
+        filtered_data = {}
+        for key in data:
+            if key in filter:
+                filtered_data[key] = data[key]
+        
+        return filtered_data
