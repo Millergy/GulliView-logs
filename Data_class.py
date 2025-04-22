@@ -36,7 +36,8 @@ from functions import input_str
 #%% Classes
 from Log_class import Log
 
-#%% Init properties
+#%% Class def
+# Init properties
 init_properties = {"keys": []}
 
 class Data:

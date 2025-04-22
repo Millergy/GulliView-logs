@@ -79,7 +79,6 @@ class Log:
                     combined_values[key] += values[filename][key]
         self.all_agg_data, self.all_outliers = self.aggregate(combined_values)
 
-
 #%% return data
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
