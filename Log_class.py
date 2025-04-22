@@ -19,89 +19,125 @@
 from tqdm import tqdm
 import os
 import datetime as dt
+import numpy as np
+import bisect
 
 #%% Custom modules
 from functions import try_int_float_convert
 
 class Log:
 
-    def __init__(self, filepath, general_log_filename, show_progress = True):
-        # Init dicts for data import
-        self.data = {}      # Log data
-        self.other = {}     # Data not useful at this time
-        self.time_data = {} # Time stats
-        
-        # Go through all files in folder
-        if show_progress:
-            for log_filename in tqdm(os.listdir(filepath), desc="Importing data"):
-                self.import_file(filepath, log_filename)
-        else:
-            for log_filename in os.listdir(filepath):
-                self.import_file(filepath, log_filename)
-        
-        # Put general data in seperate dict
-        self.general_data = self.data[general_log_filename]
-        del self.data[general_log_filename]
-        self.format_general()
+    def __init__(self, folderpath, general_log_filename, show_progress = True):
 
+        # List of filepaths for files
+        filenames = os.listdir(folderpath)
+
+        # Import general
+        self.general_data = {}  # Data denoting version, timestamp, etc
+        if general_log_filename in filenames:
+            filepath = os.path.join(folderpath, general_log_filename)
+            self.import_file(filepath, True)
+            self.format_general()
+            filenames.remove(general_log_filename)
+
+        # If we want progress bar or not for importing data
         if show_progress:
-            for i in tqdm(self.data, desc="Formatting data"):
-                self.format_data(i)
+            iterator = tqdm(filenames, "Importing data")
         else:
-            for i in self.data:
-                self.format_data(i)
+            iterator = filenames
+
+        # Go through all files in folder and format
+        values = {}
+        self.agg_data = {} # Aggregated data for plotting
+        self.outliers = {} # Outliers not > 1.5 * IQR
+        for filename in iterator:
+            filepath = os.path.join(folderpath, filename)
+            data, _ = self.import_file(filepath)
+            values[filename] = self.format_data(data)
+            self.agg_data[filename], self.outliers[filename] = self.aggregate(values[filename])
+        
+        # Save all available keys
+        self.keys = []
+        for filename in self.agg_data.keys():
+            self.keys += list(self.agg_data[filename].keys())
+        self.keys = list(dict.fromkeys(self.keys))
+
+        # If we want progress bar or not for aggregating all
+        if show_progress:
+            iterator = tqdm(self.keys, "Aggrigating")
+        else:
+            iterator = self.keys
+
+        # Combine all data into one dict and aggregate all
+        combined_values = {}
+        for key in iterator:
+            combined_values[key] = []
+            for filename in values:
+                if key in values[filename].keys():
+                    combined_values[key] += values[filename][key]
+        self.all_agg_data, self.all_outliers = self.aggregate(combined_values)
+
 
 #%% return data
     # name of folder with archived logs, it is the timestamp of the log
     def return_folder_name(self):
         return str(self.general_data["TIME"]).replace(":",";")
     
+    # version of code as identifier
+    def return_identifier(self):
+        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"])
+
     # general log attributes
     def return_attributes(self):
         return self.general_data
     
     # keys for time data
     def return_keys(self):
-        all_keys = []
-        for filename in self.time_data.keys():
-            all_keys += list(self.time_data[filename].keys())
-        return all_keys
+        return self.keys
 
-    # version of code as identifier
-    def return_identifier(self):
-        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"])
+    # data for plotting from individual files
+    def return_agg_data(self, filename, key):
+        return self.agg_data[filename][key]
+    def return_outliers(self, filename, key):
+        return self.outliers[filename][key]
+    
+    # data for plotting from all files
+    def return_all_agg_data(self, key):
+        return self.all_agg_data[key]
+    def return_all_outliers(self, key):
+        return self.all_outliers[key]
 
 #%% used for __init__
     # Convert text in files to dict
-    def import_file(self, folder_filepath, filename, limit = None):
-        # If log data does not follow expected fomrat it is put in "other"
-        # Used for debugging
-        self.other[filename] = []
+    def import_file(self, filepath, general = False):
+        other = []
+        data = {}
 
-        filepath = os.path.join(folder_filepath, filename)
         with open(filepath, "r", encoding="utf-8") as file:
             for i,line in enumerate(file):
-                
-                # Get limit first lines of file for debugging
-                if limit and i >= limit:
-                    return
 
+                # If it is general log file we import a little differently
+                if general:
+                    key, value = line.strip().split(":", 1)
+                    self.general_data[key] = value.strip()
+                
                 # ':' represents data, otherwise it is just info and is put in 'other'
-                if ':' in line:
+                elif ':' in line:
                     # Group data by key, the key is the string before the first ':'
                     # For every key there is a list with the values
                     key, value = line.strip().split(":", 1)
-                    self.data.setdefault(filename, {}).setdefault(key, []).append(value.strip())
+                    data.setdefault(key, []).append(value.strip())
 
-                elif not line in self.other[filename]:
-                    self.other[filename].append(line)
+                # If log data does not follow expected fomrat it is put in "other"
+                # Used for debugging
+                elif not line in other:
+                    other.append(line)
+        
+        return data, other
 
     def format_general(self):
         
         for key in self.general_data:
-            
-            # The data is in a nested list, this removes this list
-            self.general_data[key] = self.general_data[key][0]
 
             # If 0/1 change to True/False, else convert to int or float
             if self.general_data[key] == "0":
@@ -117,79 +153,91 @@ class Log:
     def convert_units_to_float(self, array, factor = 1):
         time_list = []
         for value in array:
-            if "=" in value:
-                split = value.split("=")
-                split = split[-1].split(" ")
-            else:
-                split = value.split(" ")
-
-            # Assumes 'xxx ms' is the last two values
+            split = value.split(" ")
             try:
-                time = float(split[-2])
+                time = float(split[0])
                 time_list.append(time/factor)
             except ValueError:
-                # Used to debug formatting, should not be printed
-                print("Could not convert to float:", split[-2], "in", value)
+                # Used to debug formatting, should never be printed in real world use case
+                print("Could not convert to float:", split[0], "in", value)
 
         return time_list
 
     # formats data into dicts for plotting
-    def format_data(self, key):
-        data_dict = self.data[key].copy()
-        value_dict = {}
+    def format_data(self, data):
 
-        for category in data_dict:
-            array = data_dict[category]
-
+        # If data is {"key" : ["aaa=bb, ccc=dd"]} split into {"key, aaa" : "bb", "key, ccc" : "dd"}
+        keys = list(data.keys())
+        for key in keys:
+            if "=" in data[key][0]:
+                split_lists = list(map(lambda item: item.split(","), data[key]))
+                for sublist in split_lists:
+                    for item in sublist:
+                        subkey, value = item.split("=")
+                        subkey = subkey.strip()
+                        data.setdefault(key + ", " + subkey, []).append(value)
+                del data[key]
+        
+        # Convert elements to usable values for plotting
+        values = {}
+        keys = list(data.keys())
+        for key in keys:
             # Assume all values follow same format
-            first_split_space = array[0].split(" ")
-            first_split_equal = array[0].split("=")
-            first_split_equal_space = first_split_equal[-1].split(" ")
+            first_split_space = data[key][0].split(" ")
+            first_split_space_value = try_int_float_convert(first_split_space[0])
+            is_int_or_float = isinstance(first_split_space_value, (int, float))
 
-            # If value is alone we just flatten list, possibly not needed 
-            if len(array) == 1:
-                data_dict[category] = array[0]
+            # Value cannot be split so we try to convert to int or float
+            if len(first_split_space) == 1:
+                for i in data[key]:
+                    values.setdefault(key, []).append(try_int_float_convert(i))
 
-            # Value cannot be split
-            elif len(first_split_space) == 1:
-                new_array = []
-                for i in array:
-                    new_array.append(try_int_float_convert(i))
-                data_dict[category] = new_array
+            # Assume the second is a unit
+            elif len(first_split_space) == 2 and is_int_or_float:
+                unit = first_split_space[1]
+                values[f"{key} ({unit})"] = self.convert_units_to_float(data[key])
+        
+        return values
 
-            # key: xxx ms
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "ms":
-                value_dict[category + " (ms)"] = self.convert_units_to_float(array)
-            
-            # key: xxx us
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "us":
-                value_dict[category + " (us)"] = self.convert_units_to_float(array)
-            
-            # key: xxx ns
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "ns":
-                value_dict[category + " (ns)"] = self.convert_units_to_float(array)
-            
-            # key: xxx Hz
-            elif len(first_split_space) == 2 and len(first_split_space) >=2 and first_split_space[1] == "Hz":
-                value_dict[category + " (Hz)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx ms
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "ms":
-                value_dict[category + " (ms)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx us
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "us":
-                value_dict[category + " (us)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx ns
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "ns":
-                value_dict[category + " (ns)"] = self.convert_units_to_float(array)
-            
-            # key: value=xxx Hz
-            elif len(first_split_equal) >= 2 and len(first_split_equal_space) >= 2 and first_split_equal_space[1] == "Hz":
-                value_dict[category + " (Hz)"] = self.convert_units_to_float(array)
+    # Aggregate data (calculate percentiles)
+    def aggregate(self, data):
+        aggregated_values = {}
+        outliers = {}
+        for key in data:
+            try:
+                # Throws an exception for TypeError if data in wrong format, just skip these datapoints then
+                aggregated_values[key] = list(np.percentile(data[key], [0, 25, 50, 75, 100]))
+            except TypeError as e:
+                # Only important when debugging
+                if __debug__:
+                    print(f"Error processing key '{key}' with example value '{data[key][0]}': {type(e).__name__}: {e}")
+                continue
 
-            # else:
-            #     print(category, data_dict[category])
+            data[key].sort()
+            outliers[key] = []
+
+            min = aggregated_values[key][0]
+            Q1 = aggregated_values[key][1]
+            Q3 = aggregated_values[key][3]
+            max = aggregated_values[key][4]
+
+            IQR = Q3 - Q1
+
+            # Outliers as defined by seaborn library for python
+            min_limit = Q1 - 1.5 * IQR
+            if min < min_limit:
+                aggregated_values[key][0] = min_limit
+
+                # Add outliers to dict
+                lower_index = bisect.bisect_left(data[key], min_limit)
+                outliers[key].extend(data[key][:lower_index])
             
-            self.time_data[key] = value_dict
+            max_limit = Q3 + 1.5 * IQR
+            if max > max_limit:
+                aggregated_values[key][4] = max_limit
+
+                # Add outliers to dict
+                upper_index = bisect.bisect_right(data[key], max_limit)
+                outliers[key].extend(data[key][upper_index:])
+
+        return aggregated_values, outliers

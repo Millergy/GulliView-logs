@@ -26,6 +26,7 @@ import subprocess
 from tabulate import tabulate
 import seaborn as sns
 import matplotlib.pyplot as plt
+import numpy as np
 
 #%% Custom modules
 from functions import user_acknowledge
@@ -169,8 +170,6 @@ class Data:
                 user_acknowledge("Input folder not found, this message should only be present in debug mode")
                 return
             new_log = Log(input_folder, self.general_log_filename)
-        
-        
 
         # Get new folder name, it's path and it's archive path to be moved to
         new_name = new_log.return_folder_name()
@@ -182,14 +181,6 @@ class Data:
             if os.path.exists(new_path):
                 user_acknowledge("Logs already imported, please delete input folder as this cannot be done by the program")
                 return
-            
-        if not __debug__:
-            # Get keys for time data
-            keys = new_log.return_keys()
-            for key in keys:
-                if not key in self.properties["keys"]:
-                    self.properties["keys"].append(key)
-            self.properties["keys"].sort()
 
         # Rename and move if not called by reimport_all
         if not other_input_folder:
@@ -216,7 +207,7 @@ class Data:
         self.logs = []
         self.properties = init_properties
         filenames = os.listdir(self.archive_folder)
-        for folder_name in tqdm(filenames, desc="Importing files"):
+        for folder_name in tqdm(filenames, desc="Reimporting files"):
             filepath = os.path.join(self.archive_folder, folder_name)
             self.read_data(filepath)
         self.saveFile()
@@ -309,23 +300,27 @@ class Data:
 
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):
+        # Prepare data for plotting
+        data = {key: [] for key in keys}
+        outliers = {key: [] for key in keys}
 
-        # init key data with empty arrays for all keys
-        key_data = {key: [] for key in keys}
         labels = []  # Store log version labels
-
-        for log in tqdm(comp, desc="Reformatting data for plots"):
+        for log in comp:
             # Get the version label for x axis
             labels.append(log.return_identifier())
-            
-            # Get datapoints for each key from all files in object
-            for key in keys:
-                datapoints = []
-                for file in log.time_data.keys():
-                    if key in log.time_data[file].keys():
-                        datapoints += log.time_data[file][key]
-                key_data[key].append(datapoints)
         
+        for key in tqdm(keys, "Reformatting data for plots"):
+            for log in comp:
+                try:
+                    # Get aggregated data and outliers for the key
+                    data[key].append(log.return_all_agg_data(key))
+                    outliers[key].append(log.return_all_outliers(key))
+                except KeyError:
+                    # Handle missing data for the key
+                    data[key].append([None, None, None, None, None])
+                    outliers[key].append([])
+            
+
         plot_count = len(keys)
 
         columns = plot_count
@@ -338,10 +333,35 @@ class Data:
         if len(keys) == 1:  
             axes = [axes]  # Ensure iterable axes for single key
 
-        for ax, (key, values) in tqdm(zip(axes, key_data.items()), desc="Creating plots"):
+        for i, (ax, key) in tqdm(enumerate(zip(axes, keys)), "Creating plots"):
+
+            # Extract aggregated statistics
+            aggregated_data = np.array(data[key])
+            mins = aggregated_data[:, 0]
+            q1s = aggregated_data[:, 1]
+            medians = aggregated_data[:, 2]
+            q3s = aggregated_data[:, 3]
+            maxs = aggregated_data[:, 4]
+
+            plot_data = zip(mins, q1s, medians, q3s, maxs, outliers[key])
+
+            # Plot box for each key
+            for j, (min_val, q1, median, q3, max_val, log_outliers) in enumerate(plot_data):
+
+                x_pos = j
+
+                # Draw the box
+                ax.plot([x_pos, x_pos], [q1, q3], color="blue", linewidth=10, alpha=0.5)  # Box
+                # Draw the median
+                ax.plot([x_pos - 0.1, x_pos + 0.1], [median, median], color="red", linewidth=2)  # Median
+                # Draw the whiskers
+                ax.plot([x_pos, x_pos], [min_val, q1], color="black", linestyle="-")  # Lower whisker
+                ax.plot([x_pos, x_pos], [q3, max_val], color="black", linestyle="-")  # Upper whisker
+
+                # Plot outliers as individual points
+                ax.scatter([x_pos] * len(log_outliers), log_outliers, color="orange", label="Outliers" if i == 0 and j == 0 else "")
             
-            sns.boxplot(data=values, ax=ax)
-            
+            # Tidying plots
             if "(" in key:
                 title = key.split("(")[0].strip()
                 ax.set_title(title)
@@ -363,6 +383,6 @@ class Data:
                 label = f"Frequency ({label})"
             ax.set_ylabel(label)
 
+        # Show the plot
         plt.tight_layout()
         plt.show()
-
