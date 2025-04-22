@@ -85,7 +85,7 @@ class Log:
     
     # version of code as identifier
     def return_identifier(self):
-        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"])
+        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"]) + "\n" + self.general_data["COMMENT"]
 
     # general log attributes
     def return_attributes(self):

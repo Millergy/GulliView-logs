@@ -24,8 +24,8 @@ from tqdm import tqdm
 import shutil
 import subprocess
 from tabulate import tabulate
-import seaborn as sns
 import matplotlib.pyplot as plt
+from matplotlib.patches import Rectangle
 import numpy as np
 
 #%% Custom modules
@@ -347,19 +347,17 @@ class Data:
 
             # Plot box for each key
             for j, (min_val, q1, median, q3, max_val, log_outliers) in enumerate(plot_data):
-
-                x_pos = j
-
                 # Draw the box
-                ax.plot([x_pos, x_pos], [q1, q3], color="blue", linewidth=10, alpha=0.5)  # Box
+                box = Rectangle((j - 0.3, q1), 0.3 * 2, q3 - q1, color="blue")
+                ax.add_patch(box)
                 # Draw the median
-                ax.plot([x_pos - 0.45, x_pos + 0.45], [median, median], color="red", linewidth=2)  # Median
-                # Draw the whiskers
-                ax.plot([x_pos, x_pos], [min_val, q1], color="black", linestyle="-")  # Lower whisker
-                ax.plot([x_pos - 0.3, x_pos + 0.3], [min_val, min_val], color="black", linestyle="-")
-
-                ax.plot([x_pos, x_pos], [q3, max_val], color="black", linestyle="-")  # Upper whisker
-                ax.plot([x_pos - 0.3, x_pos + 0.3], [max_val, max_val], color="black", linestyle="-")
+                ax.plot([j - 0.45, j + 0.45], [median, median], color="red", linewidth=2)
+                # Draw the lower whisker
+                ax.plot([j, j], [min_val, q1], color="black", linestyle="-")
+                ax.plot([j - 0.3, j + 0.3], [min_val, min_val], color="black", linestyle="-")
+                # Draw the upper whisker
+                ax.plot([j, j], [q3, max_val], color="black", linestyle="-")
+                ax.plot([j - 0.3, j + 0.3], [max_val, max_val], color="black", linestyle="-")
 
                 # Plot outliers as individual points
                 ax.scatter([x_pos] * len(log_outliers), log_outliers, color="orange", label="Outliers" if i == 0 and j == 0 else "")
