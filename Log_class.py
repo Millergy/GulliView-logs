@@ -26,7 +26,6 @@ import bisect
 from functions import try_int_float_convert
 
 class Log:
-
     def __init__(self, folderpath, general_filename, show_progress = True):
 
         # List of filepaths for files
