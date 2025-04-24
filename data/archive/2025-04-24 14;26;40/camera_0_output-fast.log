@@ -1,0 +1,4177 @@
+Remap: 90.57 ms
+Transform color: 14.49 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=0, trial=1, Duration=123547 ms
+Remap: 82.41 ms
+Transform color: 11.50 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=1, trial=1, Duration=131030 ms
+Remap: 52.58 ms
+Transform color: 2.00 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=2, trial=1, Duration=73373 ms
+Remap: 17.44 ms
+Transform color: 1.82 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=3, trial=1, Duration=40055 ms
+Remap: 15.43 ms
+Transform color: 3.35 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=4, trial=1, Duration=247894 ms
+Remap: 46.73 ms
+Transform color: 1.40 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=5, trial=1, Duration=281051 ms
+Remap: 55.90 ms
+Transform color: 3.80 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=6, trial=1, Duration=113152 ms
+Remap: 83.33 ms
+Transform color: 2.80 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=7, trial=1, Duration=100496 ms
+Remap: 82.96 ms
+Transform color: 12.51 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=8, trial=1, Duration=141718 ms
+Remap: 77.27 ms
+Transform color: 15.22 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=9, trial=1, Duration=94879 ms
+Remap: 70.80 ms
+Transform color: 16.86 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=10, trial=1, Duration=91283 ms
+Remap: 77.75 ms
+Transform color: 14.01 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=11, trial=1, Duration=111926 ms
+Remap: 82.41 ms
+Transform color: 13.34 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=12, trial=1, Duration=99412 ms
+Remap: 80.20 ms
+Transform color: 17.48 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=13, trial=1, Duration=147656 ms
+Remap: 79.41 ms
+Transform color: 18.51 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=14, trial=1, Duration=406238 ms
+Remap: 85.58 ms
+Transform color: 12.78 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=15, trial=1, Duration=115544 ms
+Remap: 60.25 ms
+Transform color: 1.31 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 20.29 ms
+CAM#3: tag#5: FAST SEARCH: search_time:20.48 microseconds
+CAM#3: tag#5 exceeded 17ms search time. Switching to exhaustive search.
+CAM#3: PART SEARCH: search_time:20.51 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:160.50 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1594.00
+Loop: count=16, trial=1, Duration=503839 ms
+Remap: 74.45 ms
+Transform color: 6.47 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 8.34 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.61 microseconds
+CAM#3: PART SEARCH: search_time:8.64 ms
+CAM#3: Found when using PART_IMAGE. X: 655.55 Y:1586.62
+tag->x: 655 tag->y: 1594 detection->x: 655.55 detection->y: 1586.62
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.34, Search Area Size: 3584.77, Ratio: 26.10
+Loop: count=17, trial=1, Duration=92763 ms
+Remap: 73.62 ms
+Transform color: 4.30 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.58 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.79 microseconds
+CAM#3: PART SEARCH: search_time:3.81 ms
+CAM#3: Found when using PART_IMAGE. X: 655.60 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.60 detection->y: 1586.62
+Previous velocity: 10.85 Current velocity: 0.00 time s: 0.09 acceleration: 120.89
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.36, Search Area Size: 1686.12, Ratio: 12.28
+Loop: count=18, trial=1, Duration=87257 ms
+Remap: 72.60 ms
+Transform color: 5.46 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 3.44 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.60 microseconds
+CAM#3: PART SEARCH: search_time:3.65 ms
+CAM#3: Found when using PART_IMAGE. X: 655.62 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.62 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 1.00 ms
+Tag ID: 5, AprilTag Size: 137.37, Search Area Size: 1686.12, Ratio: 12.27
+Loop: count=19, trial=1, Duration=89976 ms
+Remap: 73.91 ms
+Transform color: 4.62 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.79 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.92 microseconds
+CAM#3: PART SEARCH: search_time:3.95 ms
+CAM#3: Found when using PART_IMAGE. X: 655.65 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.65 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.39, Search Area Size: 1691.27, Ratio: 12.31
+Loop: count=20, trial=1, Duration=86347 ms
+Remap: 75.89 ms
+Transform color: 37.33 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 23.03 ms
+CAM#3: tag#5: FAST SEARCH: search_time:23.17 microseconds
+CAM#3: tag#5 exceeded 17ms search time. Switching to exhaustive search.
+CAM#3: PART SEARCH: search_time:23.19 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 657.00 Y:1586.00
+Loop: count=21, trial=1, Duration=169510 ms
+Remap: 73.93 ms
+Transform color: 389.27 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 19.40 ms
+CAM#3: tag#5: FAST SEARCH: search_time:19.59 microseconds
+CAM#3: tag#5 exceeded 17ms search time. Switching to exhaustive search.
+CAM#3: PART SEARCH: search_time:19.62 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=22, trial=1, Duration=551701 ms
+Remap: 83.24 ms
+Transform color: 15.83 ms
+Get partial image time: 0.15 ms
+Apriltag detector detect time: 11.15 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:11.40 microseconds
+CAM#3: PART SEARCH: search_time:11.42 ms
+CAM#3: Found when using PART_IMAGE. X: 655.60 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.60 detection->y: 1586.65
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.35, Search Area Size: 4117.11, Ratio: 29.98
+Loop: count=23, trial=1, Duration=114297 ms
+Remap: 79.72 ms
+Transform color: 16.14 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.21 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.51 microseconds
+CAM#3: PART SEARCH: search_time:4.54 ms
+CAM#3: Found when using PART_IMAGE. X: 655.59 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.59 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.95 ms
+Tag ID: 5, AprilTag Size: 137.33, Search Area Size: 1691.27, Ratio: 12.32
+Loop: count=24, trial=1, Duration=178131 ms
+Remap: 77.25 ms
+Transform color: 5.12 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 3.21 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.32 microseconds
+CAM#3: PART SEARCH: search_time:3.34 ms
+CAM#3: Found when using PART_IMAGE. X: 655.55 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.55 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.16 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.34, Search Area Size: 1701.55, Ratio: 12.39
+Loop: count=25, trial=1, Duration=88983 ms
+Remap: 83.34 ms
+Transform color: 14.81 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.24 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.41 microseconds
+CAM#3: PART SEARCH: search_time:4.45 ms
+CAM#3: Found when using PART_IMAGE. X: 655.55 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.55 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.34, Search Area Size: 1691.27, Ratio: 12.31
+Loop: count=26, trial=1, Duration=107083 ms
+Remap: 83.54 ms
+Transform color: 16.37 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.19 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.41 microseconds
+CAM#3: PART SEARCH: search_time:5.45 ms
+CAM#3: Found when using PART_IMAGE. X: 655.52 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.52 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.34, Search Area Size: 1691.27, Ratio: 12.31
+Loop: count=27, trial=1, Duration=118840 ms
+Remap: 90.42 ms
+Transform color: 2.68 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.19 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.34 microseconds
+CAM#3: PART SEARCH: search_time:4.37 ms
+CAM#3: Found when using PART_IMAGE. X: 655.57 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.57 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.81 ms
+Tag ID: 5, AprilTag Size: 137.33, Search Area Size: 1691.27, Ratio: 12.32
+Loop: count=28, trial=1, Duration=144231 ms
+Remap: 221.34 ms
+Transform color: 2.39 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.64 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.74 microseconds
+CAM#3: PART SEARCH: search_time:3.77 ms
+CAM#3: Found when using PART_IMAGE. X: 655.53 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.53 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.27 acceleration: 0.00
+Process time: 1.00 ms
+Tag ID: 5, AprilTag Size: 137.37, Search Area Size: 1732.39, Ratio: 12.61
+Loop: count=29, trial=1, Duration=256140 ms
+Remap: 86.55 ms
+Transform color: 13.85 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 4.80 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.01 microseconds
+CAM#3: PART SEARCH: search_time:5.06 ms
+CAM#3: Found when using PART_IMAGE. X: 659.00 Y:1593.56
+tag->x: 655 tag->y: 1586 detection->x: 659.00 detection->y: 1593.56
+Previous velocity: 0.00 Current velocity: 57.30 time s: 0.13 acceleration: 431.05
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 134.78, Search Area Size: 1701.55, Ratio: 12.62
+Loop: count=30, trial=1, Duration=372709 ms
+Remap: 17.87 ms
+Transform color: 1.76 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.17 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.30 microseconds
+CAM#3: PART SEARCH: search_time:4.32 ms
+CAM#3: Found when using PART_IMAGE. X: 660.11 Y:1586.85
+tag->x: 658 tag->y: 1593 detection->x: 660.11 detection->y: 1586.85
+Previous velocity: 57.30 Current velocity: 24.93 time s: 0.29 acceleration: 110.84
+Process time: 0.65 ms
+Tag ID: 5, AprilTag Size: 128.32, Search Area Size: 1810.16, Ratio: 14.11
+Loop: count=31, trial=1, Duration=26475 ms
+Remap: 75.01 ms
+Transform color: 5.72 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 3.97 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.09 microseconds
+CAM#3: PART SEARCH: search_time:4.13 ms
+CAM#3: Found when using PART_IMAGE. X: 659.06 Y:1585.09
+tag->x: 660 tag->y: 1586 detection->x: 659.06 detection->y: 1585.09
+Previous velocity: 24.93 Current velocity: 13.77 time s: 0.10 acceleration: 108.70
+Process time: 1.16 ms
+Tag ID: 5, AprilTag Size: 129.90, Search Area Size: 1706.69, Ratio: 13.14
+Loop: count=32, trial=1, Duration=104115 ms
+Remap: 84.40 ms
+Transform color: 13.09 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.59 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.78 microseconds
+CAM#3: PART SEARCH: search_time:4.81 ms
+CAM#3: Found when using PART_IMAGE. X: 656.71 Y:1586.46
+tag->x: 659 tag->y: 1585 detection->x: 656.71 detection->y: 1586.46
+Previous velocity: 13.77 Current velocity: 29.88 time s: 0.11 acceleration: 152.19
+Process time: 0.89 ms
+Tag ID: 5, AprilTag Size: 134.28, Search Area Size: 1711.83, Ratio: 12.75
+Loop: count=33, trial=1, Duration=106221 ms
+Remap: 56.47 ms
+Transform color: 6.13 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 3.65 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.75 microseconds
+CAM#3: PART SEARCH: search_time:3.77 ms
+CAM#3: Found when using PART_IMAGE. X: 655.05 Y:1586.79
+tag->x: 656 tag->y: 1586 detection->x: 655.05 detection->y: 1586.79
+Previous velocity: 29.88 Current velocity: 14.02 time s: 0.07 acceleration: 222.36
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1701.55, Ratio: 12.40
+Loop: count=34, trial=1, Duration=71168 ms
+Remap: 79.31 ms
+Transform color: 15.95 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.79 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.99 microseconds
+CAM#3: PART SEARCH: search_time:5.03 ms
+CAM#3: Found when using PART_IMAGE. X: 653.44 Y:1587.34
+tag->x: 655 tag->y: 1586 detection->x: 653.44 detection->y: 1587.34
+Previous velocity: 14.02 Current velocity: 21.52 time s: 0.10 acceleration: 72.24
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 135.39, Search Area Size: 1706.69, Ratio: 12.61
+Loop: count=35, trial=1, Duration=104739 ms
+Remap: 78.70 ms
+Transform color: 7.54 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 3.61 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.71 microseconds
+CAM#3: PART SEARCH: search_time:3.74 ms
+CAM#3: Found when using PART_IMAGE. X: 652.02 Y:1588.57
+tag->x: 653 tag->y: 1587 detection->x: 652.02 detection->y: 1588.57
+Previous velocity: 21.52 Current velocity: 14.77 time s: 0.10 acceleration: 70.52
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 132.37, Search Area Size: 1711.83, Ratio: 12.93
+Loop: count=36, trial=1, Duration=93201 ms
+Remap: 59.80 ms
+Transform color: 6.21 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.14 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.32 microseconds
+CAM#3: PART SEARCH: search_time:4.36 ms
+CAM#3: Found when using PART_IMAGE. X: 652.02 Y:1588.58
+tag->x: 652 tag->y: 1588 detection->x: 652.02 detection->y: 1588.58
+Previous velocity: 14.77 Current velocity: 0.00 time s: 0.07 acceleration: 202.36
+Process time: 1.12 ms
+Tag ID: 5, AprilTag Size: 132.14, Search Area Size: 1701.55, Ratio: 12.88
+Loop: count=37, trial=1, Duration=75893 ms
+Remap: 84.58 ms
+Transform color: 12.76 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.73 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.88 microseconds
+CAM#3: PART SEARCH: search_time:4.92 ms
+CAM#3: Found when using PART_IMAGE. X: 653.72 Y:1589.91
+tag->x: 652 tag->y: 1588 detection->x: 653.72 detection->y: 1589.91
+Previous velocity: 0.00 Current velocity: 13.18 time s: 0.11 acceleration: 122.81
+Process time: 1.04 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 658.00 Y:1593.00
+Loop: count=38, trial=1, Duration=106493 ms
+Remap: 71.86 ms
+Transform color: 14.79 ms
+Get partial image time: 0.15 ms
+Apriltag detector detect time: 10.94 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:11.21 microseconds
+CAM#3: PART SEARCH: search_time:11.24 ms
+CAM#3: Found when using PART_IMAGE. X: 654.62 Y:1595.67
+tag->x: 658 tag->y: 1593 detection->x: 654.62 detection->y: 1595.67
+Process time: 0.90 ms
+Tag ID: 5, AprilTag Size: 134.93, Search Area Size: 4506.27, Ratio: 33.40
+Loop: count=39, trial=1, Duration=101027 ms
+Remap: 59.65 ms
+Transform color: 5.67 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 3.68 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.80 microseconds
+CAM#3: PART SEARCH: search_time:3.83 ms
+CAM#3: Found when using PART_IMAGE. X: 657.28 Y:1594.38
+tag->x: 654 tag->y: 1595 detection->x: 657.28 detection->y: 1594.38
+Previous velocity: 4.19 Current velocity: 39.68 time s: 0.08 acceleration: 445.50
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 137.14, Search Area Size: 1701.55, Ratio: 12.41
+Loop: count=40, trial=1, Duration=72185 ms
+Remap: 83.88 ms
+Transform color: 6.26 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.15 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.29 microseconds
+CAM#3: PART SEARCH: search_time:4.33 ms
+CAM#3: Found when using PART_IMAGE. X: 659.30 Y:1593.12
+tag->x: 657 tag->y: 1594 detection->x: 659.30 detection->y: 1593.12
+Previous velocity: 39.68 Current velocity: 23.04 time s: 0.10 acceleration: 171.52
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 134.30, Search Area Size: 1711.83, Ratio: 12.75
+Loop: count=41, trial=1, Duration=98682 ms
+Remap: 75.75 ms
+Transform color: 17.55 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.24 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.45 microseconds
+CAM#3: PART SEARCH: search_time:4.51 ms
+CAM#3: Found when using PART_IMAGE. X: 659.48 Y:1592.65
+tag->x: 659 tag->y: 1593 detection->x: 659.48 detection->y: 1592.65
+Previous velocity: 23.04 Current velocity: 9.82 time s: 0.10 acceleration: 129.77
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 132.51, Search Area Size: 1711.83, Ratio: 12.92
+Loop: count=42, trial=1, Duration=156967 ms
+Remap: 86.38 ms
+Transform color: 15.34 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 4.53 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.76 microseconds
+CAM#3: PART SEARCH: search_time:4.80 ms
+CAM#3: Found when using PART_IMAGE. X: 658.50 Y:1592.05
+tag->x: 659 tag->y: 1592 detection->x: 658.50 detection->y: 1592.05
+Previous velocity: 9.82 Current velocity: 6.04 time s: 0.17 acceleration: 22.80
+Process time: 1.15 ms
+Tag ID: 5, AprilTag Size: 132.74, Search Area Size: 1752.95, Ratio: 13.21
+Loop: count=43, trial=1, Duration=110818 ms
+Remap: 83.81 ms
+Transform color: 10.60 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.09 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.20 microseconds
+CAM#3: PART SEARCH: search_time:4.23 ms
+CAM#3: Found when using PART_IMAGE. X: 656.09 Y:1586.51
+tag->x: 658 tag->y: 1592 detection->x: 656.09 detection->y: 1586.51
+Previous velocity: 6.04 Current velocity: 61.12 time s: 0.10 acceleration: 532.32
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.15, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=44, trial=1, Duration=102278 ms
+Remap: 81.36 ms
+Transform color: 13.10 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 5.10 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.23 microseconds
+CAM#3: PART SEARCH: search_time:5.25 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.61
+tag->x: 656 tag->y: 1586 detection->x: 655.34 detection->y: 1586.61
+Previous velocity: 61.12 Current velocity: 9.77 time s: 0.10 acceleration: 501.81
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1727.25, Ratio: 12.59
+Loop: count=45, trial=1, Duration=106071 ms
+Remap: 84.31 ms
+Transform color: 17.54 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.83 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.00 microseconds
+CAM#3: PART SEARCH: search_time:5.02 ms
+CAM#3: Found when using PART_IMAGE. X: 655.39 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.39 detection->y: 1586.65
+Previous velocity: 9.77 Current velocity: 0.00 time s: 0.11 acceleration: 86.06
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=46, trial=1, Duration=111627 ms
+Remap: 84.93 ms
+Transform color: 19.43 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.54 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.77 microseconds
+CAM#3: PART SEARCH: search_time:4.81 ms
+CAM#3: Found when using PART_IMAGE. X: 655.41 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.41 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=47, trial=1, Duration=112654 ms
+Remap: 79.28 ms
+Transform color: 9.10 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.94 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.03 microseconds
+CAM#3: PART SEARCH: search_time:4.05 ms
+CAM#3: Found when using PART_IMAGE. X: 655.42 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.42 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=48, trial=1, Duration=96709 ms
+Remap: 85.17 ms
+Transform color: 31.06 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.10 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.28 microseconds
+CAM#3: PART SEARCH: search_time:5.31 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1732.39, Ratio: 12.62
+Loop: count=49, trial=1, Duration=125990 ms
+Remap: 85.03 ms
+Transform color: 4.34 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.29 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.45 microseconds
+CAM#3: PART SEARCH: search_time:4.48 ms
+CAM#3: Found when using PART_IMAGE. X: 655.39 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.39 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.27, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=50, trial=1, Duration=98591 ms
+Remap: 76.10 ms
+Transform color: 18.00 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.10 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.24 microseconds
+CAM#3: PART SEARCH: search_time:4.28 ms
+CAM#3: Found when using PART_IMAGE. X: 655.38 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.38 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.97 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=51, trial=1, Duration=134157 ms
+Remap: 85.99 ms
+Transform color: 17.93 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.25 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.40 microseconds
+CAM#3: PART SEARCH: search_time:4.44 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.69
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.14 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1742.67, Ratio: 12.70
+Loop: count=52, trial=1, Duration=125525 ms
+Remap: 92.41 ms
+Transform color: 18.58 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.09 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.23 microseconds
+CAM#3: PART SEARCH: search_time:4.26 ms
+CAM#3: Found when using PART_IMAGE. X: 655.41 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.41 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.13 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=53, trial=1, Duration=140939 ms
+Remap: 76.12 ms
+Transform color: 6.17 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.20 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.32 microseconds
+CAM#3: PART SEARCH: search_time:4.36 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.02 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=54, trial=1, Duration=124448 ms
+Remap: 91.37 ms
+Transform color: 4.34 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 9.42 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:9.62 microseconds
+CAM#3: PART SEARCH: search_time:9.65 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.60
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 3692.58, Ratio: 26.91
+Loop: count=55, trial=1, Duration=139232 ms
+Remap: 81.31 ms
+Transform color: 14.99 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.92 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.10 microseconds
+CAM#3: PART SEARCH: search_time:5.13 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.14 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1742.67, Ratio: 12.70
+Loop: count=56, trial=1, Duration=106008 ms
+Remap: 84.45 ms
+Transform color: 7.72 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.09 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.21 microseconds
+CAM#3: PART SEARCH: search_time:4.26 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=57, trial=1, Duration=99848 ms
+Remap: 88.71 ms
+Transform color: 3.68 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.92 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.11 microseconds
+CAM#3: PART SEARCH: search_time:5.16 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=58, trial=1, Duration=102399 ms
+Remap: 76.70 ms
+Transform color: 17.71 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.45 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.57 microseconds
+CAM#3: PART SEARCH: search_time:4.60 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=59, trial=1, Duration=128449 ms
+Remap: 88.11 ms
+Transform color: 12.05 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 5.19 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.37 microseconds
+CAM#3: PART SEARCH: search_time:5.41 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.27, Search Area Size: 1742.67, Ratio: 12.69
+Loop: count=60, trial=1, Duration=134975 ms
+Remap: 80.94 ms
+Transform color: 14.99 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 5.36 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.53 microseconds
+CAM#3: PART SEARCH: search_time:5.55 ms
+CAM#3: Found when using PART_IMAGE. X: 655.38 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.38 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1732.39, Ratio: 12.62
+Loop: count=61, trial=1, Duration=108571 ms
+Remap: 84.86 ms
+Transform color: 13.05 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.50 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.71 microseconds
+CAM#3: PART SEARCH: search_time:4.74 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=62, trial=1, Duration=108274 ms
+Remap: 84.92 ms
+Transform color: 18.37 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.63 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.79 microseconds
+CAM#3: PART SEARCH: search_time:4.82 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.69
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.27, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=63, trial=1, Duration=112485 ms
+Remap: 88.77 ms
+Transform color: 21.38 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.89 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.08 microseconds
+CAM#3: PART SEARCH: search_time:5.12 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.27, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=64, trial=1, Duration=120247 ms
+Remap: 83.69 ms
+Transform color: 18.92 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.68 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.84 microseconds
+CAM#3: PART SEARCH: search_time:4.87 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.12 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=65, trial=1, Duration=111492 ms
+Remap: 83.70 ms
+Transform color: 15.61 ms
+Get partial image time: 0.14 ms
+Apriltag detector detect time: 5.78 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.06 microseconds
+CAM#3: PART SEARCH: search_time:6.12 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.26, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=66, trial=1, Duration=205838 ms
+Remap: 77.32 ms
+Transform color: 15.08 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.54 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.71 microseconds
+CAM#3: PART SEARCH: search_time:4.74 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.20 acceleration: 0.00
+Process time: 0.97 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1804.36, Ratio: 13.15
+Loop: count=67, trial=1, Duration=101177 ms
+Remap: 84.00 ms
+Transform color: 6.16 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.30 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.42 microseconds
+CAM#3: PART SEARCH: search_time:4.49 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.13 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=68, trial=1, Duration=99944 ms
+Remap: 85.45 ms
+Transform color: 15.54 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.70 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.92 microseconds
+CAM#3: PART SEARCH: search_time:4.96 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.58
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.58
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=69, trial=1, Duration=115702 ms
+Remap: 84.51 ms
+Transform color: 18.54 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.45 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.60 microseconds
+CAM#3: PART SEARCH: search_time:4.63 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.16 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=70, trial=1, Duration=131675 ms
+Remap: 85.91 ms
+Transform color: 4.71 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 10.97 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:11.14 microseconds
+CAM#3: PART SEARCH: search_time:11.16 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.63
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 4550.39, Ratio: 33.16
+Loop: count=71, trial=1, Duration=129900 ms
+Remap: 60.34 ms
+Transform color: 5.40 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 3.94 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.08 microseconds
+CAM#3: PART SEARCH: search_time:4.12 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=72, trial=1, Duration=115470 ms
+Remap: 294.02 ms
+Transform color: 45.02 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.86 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.01 microseconds
+CAM#3: PART SEARCH: search_time:5.03 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.58
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.58
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.39 acceleration: 0.00
+Process time: 1.14 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 2148.89, Ratio: 15.66
+Loop: count=73, trial=1, Duration=349044 ms
+Remap: 89.42 ms
+Transform color: 6.83 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 6.08 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.22 microseconds
+CAM#3: PART SEARCH: search_time:6.28 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.27, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=74, trial=1, Duration=107811 ms
+Remap: 82.43 ms
+Transform color: 21.60 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.24 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.51 microseconds
+CAM#3: PART SEARCH: search_time:5.55 ms
+CAM#3: Found when using PART_IMAGE. X: 655.39 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.39 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=75, trial=1, Duration=114921 ms
+Remap: 90.83 ms
+Transform color: 16.85 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.13 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.38 microseconds
+CAM#3: PART SEARCH: search_time:5.42 ms
+CAM#3: Found when using PART_IMAGE. X: 655.39 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.39 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=76, trial=1, Duration=117702 ms
+Remap: 81.82 ms
+Transform color: 16.12 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.29 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.39 microseconds
+CAM#3: PART SEARCH: search_time:4.42 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.97 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=77, trial=1, Duration=105898 ms
+Remap: 82.79 ms
+Transform color: 4.17 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.30 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.40 microseconds
+CAM#3: PART SEARCH: search_time:4.42 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=78, trial=1, Duration=96345 ms
+Remap: 86.86 ms
+Transform color: 20.55 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.69 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.87 microseconds
+CAM#3: PART SEARCH: search_time:4.90 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.00 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=79, trial=1, Duration=116070 ms
+Remap: 84.07 ms
+Transform color: 12.84 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.76 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.92 microseconds
+CAM#3: PART SEARCH: search_time:4.97 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.20 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=80, trial=1, Duration=233300 ms
+Remap: 74.11 ms
+Transform color: 3.23 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 35.22 ms
+CAM#3: tag#5: FAST SEARCH: search_time:35.31 microseconds
+CAM#3: tag#5 exceeded 17ms search time. Switching to exhaustive search.
+CAM#3: PART SEARCH: search_time:35.32 ms
+Tags are missing.
+Process time: 0.01 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=81, trial=1, Duration=314802 ms
+Remap: 91.36 ms
+Transform color: 19.30 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 10.73 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:10.93 microseconds
+CAM#3: PART SEARCH: search_time:10.96 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.66
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 3876.64, Ratio: 28.25
+Loop: count=82, trial=1, Duration=128989 ms
+Remap: 97.76 ms
+Transform color: 18.27 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.61 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.75 microseconds
+CAM#3: PART SEARCH: search_time:4.77 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.00 ms
+Tag ID: 5, AprilTag Size: 137.26, Search Area Size: 1742.67, Ratio: 12.70
+Loop: count=83, trial=1, Duration=125141 ms
+Remap: 78.21 ms
+Transform color: 19.66 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.28 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.46 microseconds
+CAM#3: PART SEARCH: search_time:5.50 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=84, trial=1, Duration=107382 ms
+Remap: 82.33 ms
+Transform color: 12.78 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.54 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.71 microseconds
+CAM#3: PART SEARCH: search_time:4.76 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=85, trial=1, Duration=126598 ms
+Remap: 91.40 ms
+Transform color: 15.31 ms
+Get partial image time: 0.14 ms
+Apriltag detector detect time: 6.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.27 microseconds
+CAM#3: PART SEARCH: search_time:6.29 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.14 acceleration: 0.00
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1742.67, Ratio: 12.70
+Loop: count=86, trial=1, Duration=116995 ms
+Remap: 78.36 ms
+Transform color: 17.22 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.27 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.41 microseconds
+CAM#3: PART SEARCH: search_time:4.43 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.70
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.70
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=87, trial=1, Duration=129301 ms
+Remap: 53.30 ms
+Transform color: 1.45 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 8.46 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.59 microseconds
+CAM#3: PART SEARCH: search_time:8.61 ms
+CAM#3: Found when using PART_IMAGE. X: 655.38 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.38 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 0.93 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=88, trial=1, Duration=68115 ms
+Remap: 69.75 ms
+Transform color: 8.22 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 3.96 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.10 microseconds
+CAM#3: PART SEARCH: search_time:4.14 ms
+CAM#3: Found when using PART_IMAGE. X: 655.23 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.23 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.29, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=89, trial=1, Duration=247330 ms
+Remap: 80.60 ms
+Transform color: 5.20 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.46 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.62 microseconds
+CAM#3: PART SEARCH: search_time:4.65 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.59
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.59
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.25 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1866.05, Ratio: 13.60
+Loop: count=90, trial=1, Duration=95580 ms
+Remap: 81.69 ms
+Transform color: 20.63 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 5.41 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.60 microseconds
+CAM#3: PART SEARCH: search_time:5.64 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=91, trial=1, Duration=111277 ms
+Remap: 145.11 ms
+Transform color: 18.05 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 8.52 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.78 microseconds
+CAM#3: PART SEARCH: search_time:8.81 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.17 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1773.52, Ratio: 12.92
+Loop: count=92, trial=1, Duration=175693 ms
+Remap: 80.91 ms
+Transform color: 6.85 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.71 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.86 microseconds
+CAM#3: PART SEARCH: search_time:4.89 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=93, trial=1, Duration=96856 ms
+Remap: 73.86 ms
+Transform color: 7.32 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.78 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.94 microseconds
+CAM#3: PART SEARCH: search_time:4.98 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=94, trial=1, Duration=90248 ms
+Remap: 87.30 ms
+Transform color: 14.62 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.78 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.96 microseconds
+CAM#3: PART SEARCH: search_time:5.00 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.14 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=95, trial=1, Duration=111733 ms
+Remap: 55.09 ms
+Transform color: 3.59 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.30 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.40 microseconds
+CAM#3: PART SEARCH: search_time:3.42 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.07 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1701.55, Ratio: 12.40
+Loop: count=96, trial=1, Duration=74321 ms
+Remap: 156.33 ms
+Transform color: 7.15 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 5.38 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.61 microseconds
+CAM#3: PART SEARCH: search_time:5.64 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.18 acceleration: 0.00
+Process time: 1.12 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=97, trial=1, Duration=253365 ms
+Remap: 85.86 ms
+Transform color: 13.16 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 9.20 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:9.43 microseconds
+CAM#3: PART SEARCH: search_time:9.45 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.61
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 3349.61, Ratio: 24.41
+Loop: count=98, trial=1, Duration=113736 ms
+Remap: 78.86 ms
+Transform color: 4.09 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.32 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.44 microseconds
+CAM#3: PART SEARCH: search_time:4.47 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.94 ms
+Tag ID: 5, AprilTag Size: 137.31, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=99, trial=1, Duration=178106 ms
+Remap: 84.04 ms
+Transform color: 8.09 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.65 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.77 microseconds
+CAM#3: PART SEARCH: search_time:4.81 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.19 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1783.80, Ratio: 13.00
+Loop: count=100, trial=1, Duration=101185 ms
+Remap: 89.57 ms
+Transform color: 4.23 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.82 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.92 microseconds
+CAM#3: PART SEARCH: search_time:3.93 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=101, trial=1, Duration=101746 ms
+Remap: 86.78 ms
+Transform color: 19.17 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.57 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.73 microseconds
+CAM#3: PART SEARCH: search_time:4.76 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=102, trial=1, Duration=193233 ms
+Remap: 74.48 ms
+Transform color: 16.28 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.39 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.55 microseconds
+CAM#3: PART SEARCH: search_time:4.58 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.18 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1773.52, Ratio: 12.92
+Loop: count=103, trial=1, Duration=233518 ms
+Remap: 84.90 ms
+Transform color: 16.63 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.17 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.35 microseconds
+CAM#3: PART SEARCH: search_time:5.38 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.24 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1855.77, Ratio: 13.52
+Loop: count=104, trial=1, Duration=111876 ms
+Remap: 86.30 ms
+Transform color: 18.01 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.11 microseconds
+CAM#3: PART SEARCH: search_time:4.13 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.96 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=105, trial=1, Duration=131512 ms
+Remap: 84.46 ms
+Transform color: 18.24 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.29 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.44 microseconds
+CAM#3: PART SEARCH: search_time:4.47 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 0.86 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=106, trial=1, Duration=110489 ms
+Remap: 72.13 ms
+Transform color: 5.37 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 3.60 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.74 microseconds
+CAM#3: PART SEARCH: search_time:3.78 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.58
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.58
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 0.97 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=107, trial=1, Duration=84331 ms
+Remap: 86.05 ms
+Transform color: 124.36 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 5.14 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.28 microseconds
+CAM#3: PART SEARCH: search_time:5.31 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.22 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1824.92, Ratio: 13.30
+Loop: count=108, trial=1, Duration=227922 ms
+Remap: 91.48 ms
+Transform color: 14.26 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 3.93 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.05 microseconds
+CAM#3: PART SEARCH: search_time:4.07 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.28, Search Area Size: 1732.39, Ratio: 12.62
+Loop: count=109, trial=1, Duration=173239 ms
+Remap: 86.43 ms
+Transform color: 15.44 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.85 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.04 microseconds
+CAM#3: PART SEARCH: search_time:5.07 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.17 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1773.52, Ratio: 12.92
+Loop: count=110, trial=1, Duration=112626 ms
+Remap: 82.76 ms
+Transform color: 16.29 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.61 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.73 microseconds
+CAM#3: PART SEARCH: search_time:4.76 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=111, trial=1, Duration=107613 ms
+Remap: 86.63 ms
+Transform color: 5.45 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.18 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.31 microseconds
+CAM#3: PART SEARCH: search_time:4.33 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.57
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.57
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=112, trial=1, Duration=101441 ms
+Remap: 84.71 ms
+Transform color: 19.51 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.96 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.15 microseconds
+CAM#3: PART SEARCH: search_time:5.19 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.04 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=113, trial=1, Duration=113548 ms
+Remap: 85.73 ms
+Transform color: 16.04 ms
+Get partial image time: 0.23 ms
+Apriltag detector detect time: 12.87 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:13.21 microseconds
+CAM#3: PART SEARCH: search_time:13.24 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.62
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.26, Search Area Size: 4462.14, Ratio: 32.51
+Loop: count=114, trial=1, Duration=119781 ms
+Remap: 84.27 ms
+Transform color: 15.20 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.68 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.81 microseconds
+CAM#3: PART SEARCH: search_time:4.84 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.59
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.59
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 0.94 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=115, trial=1, Duration=107650 ms
+Remap: 23.05 ms
+Transform color: 2.94 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 4.19 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.32 microseconds
+CAM#3: PART SEARCH: search_time:4.34 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.70
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.70
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.03 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1691.27, Ratio: 12.33
+Loop: count=116, trial=1, Duration=34127 ms
+Remap: 88.32 ms
+Transform color: 22.52 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.11 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.34 microseconds
+CAM#3: PART SEARCH: search_time:5.38 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=117, trial=1, Duration=120538 ms
+Remap: 88.23 ms
+Transform color: 18.62 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.06 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.19 microseconds
+CAM#3: PART SEARCH: search_time:4.21 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.58
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.58
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=118, trial=1, Duration=134387 ms
+Remap: 75.20 ms
+Transform color: 17.52 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.97 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.22 microseconds
+CAM#3: PART SEARCH: search_time:5.26 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=119, trial=1, Duration=103120 ms
+Remap: 86.60 ms
+Transform color: 19.07 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.12 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.28 microseconds
+CAM#3: PART SEARCH: search_time:4.31 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1722.11, Ratio: 12.55
+CAM 3: -2147483648Hz
+Loop: count=120, trial=1, Duration=326049 ms
+Remap: 89.93 ms
+Transform color: 15.48 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 5.24 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.46 microseconds
+CAM#3: PART SEARCH: search_time:5.50 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.58
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.58
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.33 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 2001.52, Ratio: 14.59
+Loop: count=121, trial=1, Duration=116528 ms
+Remap: 82.11 ms
+Transform color: 7.48 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.61 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.79 microseconds
+CAM#3: PART SEARCH: search_time:4.82 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.58
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.58
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=122, trial=1, Duration=98637 ms
+Remap: 84.73 ms
+Transform color: 11.58 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.83 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.99 microseconds
+CAM#3: PART SEARCH: search_time:5.01 ms
+CAM#3: Found when using PART_IMAGE. X: 655.25 Y:1586.59
+tag->x: 655 tag->y: 1586 detection->x: 655.25 detection->y: 1586.59
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=123, trial=1, Duration=106365 ms
+Remap: 193.69 ms
+Transform color: 18.40 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.97 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.22 microseconds
+CAM#3: PART SEARCH: search_time:5.25 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.22 acceleration: 0.00
+Process time: 1.19 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1824.92, Ratio: 13.30
+Loop: count=124, trial=1, Duration=221765 ms
+Remap: 69.31 ms
+Transform color: 16.58 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.41 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.59 microseconds
+CAM#3: PART SEARCH: search_time:4.63 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=125, trial=1, Duration=142012 ms
+Remap: 81.23 ms
+Transform color: 16.63 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.94 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.16 microseconds
+CAM#3: PART SEARCH: search_time:5.19 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.15 acceleration: 0.00
+Process time: 1.15 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1752.95, Ratio: 12.78
+Loop: count=126, trial=1, Duration=108176 ms
+Remap: 83.51 ms
+Transform color: 17.91 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.26 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.41 microseconds
+CAM#3: PART SEARCH: search_time:4.44 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.59
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.59
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=127, trial=1, Duration=138485 ms
+Remap: 91.48 ms
+Transform color: 14.89 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 4.89 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.15 microseconds
+CAM#3: PART SEARCH: search_time:5.21 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.14 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1742.67, Ratio: 12.70
+Loop: count=128, trial=1, Duration=117050 ms
+Remap: 82.86 ms
+Transform color: 10.64 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.43 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.57 microseconds
+CAM#3: PART SEARCH: search_time:4.59 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.11 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=129, trial=1, Duration=215151 ms
+Remap: 76.11 ms
+Transform color: 7.54 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 10.69 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:10.93 microseconds
+CAM#3: PART SEARCH: search_time:10.95 ms
+CAM#3: Found when using PART_IMAGE. X: 655.25 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.25 detection->y: 1586.65
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 4228.45, Ratio: 30.82
+Loop: count=130, trial=1, Duration=102037 ms
+Remap: 87.62 ms
+Transform color: 16.98 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.45 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.62 microseconds
+CAM#3: PART SEARCH: search_time:4.66 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=131, trial=1, Duration=114088 ms
+Remap: 83.77 ms
+Transform color: 10.05 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.38 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.50 microseconds
+CAM#3: PART SEARCH: search_time:4.52 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.00 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=132, trial=1, Duration=102075 ms
+Remap: 87.06 ms
+Transform color: 16.85 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.75 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.93 microseconds
+CAM#3: PART SEARCH: search_time:4.97 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.59
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.59
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=133, trial=1, Duration=113134 ms
+Remap: 84.62 ms
+Transform color: 16.33 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.95 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.12 microseconds
+CAM#3: PART SEARCH: search_time:5.18 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.08 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=134, trial=1, Duration=110546 ms
+Remap: 84.87 ms
+Transform color: 13.53 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 5.26 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.42 microseconds
+CAM#3: PART SEARCH: search_time:5.45 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=135, trial=1, Duration=108413 ms
+Remap: 82.33 ms
+Transform color: 15.76 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.82 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.01 microseconds
+CAM#3: PART SEARCH: search_time:5.04 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.10 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=136, trial=1, Duration=122400 ms
+Remap: 86.47 ms
+Transform color: 18.06 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.55 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.75 microseconds
+CAM#3: PART SEARCH: search_time:4.80 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=137, trial=1, Duration=114429 ms
+Remap: 90.33 ms
+Transform color: 19.04 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.85 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.04 microseconds
+CAM#3: PART SEARCH: search_time:5.08 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=138, trial=1, Duration=119340 ms
+Remap: 76.42 ms
+Transform color: 13.62 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 5.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.20 microseconds
+CAM#3: PART SEARCH: search_time:5.23 ms
+CAM#3: Found when using PART_IMAGE. X: 655.25 Y:1586.70
+tag->x: 655 tag->y: 1586 detection->x: 655.25 detection->y: 1586.70
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.11 ms
+Tag ID: 5, AprilTag Size: 137.25, Search Area Size: 1711.83, Ratio: 12.47
+Loop: count=139, trial=1, Duration=298669 ms
+Remap: 211.32 ms
+Transform color: 5.57 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.53 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.72 microseconds
+CAM#3: PART SEARCH: search_time:5.76 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.43 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 2232.14, Ratio: 16.27
+Loop: count=140, trial=1, Duration=270250 ms
+Remap: 85.58 ms
+Transform color: 18.35 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.39 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.55 microseconds
+CAM#3: PART SEARCH: search_time:4.60 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.16 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1752.95, Ratio: 12.78
+Loop: count=141, trial=1, Duration=112759 ms
+Remap: 88.44 ms
+Transform color: 22.28 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.15 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.37 microseconds
+CAM#3: PART SEARCH: search_time:5.42 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.12 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=142, trial=1, Duration=199778 ms
+Remap: 194.98 ms
+Transform color: 4.42 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.35 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.57 microseconds
+CAM#3: PART SEARCH: search_time:5.59 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.29 acceleration: 0.00
+Process time: 1.14 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1939.45, Ratio: 14.13
+Loop: count=143, trial=1, Duration=210126 ms
+Remap: 88.22 ms
+Transform color: 19.12 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.85 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.07 microseconds
+CAM#3: PART SEARCH: search_time:5.10 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.72
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.72
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=144, trial=1, Duration=116865 ms
+Remap: 76.60 ms
+Transform color: 1.79 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.56 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.71 microseconds
+CAM#3: PART SEARCH: search_time:4.74 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 1.02 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=145, trial=1, Duration=116563 ms
+Remap: 77.40 ms
+Transform color: 14.93 ms
+Get partial image time: 0.17 ms
+Apriltag detector detect time: 7.51 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:7.78 microseconds
+CAM#3: PART SEARCH: search_time:7.82 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.65
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 3063.67, Ratio: 22.33
+Loop: count=146, trial=1, Duration=166901 ms
+Remap: 85.88 ms
+Transform color: 15.24 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 5.47 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.73 microseconds
+CAM#3: PART SEARCH: search_time:5.78 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.18 acceleration: 0.00
+Process time: 1.13 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1773.52, Ratio: 12.93
+Loop: count=147, trial=1, Duration=121978 ms
+Remap: 87.45 ms
+Transform color: 20.01 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.21 microseconds
+CAM#3: PART SEARCH: search_time:5.26 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.10 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=148, trial=1, Duration=116979 ms
+Remap: 90.36 ms
+Transform color: 14.41 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.54 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.77 microseconds
+CAM#3: PART SEARCH: search_time:5.80 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.69
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=149, trial=1, Duration=115357 ms
+Remap: 86.86 ms
+Transform color: 12.64 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.15 microseconds
+CAM#3: PART SEARCH: search_time:4.17 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.69
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=150, trial=1, Duration=433240 ms
+Remap: 74.76 ms
+Transform color: 20.04 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 5.32 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.50 microseconds
+CAM#3: PART SEARCH: search_time:5.52 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.43 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 2242.55, Ratio: 16.34
+Loop: count=151, trial=1, Duration=104600 ms
+Remap: 83.83 ms
+Transform color: 17.30 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.26 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.38 microseconds
+CAM#3: PART SEARCH: search_time:4.40 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=152, trial=1, Duration=137628 ms
+Remap: 90.66 ms
+Transform color: 19.05 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.90 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.12 microseconds
+CAM#3: PART SEARCH: search_time:5.16 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.15 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1742.67, Ratio: 12.70
+Loop: count=153, trial=1, Duration=119106 ms
+Remap: 84.13 ms
+Transform color: 19.24 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.30 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.55 microseconds
+CAM#3: PART SEARCH: search_time:5.59 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.15 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=154, trial=1, Duration=223705 ms
+Remap: 83.70 ms
+Transform color: 18.50 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 5.08 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.25 microseconds
+CAM#3: PART SEARCH: search_time:5.28 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.55
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.55
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.22 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1824.92, Ratio: 13.30
+Loop: count=155, trial=1, Duration=112774 ms
+Remap: 82.05 ms
+Transform color: 12.31 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 5.52 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.72 microseconds
+CAM#3: PART SEARCH: search_time:5.75 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.96 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=156, trial=1, Duration=105925 ms
+Remap: 82.85 ms
+Transform color: 7.04 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 5.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.18 microseconds
+CAM#3: PART SEARCH: search_time:5.21 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.17, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=157, trial=1, Duration=100180 ms
+Remap: 79.40 ms
+Transform color: 17.36 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.83 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.97 microseconds
+CAM#3: PART SEARCH: search_time:5.01 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.16 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=158, trial=1, Duration=115549 ms
+Remap: 87.32 ms
+Transform color: 11.45 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 5.22 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.41 microseconds
+CAM#3: PART SEARCH: search_time:5.44 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=159, trial=1, Duration=109297 ms
+Remap: 86.16 ms
+Transform color: 17.93 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.88 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.01 microseconds
+CAM#3: PART SEARCH: search_time:5.03 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=160, trial=1, Duration=144895 ms
+Remap: 29.84 ms
+Transform color: 19.53 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.57 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.74 microseconds
+CAM#3: PART SEARCH: search_time:4.79 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.09 acceleration: 0.00
+Process time: 1.09 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=161, trial=1, Duration=58200 ms
+Remap: 85.23 ms
+Transform color: 20.90 ms
+Get partial image time: 0.17 ms
+Apriltag detector detect time: 8.53 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.82 microseconds
+CAM#3: PART SEARCH: search_time:8.88 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.64
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 3617.11, Ratio: 26.36
+Loop: count=162, trial=1, Duration=221588 ms
+Remap: 84.69 ms
+Transform color: 15.10 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.18 microseconds
+CAM#3: PART SEARCH: search_time:5.23 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.22 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1814.64, Ratio: 13.23
+Loop: count=163, trial=1, Duration=190770 ms
+Remap: 82.62 ms
+Transform color: 14.26 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.23 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.42 microseconds
+CAM#3: PART SEARCH: search_time:5.45 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.19 acceleration: 0.00
+Process time: 1.14 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1783.80, Ratio: 13.00
+Loop: count=164, trial=1, Duration=106726 ms
+Remap: 85.49 ms
+Transform color: 16.14 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 5.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.19 microseconds
+CAM#3: PART SEARCH: search_time:5.22 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=165, trial=1, Duration=111602 ms
+Remap: 61.70 ms
+Transform color: 4.58 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.51 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.60 microseconds
+CAM#3: PART SEARCH: search_time:3.61 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.08 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1701.55, Ratio: 12.40
+Loop: count=166, trial=1, Duration=204830 ms
+Remap: 87.11 ms
+Transform color: 18.13 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.74 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.94 microseconds
+CAM#3: PART SEARCH: search_time:4.97 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.73
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.73
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.24 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1855.77, Ratio: 13.53
+Loop: count=167, trial=1, Duration=114417 ms
+Remap: 88.65 ms
+Transform color: 15.89 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.97 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.16 microseconds
+CAM#3: PART SEARCH: search_time:5.22 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=168, trial=1, Duration=114881 ms
+Remap: 82.70 ms
+Transform color: 21.01 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 5.24 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.40 microseconds
+CAM#3: PART SEARCH: search_time:5.43 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.17 ms
+Tag ID: 5, AprilTag Size: 137.16, Search Area Size: 1722.11, Ratio: 12.56
+Loop: count=169, trial=1, Duration=118970 ms
+Remap: 85.62 ms
+Transform color: 16.77 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.60 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.78 microseconds
+CAM#3: PART SEARCH: search_time:4.82 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=170, trial=1, Duration=268411 ms
+Remap: 87.06 ms
+Transform color: 16.69 ms
+Get partial image time: 0.14 ms
+Apriltag detector detect time: 5.15 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.39 microseconds
+CAM#3: PART SEARCH: search_time:5.43 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.27 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1908.42, Ratio: 13.91
+Loop: count=171, trial=1, Duration=112591 ms
+Remap: 86.15 ms
+Transform color: 15.12 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.26 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.38 microseconds
+CAM#3: PART SEARCH: search_time:4.40 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.70
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.70
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.88 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=172, trial=1, Duration=108647 ms
+Remap: 48.03 ms
+Transform color: 7.98 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 5.36 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.57 microseconds
+CAM#3: PART SEARCH: search_time:5.64 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.06 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1701.55, Ratio: 12.40
+Loop: count=173, trial=1, Duration=79726 ms
+Remap: 85.35 ms
+Transform color: 18.09 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 4.76 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.96 microseconds
+CAM#3: PART SEARCH: search_time:5.01 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.59
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.59
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=174, trial=1, Duration=141203 ms
+Remap: 84.70 ms
+Transform color: 14.37 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.96 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.21 microseconds
+CAM#3: PART SEARCH: search_time:6.26 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.14 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1742.67, Ratio: 12.70
+Loop: count=175, trial=1, Duration=202502 ms
+Remap: 76.13 ms
+Transform color: 17.61 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.53 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.75 microseconds
+CAM#3: PART SEARCH: search_time:5.78 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.20 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1794.08, Ratio: 13.07
+Loop: count=176, trial=1, Duration=104862 ms
+Remap: 84.55 ms
+Transform color: 12.73 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 4.06 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.17 microseconds
+CAM#3: PART SEARCH: search_time:4.19 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.02 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=177, trial=1, Duration=109950 ms
+Remap: 76.46 ms
+Transform color: 15.23 ms
+Get partial image time: 0.18 ms
+Apriltag detector detect time: 8.00 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.26 microseconds
+CAM#3: PART SEARCH: search_time:8.31 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.65
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 3606.33, Ratio: 26.28
+Loop: count=178, trial=1, Duration=157371 ms
+Remap: 83.80 ms
+Transform color: 9.66 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 6.72 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.89 microseconds
+CAM#3: PART SEARCH: search_time:6.95 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.16 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1763.23, Ratio: 12.85
+Loop: count=179, trial=1, Duration=196754 ms
+Remap: 82.80 ms
+Transform color: 18.69 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.28 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.41 microseconds
+CAM#3: PART SEARCH: search_time:4.44 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.20 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1804.36, Ratio: 13.15
+Loop: count=180, trial=1, Duration=136821 ms
+Remap: 76.68 ms
+Transform color: 9.76 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.44 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.61 microseconds
+CAM#3: PART SEARCH: search_time:4.65 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.00 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=181, trial=1, Duration=96297 ms
+Remap: 66.98 ms
+Transform color: 5.54 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 3.74 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.88 microseconds
+CAM#3: PART SEARCH: search_time:3.90 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.08 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1701.55, Ratio: 12.40
+Loop: count=182, trial=1, Duration=80377 ms
+Remap: 77.80 ms
+Transform color: 16.13 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 5.25 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.48 microseconds
+CAM#3: PART SEARCH: search_time:5.52 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=183, trial=1, Duration=105663 ms
+Remap: 88.57 ms
+Transform color: 15.27 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.87 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.04 microseconds
+CAM#3: PART SEARCH: search_time:5.06 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=184, trial=1, Duration=113425 ms
+Remap: 84.59 ms
+Transform color: 18.64 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 5.09 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.25 microseconds
+CAM#3: PART SEARCH: search_time:5.28 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.95 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=185, trial=1, Duration=129183 ms
+Remap: 79.14 ms
+Transform color: 20.67 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.07 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.30 microseconds
+CAM#3: PART SEARCH: search_time:5.35 ms
+CAM#3: Found when using PART_IMAGE. X: 655.37 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.37 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 0.95 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1732.39, Ratio: 12.62
+Loop: count=186, trial=1, Duration=109796 ms
+Remap: 85.11 ms
+Transform color: 4.48 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 4.51 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.65 microseconds
+CAM#3: PART SEARCH: search_time:4.67 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=187, trial=1, Duration=99270 ms
+Remap: 81.39 ms
+Transform color: 19.91 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.77 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.95 microseconds
+CAM#3: PART SEARCH: search_time:4.99 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=188, trial=1, Duration=110044 ms
+Remap: 77.77 ms
+Transform color: 9.43 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 5.36 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.62 microseconds
+CAM#3: PART SEARCH: search_time:5.67 ms
+CAM#3: Found when using PART_IMAGE. X: 655.25 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.25 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1711.83, Ratio: 12.48
+Loop: count=189, trial=1, Duration=173545 ms
+Remap: 86.64 ms
+Transform color: 19.11 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.36 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.59 microseconds
+CAM#3: PART SEARCH: search_time:5.63 ms
+CAM#3: Found when using PART_IMAGE. X: 655.25 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.25 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.19 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1794.08, Ratio: 13.07
+Loop: count=190, trial=1, Duration=116081 ms
+Remap: 84.66 ms
+Transform color: 16.98 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 5.42 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.65 microseconds
+CAM#3: PART SEARCH: search_time:5.69 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=191, trial=1, Duration=112605 ms
+Remap: 62.99 ms
+Transform color: 5.30 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.78 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.93 microseconds
+CAM#3: PART SEARCH: search_time:4.97 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.59
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.59
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.08 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1701.55, Ratio: 12.40
+Loop: count=192, trial=1, Duration=89624 ms
+Remap: 81.70 ms
+Transform color: 19.16 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.22 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.45 microseconds
+CAM#3: PART SEARCH: search_time:5.48 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.02 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=193, trial=1, Duration=111536 ms
+Remap: 84.87 ms
+Transform color: 14.27 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 7.78 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.00 microseconds
+CAM#3: PART SEARCH: search_time:8.02 ms
+CAM#3: Found when using PART_IMAGE. X: 655.35 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.35 detection->y: 1586.67
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 3403.20, Ratio: 24.81
+Loop: count=194, trial=1, Duration=112032 ms
+Remap: 84.18 ms
+Transform color: 18.71 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.98 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.17 microseconds
+CAM#3: PART SEARCH: search_time:5.20 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.10 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=195, trial=1, Duration=112803 ms
+Remap: 86.45 ms
+Transform color: 15.20 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.85 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.07 microseconds
+CAM#3: PART SEARCH: search_time:5.11 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.05 ms
+Tag ID: 5, AprilTag Size: 137.17, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=196, trial=1, Duration=111397 ms
+Remap: 81.86 ms
+Transform color: 14.59 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.29 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.42 microseconds
+CAM#3: PART SEARCH: search_time:4.44 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.58 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=197, trial=1, Duration=103450 ms
+Remap: 16.84 ms
+Transform color: 27.74 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.45 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.55 microseconds
+CAM#3: PART SEARCH: search_time:4.58 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.65
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.65
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.05 acceleration: 0.00
+Process time: 0.97 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1691.27, Ratio: 12.33
+Loop: count=198, trial=1, Duration=139442 ms
+Remap: 84.19 ms
+Transform color: 7.25 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.87 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.07 microseconds
+CAM#3: PART SEARCH: search_time:5.10 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.72
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.72
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.19 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1783.80, Ratio: 13.00
+Loop: count=199, trial=1, Duration=102082 ms
+Remap: 86.84 ms
+Transform color: 19.65 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.87 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.05 microseconds
+CAM#3: PART SEARCH: search_time:5.09 ms
+CAM#3: Found when using PART_IMAGE. X: 655.36 Y:1586.70
+tag->x: 655 tag->y: 1586 detection->x: 655.36 detection->y: 1586.70
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=200, trial=1, Duration=120066 ms
+Remap: 77.05 ms
+Transform color: 17.41 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.68 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.87 microseconds
+CAM#3: PART SEARCH: search_time:4.90 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=201, trial=1, Duration=103745 ms
+Remap: 86.15 ms
+Transform color: 16.04 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.44 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.63 microseconds
+CAM#3: PART SEARCH: search_time:4.68 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1722.11, Ratio: 12.55
+Loop: count=202, trial=1, Duration=142833 ms
+Remap: 74.77 ms
+Transform color: 14.53 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.53 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.73 microseconds
+CAM#3: PART SEARCH: search_time:5.77 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.13 acceleration: 0.00
+Process time: 1.13 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1732.39, Ratio: 12.63
+Loop: count=203, trial=1, Duration=100217 ms
+Remap: 266.59 ms
+Transform color: 1.82 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 4.86 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.04 microseconds
+CAM#3: PART SEARCH: search_time:5.08 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.29 acceleration: 0.00
+Process time: 0.95 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1929.11, Ratio: 14.06
+Loop: count=204, trial=1, Duration=284405 ms
+Remap: 74.51 ms
+Transform color: 4.99 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.14 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.27 microseconds
+CAM#3: PART SEARCH: search_time:4.29 ms
+CAM#3: Found when using PART_IMAGE. X: 713.13 Y:1590.49
+tag->x: 655 tag->y: 1586 detection->x: 713.13 detection->y: 1590.49
+Previous velocity: 0.00 Current velocity: 660.29 time s: 0.09 acceleration: 7499.11
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 136.05, Search Area Size: 1711.83, Ratio: 12.58
+Loop: count=205, trial=1, Duration=87972 ms
+Remap: 84.98 ms
+Transform color: 18.34 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.38 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.53 microseconds
+CAM#3: PART SEARCH: search_time:4.57 ms
+CAM#3: Found when using PART_IMAGE. X: 655.25 Y:1586.64
+tag->x: 713 tag->y: 1590 detection->x: 655.25 detection->y: 1586.64
+Previous velocity: 660.29 Current velocity: 519.48 time s: 0.11 acceleration: 1258.16
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 2083.28, Ratio: 15.18
+Loop: count=206, trial=1, Duration=138081 ms
+Remap: 80.16 ms
+Transform color: 15.83 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.99 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.16 microseconds
+CAM#3: PART SEARCH: search_time:5.19 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.69
+Previous velocity: 519.48 Current velocity: 0.00 time s: 0.13 acceleration: 3970.93
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.15, Search Area Size: 1846.36, Ratio: 13.46
+Loop: count=207, trial=1, Duration=106491 ms
+Remap: 210.87 ms
+Transform color: 6.47 ms
+Get partial image time: 0.14 ms
+Apriltag detector detect time: 6.16 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.36 microseconds
+CAM#3: PART SEARCH: search_time:6.41 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.61
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.61
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.23 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 2252.95, Ratio: 16.42
+Loop: count=208, trial=1, Duration=339979 ms
+Remap: 78.89 ms
+Transform color: 18.74 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.38 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.55 microseconds
+CAM#3: PART SEARCH: search_time:5.58 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.22 acceleration: 0.00
+Process time: 1.04 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 713.00 Y:1590.00
+Loop: count=209, trial=1, Duration=136616 ms
+Remap: 84.67 ms
+Transform color: 19.72 ms
+Get partial image time: 0.13 ms
+Apriltag detector detect time: 6.78 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.99 microseconds
+CAM#3: PART SEARCH: search_time:7.02 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.70
+tag->x: 713 tag->y: 1590 detection->x: 655.27 detection->y: 1586.70
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 3148.92, Ratio: 22.95
+Loop: count=210, trial=1, Duration=117596 ms
+Remap: 78.02 ms
+Transform color: 1.43 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 20.36 ms
+CAM#3: tag#5: FAST SEARCH: search_time:20.49 microseconds
+CAM#3: tag#5 exceeded 17ms search time. Switching to exhaustive search.
+CAM#3: PART SEARCH: search_time:20.51 ms
+Tags are missing.
+Process time: 0.03 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:200.81 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=211, trial=1, Duration=308077 ms
+Remap: 83.34 ms
+Transform color: 16.09 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 6.54 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.65 microseconds
+CAM#3: PART SEARCH: search_time:6.67 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.67
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 2907.98, Ratio: 21.19
+Loop: count=212, trial=1, Duration=109491 ms
+Remap: 78.48 ms
+Transform color: 16.34 ms
+Get partial image time: 0.13 ms
+Apriltag detector detect time: 5.43 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.68 microseconds
+CAM#3: PART SEARCH: search_time:5.74 ms
+CAM#3: Found when using PART_IMAGE. X: 655.28 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.28 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1949.80, Ratio: 14.21
+Loop: count=213, trial=1, Duration=150076 ms
+Remap: 76.14 ms
+Transform color: 6.11 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.22 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.33 microseconds
+CAM#3: PART SEARCH: search_time:4.35 ms
+CAM#3: Found when using PART_IMAGE. X: 655.25 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.25 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.14 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 2022.20, Ratio: 14.74
+Loop: count=214, trial=1, Duration=89751 ms
+Remap: 88.57 ms
+Transform color: 7.45 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.82 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.94 microseconds
+CAM#3: PART SEARCH: search_time:4.98 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.72
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.72
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1939.45, Ratio: 14.13
+Loop: count=215, trial=1, Duration=105028 ms
+Remap: 88.95 ms
+Transform color: 16.90 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.24 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.45 microseconds
+CAM#3: PART SEARCH: search_time:5.49 ms
+CAM#3: Found when using PART_IMAGE. X: 655.24 Y:1586.72
+tag->x: 655 tag->y: 1586 detection->x: 655.24 detection->y: 1586.72
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1970.48, Ratio: 14.36
+Loop: count=216, trial=1, Duration=115249 ms
+Remap: 90.75 ms
+Transform color: 13.25 ms
+Get partial image time: 0.14 ms
+Apriltag detector detect time: 5.40 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.70 microseconds
+CAM#3: PART SEARCH: search_time:5.75 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.69
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.17, Search Area Size: 1960.14, Ratio: 14.29
+Loop: count=217, trial=1, Duration=115981 ms
+Remap: 65.11 ms
+Transform color: 3.30 ms
+Get partial image time: 0.03 ms
+Apriltag detector detect time: 3.92 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:3.98 microseconds
+CAM#3: PART SEARCH: search_time:4.00 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.08 acceleration: 0.00
+Process time: 1.06 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1876.33, Ratio: 13.67
+Loop: count=218, trial=1, Duration=75455 ms
+Remap: 78.10 ms
+Transform color: 18.64 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.30 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.53 microseconds
+CAM#3: PART SEARCH: search_time:5.55 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.60
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.60
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1939.45, Ratio: 14.14
+Loop: count=219, trial=1, Duration=107546 ms
+Remap: 91.60 ms
+Transform color: 14.77 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.40 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.62 microseconds
+CAM#3: PART SEARCH: search_time:5.66 ms
+CAM#3: Found when using PART_IMAGE. X: 655.33 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.33 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.20, Search Area Size: 1970.48, Ratio: 14.36
+Loop: count=220, trial=1, Duration=117001 ms
+Remap: 84.24 ms
+Transform color: 17.31 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.84 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.99 microseconds
+CAM#3: PART SEARCH: search_time:5.02 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.70
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.70
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.01 ms
+Tag ID: 5, AprilTag Size: 137.17, Search Area Size: 1960.14, Ratio: 14.29
+Loop: count=221, trial=1, Duration=111157 ms
+Remap: 85.98 ms
+Transform color: 16.08 ms
+Get partial image time: 0.11 ms
+Apriltag detector detect time: 5.86 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.09 microseconds
+CAM#3: PART SEARCH: search_time:6.13 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1960.14, Ratio: 14.29
+Loop: count=222, trial=1, Duration=148771 ms
+Remap: 83.75 ms
+Transform color: 17.36 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 4.62 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.81 microseconds
+CAM#3: PART SEARCH: search_time:4.84 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.63
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.63
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.15 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.17, Search Area Size: 2042.89, Ratio: 14.89
+Loop: count=223, trial=1, Duration=110409 ms
+Remap: 89.22 ms
+Transform color: 21.60 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 5.08 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.26 microseconds
+CAM#3: PART SEARCH: search_time:5.30 ms
+CAM#3: Found when using PART_IMAGE. X: 655.27 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.27 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 1980.83, Ratio: 14.44
+Loop: count=224, trial=1, Duration=120278 ms
+Remap: 84.10 ms
+Transform color: 4.67 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.92 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.00 microseconds
+CAM#3: PART SEARCH: search_time:5.02 ms
+CAM#3: Found when using PART_IMAGE. X: 655.32 Y:1586.71
+tag->x: 655 tag->y: 1586 detection->x: 655.32 detection->y: 1586.71
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.96 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1929.11, Ratio: 14.06
+Loop: count=225, trial=1, Duration=99378 ms
+Remap: 80.44 ms
+Transform color: 14.27 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.15 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.37 microseconds
+CAM#3: PART SEARCH: search_time:5.41 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.68
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 0.99 ms
+Tag ID: 5, AprilTag Size: 137.23, Search Area Size: 1949.80, Ratio: 14.21
+Loop: count=226, trial=1, Duration=104467 ms
+Remap: 81.06 ms
+Transform color: 9.85 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 4.44 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.54 microseconds
+CAM#3: PART SEARCH: search_time:4.57 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.64
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.64
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.10 acceleration: 0.00
+Process time: 0.59 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=227, trial=1, Duration=126132 ms
+Remap: 84.00 ms
+Transform color: 5.97 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 7.87 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.05 microseconds
+CAM#3: PART SEARCH: search_time:8.09 ms
+CAM#3: Found when using PART_IMAGE. X: 655.24 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.24 detection->y: 1586.67
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 3638.67, Ratio: 26.52
+Loop: count=228, trial=1, Duration=154335 ms
+Remap: 86.86 ms
+Transform color: 17.28 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.07 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.26 microseconds
+CAM#3: PART SEARCH: search_time:5.29 ms
+CAM#3: Found when using PART_IMAGE. X: 655.31 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.31 detection->y: 1586.69
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.17 acceleration: 0.00
+Process time: 1.02 ms
+Tag ID: 5, AprilTag Size: 137.21, Search Area Size: 2094.61, Ratio: 15.27
+Loop: count=229, trial=1, Duration=206396 ms
+Remap: 504.57 ms
+Transform color: 4.23 ms
+Get partial image time: 0.17 ms
+Apriltag detector detect time: 9.15 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:9.40 microseconds
+CAM#3: PART SEARCH: search_time:9.45 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.67
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.67
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.61 acceleration: 0.00
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 3234.17, Ratio: 23.57
+Loop: count=230, trial=1, Duration=522153 ms
+Remap: 78.26 ms
+Transform color: 1.61 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 21.98 ms
+CAM#3: tag#5: FAST SEARCH: search_time:22.09 microseconds
+CAM#3: tag#5 exceeded 17ms search time. Switching to exhaustive search.
+CAM#3: PART SEARCH: search_time:22.12 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 655.00 Y:1586.00
+Loop: count=231, trial=1, Duration=109787 ms
+Remap: 91.64 ms
+Transform color: 5.89 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 10.63 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:10.81 microseconds
+CAM#3: PART SEARCH: search_time:10.84 ms
+CAM#3: Found when using PART_IMAGE. X: 655.26 Y:1586.68
+tag->x: 655 tag->y: 1586 detection->x: 655.26 detection->y: 1586.68
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 3360.33, Ratio: 24.49
+Loop: count=232, trial=1, Duration=113419 ms
+Remap: 65.14 ms
+Transform color: 3.40 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.39 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.65 microseconds
+CAM#3: PART SEARCH: search_time:5.70 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.08 acceleration: 0.00
+Process time: 1.09 ms
+Tag ID: 5, AprilTag Size: 137.22, Search Area Size: 1886.61, Ratio: 13.75
+Loop: count=233, trial=1, Duration=78772 ms
+Remap: 79.19 ms
+Transform color: 18.80 ms
+Get partial image time: 0.14 ms
+Apriltag detector detect time: 5.75 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.99 microseconds
+CAM#3: PART SEARCH: search_time:6.03 ms
+CAM#3: Found when using PART_IMAGE. X: 655.34 Y:1586.69
+tag->x: 655 tag->y: 1586 detection->x: 655.34 detection->y: 1586.69
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.00 ms
+Tag ID: 5, AprilTag Size: 137.19, Search Area Size: 1949.80, Ratio: 14.21
+Loop: count=234, trial=1, Duration=210396 ms
+Remap: 91.41 ms
+Transform color: 20.63 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 4.90 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.09 microseconds
+CAM#3: PART SEARCH: search_time:5.14 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.62
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.62
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.22 acceleration: 0.00
+Process time: 0.98 ms
+Tag ID: 5, AprilTag Size: 137.15, Search Area Size: 2242.55, Ratio: 16.35
+Loop: count=235, trial=1, Duration=120596 ms
+Remap: 87.05 ms
+Transform color: 13.43 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.12 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.35 microseconds
+CAM#3: PART SEARCH: search_time:5.38 ms
+CAM#3: Found when using PART_IMAGE. X: 655.29 Y:1586.70
+tag->x: 655 tag->y: 1586 detection->x: 655.29 detection->y: 1586.70
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.11 acceleration: 0.00
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 137.24, Search Area Size: 1949.80, Ratio: 14.21
+Loop: count=236, trial=1, Duration=112233 ms
+Remap: 87.03 ms
+Transform color: 19.25 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 5.27 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.50 microseconds
+CAM#3: PART SEARCH: search_time:5.55 ms
+CAM#3: Found when using PART_IMAGE. X: 655.30 Y:1586.66
+tag->x: 655 tag->y: 1586 detection->x: 655.30 detection->y: 1586.66
+Previous velocity: 0.00 Current velocity: 0.00 time s: 0.12 acceleration: 0.00
+Process time: 1.14 ms
+Tag ID: 5, AprilTag Size: 137.18, Search Area Size: 1970.48, Ratio: 14.36
+Loop: count=237, trial=1, Duration=117578 ms
+Remap: 78.62 ms
+Transform color: 6.71 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 4.96 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.11 microseconds
+CAM#3: PART SEARCH: search_time:5.16 ms
+CAM#3: Found when using PART_IMAGE. X: 654.34 Y:1587.64
+tag->x: 655 tag->y: 1586 detection->x: 654.34 detection->y: 1587.64
+Previous velocity: 0.00 Current velocity: 14.62 time s: 0.10 acceleration: 151.20
+Process time: 1.10 ms
+Tag ID: 5, AprilTag Size: 136.24, Search Area Size: 1929.11, Ratio: 14.16
+Loop: count=238, trial=1, Duration=96038 ms
+Remap: 87.78 ms
+Transform color: 5.36 ms
+Get partial image time: 0.04 ms
+Apriltag detector detect time: 4.28 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:4.39 microseconds
+CAM#3: PART SEARCH: search_time:4.42 ms
+CAM#3: Found when using PART_IMAGE. X: 663.47 Y:1566.48
+tag->x: 654 tag->y: 1587 detection->x: 663.47 detection->y: 1566.48
+Previous velocity: 14.62 Current velocity: 220.03 time s: 0.10 acceleration: 1978.13
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 135.31, Search Area Size: 1939.45, Ratio: 14.33
+Loop: count=239, trial=1, Duration=223101 ms
+Remap: 73.08 ms
+Transform color: 15.84 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 5.79 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.96 microseconds
+CAM#3: PART SEARCH: search_time:5.98 ms
+CAM#3: Found when using PART_IMAGE. X: 686.92 Y:1514.97
+tag->x: 663 tag->y: 1566 detection->x: 686.92 detection->y: 1514.97
+Previous velocity: 220.03 Current velocity: 259.59 time s: 0.22 acceleration: 180.62
+Process time: 1.12 ms
+Tag ID: 5, AprilTag Size: 135.12, Search Area Size: 2232.14, Ratio: 16.52
+CAM 3: -2147483648Hz
+Loop: count=240, trial=1, Duration=100427 ms
+Remap: 88.25 ms
+Transform color: 18.34 ms
+Get partial image time: 0.16 ms
+Apriltag detector detect time: 6.11 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.37 microseconds
+CAM#3: PART SEARCH: search_time:6.40 ms
+CAM#3: Found when using PART_IMAGE. X: 698.27 Y:1487.83
+tag->x: 686 tag->y: 1514 detection->x: 698.27 detection->y: 1487.83
+Previous velocity: 259.59 Current velocity: 250.23 time s: 0.12 acceleration: 79.28
+Process time: 1.04 ms
+Tag ID: 5, AprilTag Size: 134.59, Search Area Size: 1965.31, Ratio: 14.60
+Loop: count=241, trial=1, Duration=116785 ms
+Remap: 84.26 ms
+Transform color: 20.85 ms
+Get partial image time: 0.16 ms
+Apriltag detector detect time: 5.30 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.56 microseconds
+CAM#3: PART SEARCH: search_time:5.61 ms
+CAM#3: Found when using PART_IMAGE. X: 713.00 Y:1449.86
+tag->x: 698 tag->y: 1487 detection->x: 713.00 detection->y: 1449.86
+Previous velocity: 250.23 Current velocity: 351.04 time s: 0.12 acceleration: 873.88
+Process time: 1.10 ms
+Tag ID: 5, AprilTag Size: 135.32, Search Area Size: 1954.97, Ratio: 14.45
+Loop: count=242, trial=1, Duration=114297 ms
+Remap: 80.79 ms
+Transform color: 7.72 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 4.96 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.13 microseconds
+CAM#3: PART SEARCH: search_time:5.18 ms
+CAM#3: Found when using PART_IMAGE. X: 728.84 Y:1413.06
+tag->x: 712 tag->y: 1449 detection->x: 728.84 detection->y: 1413.06
+Previous velocity: 351.04 Current velocity: 403.32 time s: 0.10 acceleration: 535.20
+Process time: 1.03 ms
+Tag ID: 5, AprilTag Size: 134.44, Search Area Size: 1830.84, Ratio: 13.62
+Loop: count=243, trial=1, Duration=99480 ms
+Remap: 83.31 ms
+Transform color: 22.24 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 5.48 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.73 microseconds
+CAM#3: PART SEARCH: search_time:5.76 ms
+CAM#3: Found when using PART_IMAGE. X: 739.18 Y:1390.79
+tag->x: 728 tag->y: 1413 detection->x: 739.18 detection->y: 1390.79
+Previous velocity: 403.32 Current velocity: 218.61 time s: 0.12 acceleration: 1583.81
+Process time: 1.13 ms
+Tag ID: 5, AprilTag Size: 139.05, Search Area Size: 1867.05, Ratio: 13.43
+Loop: count=244, trial=1, Duration=461180 ms
+Remap: 168.55 ms
+Transform color: 4.51 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 8.21 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.41 microseconds
+CAM#3: PART SEARCH: search_time:8.45 ms
+CAM#3: Found when using PART_IMAGE. X: 767.46 Y:1323.86
+tag->x: 739 tag->y: 1390 detection->x: 767.46 detection->y: 1323.86
+Previous velocity: 218.61 Current velocity: 137.35 time s: 0.53 acceleration: 153.70
+Process time: 1.12 ms
+Tag ID: 5, AprilTag Size: 135.38, Search Area Size: 3031.70, Ratio: 22.39
+Loop: count=245, trial=1, Duration=187452 ms
+Remap: 78.73 ms
+Transform color: 13.48 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 5.07 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.24 microseconds
+CAM#3: PART SEARCH: search_time:5.26 ms
+CAM#3: Found when using PART_IMAGE. X: 787.53 Y:1276.30
+tag->x: 767 tag->y: 1323 detection->x: 787.53 detection->y: 1276.30
+Previous velocity: 137.35 Current velocity: 478.80 time s: 0.11 acceleration: 3200.78
+Process time: 1.07 ms
+Tag ID: 5, AprilTag Size: 135.98, Search Area Size: 1949.80, Ratio: 14.34
+Loop: count=246, trial=1, Duration=205775 ms
+Remap: 87.38 ms
+Transform color: 17.72 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 5.42 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:5.65 microseconds
+CAM#3: PART SEARCH: search_time:5.68 ms
+CAM#3: Found when using PART_IMAGE. X: 815.64 Y:1216.91
+tag->x: 787 tag->y: 1276 detection->x: 815.64 detection->y: 1216.91
+Previous velocity: 478.80 Current velocity: 302.81 time s: 0.22 acceleration: 804.89
+Process time: 1.09 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 740.00 Y:1386.00
+Loop: count=247, trial=1, Duration=114655 ms
+Remap: 71.87 ms
+Transform color: 7.57 ms
+Get partial image time: 0.10 ms
+Apriltag detector detect time: 8.86 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:9.02 microseconds
+CAM#3: PART SEARCH: search_time:9.05 ms
+Process time: 0.00 ms
+Loop: count=248, trial=1, Duration=90558 ms
+Remap: 80.37 ms
+Transform color: 7.35 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 12.94 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:13.11 microseconds
+CAM#3: PART SEARCH: search_time:13.15 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 780.00 Y:1296.00
+Loop: count=249, trial=1, Duration=104122 ms
+Remap: 75.54 ms
+Transform color: 6.43 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 7.49 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:7.63 microseconds
+CAM#3: PART SEARCH: search_time:7.66 ms
+Process time: 0.00 ms
+Loop: count=250, trial=1, Duration=91980 ms
+Remap: 96.30 ms
+Transform color: 15.11 ms
+Get partial image time: 0.18 ms
+Apriltag detector detect time: 8.47 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.76 microseconds
+CAM#3: PART SEARCH: search_time:8.79 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:261.13 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 855.00 Y:1132.00
+Loop: count=251, trial=1, Duration=386859 ms
+Remap: 91.81 ms
+Transform color: 19.07 ms
+Get partial image time: 0.13 ms
+Apriltag detector detect time: 8.84 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:9.09 microseconds
+CAM#3: PART SEARCH: search_time:9.12 ms
+Process time: 0.00 ms
+Loop: count=252, trial=1, Duration=124690 ms
+Remap: 74.92 ms
+Transform color: 18.46 ms
+Get partial image time: 0.19 ms
+Apriltag detector detect time: 7.88 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.17 microseconds
+CAM#3: PART SEARCH: search_time:8.20 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:221.28 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 910.00 Y:1000.00
+Loop: count=253, trial=1, Duration=329472 ms
+Remap: 80.57 ms
+Transform color: 11.73 ms
+Get partial image time: 0.13 ms
+Apriltag detector detect time: 7.13 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:7.41 microseconds
+CAM#3: PART SEARCH: search_time:7.47 ms
+Process time: 0.00 ms
+Loop: count=254, trial=1, Duration=128365 ms
+Remap: 90.04 ms
+Transform color: 6.29 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 7.18 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:7.35 microseconds
+CAM#3: PART SEARCH: search_time:7.40 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:185.68 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 975.00 Y:858.00
+Loop: count=255, trial=1, Duration=341136 ms
+Remap: 120.34 ms
+Transform color: 10.16 ms
+Get partial image time: 0.12 ms
+Apriltag detector detect time: 6.70 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.93 microseconds
+CAM#3: PART SEARCH: search_time:6.96 ms
+Process time: 0.00 ms
+Loop: count=256, trial=1, Duration=231528 ms
+Remap: 83.96 ms
+Transform color: 6.47 ms
+Get partial image time: 0.08 ms
+Apriltag detector detect time: 8.27 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.42 microseconds
+CAM#3: PART SEARCH: search_time:8.45 ms
+Tags are missing.
+Process time: 0.03 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:80.35 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 1022.00 Y:751.00
+Loop: count=257, trial=1, Duration=183466 ms
+Remap: 83.29 ms
+Transform color: 5.21 ms
+Get partial image time: 0.06 ms
+Apriltag detector detect time: 7.62 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:7.79 microseconds
+CAM#3: PART SEARCH: search_time:7.84 ms
+Process time: 0.00 ms
+Loop: count=258, trial=1, Duration=100787 ms
+Remap: 83.89 ms
+Transform color: 5.21 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 8.07 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.22 microseconds
+CAM#3: PART SEARCH: search_time:8.24 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:472.16 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 1079.00 Y:624.00
+Loop: count=259, trial=1, Duration=574277 ms
+Remap: 109.54 ms
+Transform color: 5.19 ms
+Get partial image time: 0.05 ms
+Apriltag detector detect time: 9.25 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:9.41 microseconds
+CAM#3: PART SEARCH: search_time:9.43 ms
+Process time: 0.00 ms
+Loop: count=260, trial=1, Duration=199558 ms
+Remap: 78.47 ms
+Transform color: 15.40 ms
+Get partial image time: 0.18 ms
+Apriltag detector detect time: 10.07 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:10.34 microseconds
+CAM#3: PART SEARCH: search_time:10.38 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:256.26 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 1138.00 Y:489.00
+Loop: count=261, trial=1, Duration=364453 ms
+Remap: 85.31 ms
+Transform color: 14.32 ms
+Get partial image time: 0.20 ms
+Apriltag detector detect time: 6.79 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:7.08 microseconds
+CAM#3: PART SEARCH: search_time:7.14 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:51.964762
+Process time: 0.06 ms
+Loop: count=262, trial=1, Duration=179636 ms
+Remap: 91.17 ms
+Transform color: 7.08 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 8.27 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:8.44 microseconds
+CAM#3: PART SEARCH: search_time:8.47 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:210.92 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 1203.00 Y:333.00
+Loop: count=263, trial=1, Duration=321737 ms
+Remap: 68.08 ms
+Transform color: 5.87 ms
+Get partial image time: 0.07 ms
+Apriltag detector detect time: 6.65 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:6.80 microseconds
+CAM#3: PART SEARCH: search_time:6.84 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.472077
+Process time: 0.04 ms
+Loop: count=264, trial=1, Duration=84080 ms
+Remap: 83.58 ms
+Transform color: 13.17 ms
+Get partial image time: 0.14 ms
+Apriltag detector detect time: 11.67 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:11.91 microseconds
+CAM#3: PART SEARCH: search_time:11.95 ms
+Tags are missing.
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:296.82 ms
+CAM#3: Found when using GLOBAL_IMAGE. X: 1260.00 Y:204.00
+Loop: count=265, trial=1, Duration=408922 ms
+Remap: 72.75 ms
+Transform color: 6.82 ms
+Get partial image time: 0.09 ms
+Apriltag detector detect time: 9.01 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:9.19 microseconds
+CAM#3: PART SEARCH: search_time:9.24 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.04 ms
+Loop: count=266, trial=1, Duration=91361 ms
+Remap: 81.46 ms
+Transform color: 19.70 ms
+Get partial image time: 0.17 ms
+Apriltag detector detect time: 7.48 ms
+Zarray time: 0.00 ms
+CAM#3: tag#5: FAST SEARCH: search_time:7.75 microseconds
+CAM#3: PART SEARCH: search_time:7.79 ms
+Tags are missing.
+Process time: 0.01 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:266.08 ms
+Loop: count=267, trial=1, Duration=390279 ms
+Remap: 72.85 ms
+Transform color: 17.87 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.04 ms
+Loop: count=268, trial=1, Duration=94566 ms
+Remap: 81.68 ms
+Transform color: 18.21 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=269, trial=1, Duration=104824 ms
+Remap: 84.70 ms
+Transform color: 13.05 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=270, trial=1, Duration=101621 ms
+Remap: 83.63 ms
+Transform color: 19.24 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=271, trial=1, Duration=107333 ms
+Remap: 85.95 ms
+Transform color: 16.84 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=272, trial=1, Duration=105382 ms
+Remap: 175.62 ms
+Transform color: 82.36 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=273, trial=1, Duration=259839 ms
+Remap: 173.67 ms
+Transform color: 5.15 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=274, trial=1, Duration=181501 ms
+Remap: 136.78 ms
+Transform color: 17.61 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=275, trial=1, Duration=362105 ms
+Remap: 93.22 ms
+Transform color: 16.27 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=276, trial=1, Duration=114274 ms
+Remap: 84.27 ms
+Transform color: 5.74 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=277, trial=1, Duration=129786 ms
+Remap: 79.28 ms
+Transform color: 11.09 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=278, trial=1, Duration=92584 ms
+Remap: 87.17 ms
+Transform color: 12.04 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=279, trial=1, Duration=101603 ms
+Remap: 65.82 ms
+Transform color: 4.12 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=280, trial=1, Duration=72061 ms
+Remap: 82.16 ms
+Transform color: 7.29 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=281, trial=1, Duration=173615 ms
+Remap: 125.89 ms
+Transform color: 1.79 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=282, trial=1, Duration=173127 ms
+Remap: 76.72 ms
+Transform color: 4.92 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=283, trial=1, Duration=84149 ms
+Remap: 80.60 ms
+Transform color: 5.87 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.04 ms
+Loop: count=284, trial=1, Duration=89000 ms
+Remap: 74.54 ms
+Transform color: 5.91 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=285, trial=1, Duration=83572 ms
+Remap: 76.80 ms
+Transform color: 4.07 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=286, trial=1, Duration=87224 ms
+Remap: 51.57 ms
+Transform color: 5.79 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=287, trial=1, Duration=60941 ms
+Remap: 69.25 ms
+Transform color: 5.45 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=288, trial=1, Duration=172523 ms
+Remap: 67.94 ms
+Transform color: 4.69 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=289, trial=1, Duration=86070 ms
+Remap: 75.79 ms
+Transform color: 5.95 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=290, trial=1, Duration=128698 ms
+Remap: 80.44 ms
+Transform color: 7.48 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=291, trial=1, Duration=121768 ms
+Remap: 329.63 ms
+Transform color: 3.71 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=292, trial=1, Duration=400897 ms
+Remap: 248.86 ms
+Transform color: 1.58 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=293, trial=1, Duration=276407 ms
+Remap: 72.40 ms
+Transform color: 6.23 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=294, trial=1, Duration=105620 ms
+Remap: 74.95 ms
+Transform color: 5.17 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=295, trial=1, Duration=96292 ms
+Remap: 73.05 ms
+Transform color: 6.76 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=296, trial=1, Duration=82295 ms
+Remap: 72.67 ms
+Transform color: 2.43 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=297, trial=1, Duration=77123 ms
+Remap: 60.16 ms
+Transform color: 550.24 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=298, trial=1, Duration=623668 ms
+Remap: 36.34 ms
+Transform color: 3.11 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=299, trial=1, Duration=41900 ms
+Remap: 72.50 ms
+Transform color: 4.30 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.03 ms
+Loop: count=300, trial=1, Duration=94072 ms
+Remap: 161.61 ms
+Transform color: 18.82 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=301, trial=1, Duration=184638 ms
+Remap: 77.93 ms
+Transform color: 4.54 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=302, trial=1, Duration=115062 ms
+Remap: 83.18 ms
+Transform color: 7.45 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=303, trial=1, Duration=93851 ms
+Remap: 80.00 ms
+Transform color: 7.21 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=304, trial=1, Duration=90523 ms
+Remap: 75.89 ms
+Transform color: 6.67 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=305, trial=1, Duration=85670 ms
+Remap: 77.19 ms
+Transform color: 6.30 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=306, trial=1, Duration=86046 ms
+Remap: 74.05 ms
+Transform color: 5.91 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=307, trial=1, Duration=91214 ms
+Remap: 73.07 ms
+Transform color: 6.84 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=308, trial=1, Duration=86209 ms
+Remap: 95.82 ms
+Transform color: 5.96 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=309, trial=1, Duration=147456 ms
+Remap: 74.02 ms
+Transform color: 4.23 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=310, trial=1, Duration=80782 ms
+Remap: 236.11 ms
+Transform color: 3.14 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=311, trial=1, Duration=241484 ms
+Remap: 59.35 ms
+Transform color: 3.92 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=312, trial=1, Duration=65376 ms
+Remap: 481.94 ms
+Transform color: 1.95 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=313, trial=1, Duration=485740 ms
+Remap: 24.11 ms
+Transform color: 1.69 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=314, trial=1, Duration=27474 ms
+Remap: 82.84 ms
+Transform color: 16.86 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=315, trial=1, Duration=151399 ms
+Remap: 82.80 ms
+Transform color: 13.74 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.07 ms
+Loop: count=316, trial=1, Duration=99883 ms
+Remap: 83.36 ms
+Transform color: 16.00 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=317, trial=1, Duration=102535 ms
+Remap: 86.16 ms
+Transform color: 15.97 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=318, trial=1, Duration=104506 ms
+Remap: 81.72 ms
+Transform color: 14.76 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=319, trial=1, Duration=165496 ms
+Remap: 83.22 ms
+Transform color: 15.34 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=320, trial=1, Duration=101629 ms
+Remap: 87.74 ms
+Transform color: 15.45 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=321, trial=1, Duration=106208 ms
+Remap: 83.75 ms
+Transform color: 17.69 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=322, trial=1, Duration=104758 ms
+Remap: 81.36 ms
+Transform color: 14.64 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=323, trial=1, Duration=139760 ms
+Remap: 73.74 ms
+Transform color: 10.93 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=324, trial=1, Duration=92250 ms
+Remap: 81.79 ms
+Transform color: 13.76 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=325, trial=1, Duration=127531 ms
+Remap: 140.66 ms
+Transform color: 6.29 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=326, trial=1, Duration=150193 ms
+Remap: 90.36 ms
+Transform color: 13.25 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=327, trial=1, Duration=106291 ms
+Remap: 84.98 ms
+Transform color: 16.54 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=328, trial=1, Duration=105115 ms
+Remap: 82.15 ms
+Transform color: 17.50 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=329, trial=1, Duration=106418 ms
+Remap: 72.43 ms
+Transform color: 15.83 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=330, trial=1, Duration=91218 ms
+Remap: 87.93 ms
+Transform color: 14.95 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=331, trial=1, Duration=106377 ms
+Remap: 77.99 ms
+Transform color: 12.76 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.05 ms
+Loop: count=332, trial=1, Duration=136224 ms
+Remap: 75.26 ms
+Transform color: 14.69 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=333, trial=1, Duration=93432 ms
+Remap: 83.16 ms
+Transform color: 15.57 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=334, trial=1, Duration=102544 ms
+Remap: 82.80 ms
+Transform color: 15.31 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=335, trial=1, Duration=101376 ms
+Remap: 79.82 ms
+Transform color: 14.28 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=336, trial=1, Duration=118315 ms
+Remap: 42.05 ms
+Transform color: 411.80 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=337, trial=1, Duration=456466 ms
+Remap: 88.61 ms
+Transform color: 14.79 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=338, trial=1, Duration=125053 ms
+Remap: 86.97 ms
+Transform color: 13.99 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=339, trial=1, Duration=186185 ms
+Remap: 92.24 ms
+Transform color: 17.72 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=340, trial=1, Duration=113983 ms
+Remap: 87.82 ms
+Transform color: 14.16 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=341, trial=1, Duration=105738 ms
+Remap: 78.82 ms
+Transform color: 2.04 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=342, trial=1, Duration=90114 ms
+Remap: 83.27 ms
+Transform color: 45.40 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=343, trial=1, Duration=383824 ms
+Remap: 80.01 ms
+Transform color: 12.15 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=344, trial=1, Duration=95634 ms
+Remap: 86.72 ms
+Transform color: 18.84 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=345, trial=1, Duration=109001 ms
+Remap: 87.22 ms
+Transform color: 48.65 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=346, trial=1, Duration=146299 ms
+Remap: 89.38 ms
+Transform color: 13.48 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=347, trial=1, Duration=105904 ms
+Remap: 87.45 ms
+Transform color: 11.29 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.04 ms
+Loop: count=348, trial=1, Duration=101762 ms
+Remap: 82.65 ms
+Transform color: 13.41 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=349, trial=1, Duration=99028 ms
+Remap: 85.97 ms
+Transform color: 17.98 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=350, trial=1, Duration=108294 ms
+Remap: 73.98 ms
+Transform color: 16.12 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=351, trial=1, Duration=92944 ms
+Remap: 85.85 ms
+Transform color: 14.26 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=352, trial=1, Duration=102982 ms
+Remap: 118.88 ms
+Transform color: 8.81 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=353, trial=1, Duration=136235 ms
+Remap: 76.95 ms
+Transform color: 19.95 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=354, trial=1, Duration=100739 ms
+Remap: 74.24 ms
+Transform color: 17.19 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=355, trial=1, Duration=95645 ms
+Remap: 85.64 ms
+Transform color: 13.52 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=356, trial=1, Duration=101802 ms
+Remap: 79.51 ms
+Transform color: 15.50 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=357, trial=1, Duration=143562 ms
+Remap: 80.21 ms
+Transform color: 19.40 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=358, trial=1, Duration=101973 ms
+Remap: 83.60 ms
+Transform color: 17.72 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=359, trial=1, Duration=222728 ms
+Remap: 80.72 ms
+Transform color: 17.12 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM 3: -2147483648Hz
+Loop: count=360, trial=1, Duration=100510 ms
+Remap: 106.54 ms
+Transform color: 17.45 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=361, trial=1, Duration=127103 ms
+Remap: 87.51 ms
+Transform color: 17.03 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=362, trial=1, Duration=334518 ms
+Remap: 87.82 ms
+Transform color: 15.97 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=363, trial=1, Duration=133307 ms
+Remap: 86.14 ms
+Transform color: 14.28 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.04 ms
+Loop: count=364, trial=1, Duration=104081 ms
+Remap: 24.47 ms
+Transform color: 3.69 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=365, trial=1, Duration=34792 ms
+Remap: 23.34 ms
+Transform color: 62.20 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=366, trial=1, Duration=88268 ms
+Remap: 81.30 ms
+Transform color: 18.15 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=367, trial=1, Duration=102226 ms
+Remap: 91.65 ms
+Transform color: 16.86 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=368, trial=1, Duration=111079 ms
+Remap: 92.52 ms
+Transform color: 19.43 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=369, trial=1, Duration=115588 ms
+Remap: 88.75 ms
+Transform color: 15.58 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=370, trial=1, Duration=107673 ms
+Remap: 84.87 ms
+Transform color: 12.58 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=371, trial=1, Duration=132591 ms
+Remap: 81.52 ms
+Transform color: 21.51 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=372, trial=1, Duration=111592 ms
+Remap: 84.98 ms
+Transform color: 21.16 ms
+CAM#3: PART SEARCH: search_time:0.01 ms
+Process time: 0.00 ms
+Loop: count=373, trial=1, Duration=109553 ms
+Remap: 86.14 ms
+Transform color: 16.05 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=374, trial=1, Duration=105892 ms
+Remap: 86.20 ms
+Transform color: 14.93 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=375, trial=1, Duration=103649 ms
+Remap: 86.02 ms
+Transform color: 5.21 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=376, trial=1, Duration=95128 ms
+Remap: 85.36 ms
+Transform color: 16.02 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=377, trial=1, Duration=152643 ms
+Remap: 83.43 ms
+Transform color: 19.33 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=378, trial=1, Duration=154192 ms
+Remap: 86.14 ms
+Transform color: 16.04 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=379, trial=1, Duration=106558 ms
+Remap: 85.09 ms
+Transform color: 15.45 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.03 ms
+Loop: count=380, trial=1, Duration=102914 ms
+Remap: 82.15 ms
+Transform color: 13.29 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=381, trial=1, Duration=98106 ms
+Remap: 84.96 ms
+Transform color: 18.28 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=382, trial=1, Duration=105934 ms
+Remap: 80.08 ms
+Transform color: 14.32 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=383, trial=1, Duration=97405 ms
+Remap: 83.11 ms
+Transform color: 15.89 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=384, trial=1, Duration=101682 ms
+Remap: 76.96 ms
+Transform color: 13.28 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=385, trial=1, Duration=92326 ms
+Remap: 76.25 ms
+Transform color: 13.85 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=386, trial=1, Duration=93421 ms
+Remap: 105.66 ms
+Transform color: 13.98 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=387, trial=1, Duration=562779 ms
+Remap: 74.43 ms
+Transform color: 15.27 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=388, trial=1, Duration=92792 ms
+Remap: 74.05 ms
+Transform color: 16.06 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=389, trial=1, Duration=163747 ms
+Remap: 105.73 ms
+Transform color: 2.56 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=390, trial=1, Duration=177501 ms
+Remap: 73.02 ms
+Transform color: 13.03 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=391, trial=1, Duration=91204 ms
+Remap: 79.72 ms
+Transform color: 14.75 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=392, trial=1, Duration=97296 ms
+Remap: 79.00 ms
+Transform color: 15.98 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=393, trial=1, Duration=97578 ms
+Remap: 75.27 ms
+Transform color: 15.13 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=394, trial=1, Duration=92887 ms
+Remap: 75.07 ms
+Transform color: 13.66 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=395, trial=1, Duration=93344 ms
+Remap: 72.51 ms
+Transform color: 14.10 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.03 ms
+Loop: count=396, trial=1, Duration=93118 ms
+Remap: 76.49 ms
+Transform color: 16.18 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=397, trial=1, Duration=96088 ms
+Remap: 79.50 ms
+Transform color: 15.74 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=398, trial=1, Duration=98504 ms
+Remap: 178.44 ms
+Transform color: 2.72 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=399, trial=1, Duration=183468 ms
+Remap: 115.86 ms
+Transform color: 8.14 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=400, trial=1, Duration=143384 ms
+Remap: 81.58 ms
+Transform color: 15.39 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=401, trial=1, Duration=99967 ms
+Remap: 69.22 ms
+Transform color: 12.04 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=402, trial=1, Duration=85079 ms
+Remap: 78.86 ms
+Transform color: 10.08 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=403, trial=1, Duration=95530 ms
+Remap: 74.27 ms
+Transform color: 5.85 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=404, trial=1, Duration=84583 ms
+Remap: 38.92 ms
+Transform color: 95.50 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=405, trial=1, Duration=136812 ms
+Remap: 99.66 ms
+Transform color: 2.36 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=406, trial=1, Duration=342691 ms
+Remap: 20.59 ms
+Transform color: 12.88 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=407, trial=1, Duration=35710 ms
+Remap: 97.18 ms
+Transform color: 3.27 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=408, trial=1, Duration=121521 ms
+Remap: 70.47 ms
+Transform color: 10.59 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=409, trial=1, Duration=86182 ms
+Remap: 74.07 ms
+Transform color: 10.90 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=410, trial=1, Duration=86951 ms
+Remap: 166.06 ms
+Transform color: 1.94 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=411, trial=1, Duration=174240 ms
+Remap: 79.18 ms
+Transform color: 11.96 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.03 ms
+Loop: count=412, trial=1, Duration=93497 ms
+Remap: 76.07 ms
+Transform color: 10.45 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=413, trial=1, Duration=90742 ms
+Remap: 69.28 ms
+Transform color: 11.22 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=414, trial=1, Duration=82375 ms
+Remap: 11.44 ms
+Transform color: 60.37 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=415, trial=1, Duration=73971 ms
+Remap: 73.16 ms
+Transform color: 10.94 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=416, trial=1, Duration=86317 ms
+Remap: 75.23 ms
+Transform color: 2.42 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=417, trial=1, Duration=108747 ms
+Remap: 29.16 ms
+Transform color: 1.46 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=418, trial=1, Duration=48765 ms
+Remap: 65.44 ms
+Transform color: 1.93 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=419, trial=1, Duration=69789 ms
+Remap: 48.16 ms
+Transform color: 1.83 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=420, trial=1, Duration=58193 ms
+Remap: 15.92 ms
+Transform color: 2.23 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=421, trial=1, Duration=20400 ms
+Remap: 21.53 ms
+Transform color: 2.08 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=422, trial=1, Duration=25791 ms
+Remap: 59.30 ms
+Transform color: 2.28 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=423, trial=1, Duration=74656 ms
+Remap: 72.63 ms
+Transform color: 1.29 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=424, trial=1, Duration=75671 ms
+Remap: 11.20 ms
+Transform color: 1.27 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=425, trial=1, Duration=14578 ms
+Remap: 10.98 ms
+Transform color: 1.41 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=426, trial=1, Duration=14521 ms
+Remap: 10.69 ms
+Transform color: 1.27 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+CAM#3: Using GLobal SEARCH ##############################################
+CAM#3: GLOBAL SEARCH: search_time:0.00 ms
+Loop: count=427, trial=1, Duration=19861 ms
+Remap: 10.37 ms
+Transform color: 1.37 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Tag#5 detected in the overlapping area. Time frame: 2025-Apr-24 12:25:52.986420
+Process time: 0.02 ms
+Loop: count=428, trial=1, Duration=19214 ms
+Remap: 10.32 ms
+Transform color: 32.81 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=429, trial=1, Duration=50612 ms
+Remap: 54.00 ms
+Transform color: 2.18 ms
+CAM#3: PART SEARCH: search_time:0.00 ms
+Process time: 0.00 ms
+Loop: count=430, trial=1, Duration=59151 ms

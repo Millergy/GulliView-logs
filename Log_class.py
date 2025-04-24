@@ -40,6 +40,8 @@ class Log:
             self.import_file(filepath, True)
             self.format_general()
             self.filenames.remove(self.general_filename)
+        else:
+            self.general_data["TIME"] = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
         # If we want progress bar or not for importing data
         if show_progress:
@@ -89,7 +91,10 @@ class Log:
 
     # version of code as identifier
     def return_identifier(self):
-        return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"]) + "\n" + self.general_data["COMMENT"]
+        try:
+            return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"]) + "\n" + self.general_data["COMMENT"]
+        except KeyError:
+            return "No version data"
 
     # general log attributes
     def return_attributes(self):
