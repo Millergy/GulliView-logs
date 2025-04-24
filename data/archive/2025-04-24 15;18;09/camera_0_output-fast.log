@@ -1,0 +1,4251 @@
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 62.423 ms
+Transform color: 5.389 ms
+transform_frame: 67.884 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.003 ms
+Loop: count=0, trial=1, Duration=73.172 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 129.751 ms
+Transform color: 4.286 ms
+transform_frame: 134.092 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=1, trial=1, Duration=142.279 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 61.071 ms
+Transform color: 3.828 ms
+transform_frame: 64.928 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=2, trial=1, Duration=69.249 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 46.175 ms
+Transform color: 2.708 ms
+transform_frame: 48.905 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.002 ms
+Loop: count=3, trial=1, Duration=84.219 ms
+Core number: 4
+Fast thread waiting for producer: 185.129 ms
+Remap: 73.629 ms
+Transform color: 4.316 ms
+transform_frame: 77.987 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Loop: count=4, trial=1, Duration=587.282 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 22.742 ms
+Transform color: 1.208 ms
+transform_frame: 23.978 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=5, trial=1, Duration=41.131 ms
+Core number: 4
+Fast thread waiting for producer: 15.051 ms
+Remap: 16.723 ms
+Transform color: 3.06 ms
+transform_frame: 19.864 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.003 ms
+Loop: count=6, trial=1, Duration=281.699 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 71.24 ms
+Transform color: 4.558 ms
+transform_frame: 75.84 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.004 ms
+Loop: count=7, trial=1, Duration=94.37 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 48.345 ms
+Transform color: 3.064 ms
+transform_frame: 51.447 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=8, trial=1, Duration=53.105 ms
+Core number: 4
+Fast thread waiting for producer: 85.064 ms
+Remap: 79.224 ms
+Transform color: 4.703 ms
+transform_frame: 83.983 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=9, trial=1, Duration=171.756 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 59.829 ms
+Transform color: 4.352 ms
+transform_frame: 64.21 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=10, trial=1, Duration=66.022 ms
+Core number: 4
+Fast thread waiting for producer: 115.13 ms
+Remap: 82.933 ms
+Transform color: 6.806 ms
+transform_frame: 89.787 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=11, trial=1, Duration=223.503 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 66.951 ms
+Transform color: 4.577 ms
+transform_frame: 71.552 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Loop: count=12, trial=1, Duration=75.453 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 48.346 ms
+Transform color: 4.302 ms
+transform_frame: 52.703 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.003 ms
+Loop: count=13, trial=1, Duration=66.664 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 67.382 ms
+Transform color: 8.402 ms
+transform_frame: 75.842 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.002 ms
+Loop: count=14, trial=1, Duration=78.341 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 67.667 ms
+Transform color: 5.098 ms
+transform_frame: 72.804 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Global search in fast thread: 0.001 ms
+Loop: count=15, trial=1, Duration=110.199 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 7.784 ms
+Transform color: 0.985 ms
+transform_frame: 8.797 ms
+get_partial_image: 0.039 ms
+apriltag_detector_detect: 51.059 ms
+Part search time: tag#=5, time=51.148 ms
+Fast search time: 51.156 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 51.162 ms
+Process time: 0.004 ms
+Global search in fast thread: 581.624 ms
+Loop: count=16, trial=1, Duration=645.159 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 81.917 ms
+Transform color: 4.033 ms
+transform_frame: 86.002 ms
+get_partial_image: 0.058 ms
+apriltag_detector_detect: 22.414 ms
+Part search time: tag#=5, time=22.541 ms
+Fast search time: 22.552 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 22.562 ms
+Process time: 0.005 ms
+Global search in fast thread: 606.49 ms
+Loop: count=17, trial=1, Duration=717.451 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 52.87 ms
+Transform color: 6.23 ms
+transform_frame: 59.208 ms
+get_partial_image: 0.073 ms
+apriltag_detector_detect: 13.989 ms
+Zarray time: 0.001 ms
+partial_search: 14.111 ms
+Part search time: tag#=5, time=14.114 ms
+Fast search time: 14.125 ms
+Fast search in fast thread: 14.136 ms
+Process time: 0.876 ms
+Loop: count=18, trial=1, Duration=87.135 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 75.736 ms
+Transform color: 6.344 ms
+transform_frame: 82.161 ms
+get_partial_image: 0.042 ms
+apriltag_detector_detect: 6.45 ms
+Zarray time: 0.001 ms
+partial_search: 6.528 ms
+Part search time: tag#=5, time=6.531 ms
+Fast search time: 6.542 ms
+Fast search in fast thread: 6.552 ms
+Process time: 0.55 ms
+Loop: count=19, trial=1, Duration=117.608 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 73.157 ms
+Transform color: 6.735 ms
+transform_frame: 79.948 ms
+get_partial_image: 0.056 ms
+apriltag_detector_detect: 9.06 ms
+Zarray time: 0.003 ms
+partial_search: 9.166 ms
+Part search time: tag#=5, time=9.169 ms
+Fast search time: 9.184 ms
+Fast search in fast thread: 9.192 ms
+Process time: 1.097 ms
+Loop: count=20, trial=1, Duration=94.698 ms
+Core number: 4
+Fast thread waiting for producer: 0.01 ms
+Remap: 74.937 ms
+Transform color: 9.154 ms
+transform_frame: 84.212 ms
+get_partial_image: 0.051 ms
+apriltag_detector_detect: 9.583 ms
+Zarray time: 0.002 ms
+partial_search: 9.686 ms
+Part search time: tag#=5, time=9.69 ms
+Fast search time: 9.704 ms
+Fast search in fast thread: 9.714 ms
+Process time: 0.573 ms
+Loop: count=21, trial=1, Duration=109.23 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 67.738 ms
+Transform color: 7.785 ms
+transform_frame: 75.663 ms
+get_partial_image: 0.064 ms
+apriltag_detector_detect: 9.521 ms
+Zarray time: 0.003 ms
+partial_search: 9.677 ms
+Part search time: tag#=5, time=9.682 ms
+Fast search time: 9.703 ms
+Fast search in fast thread: 9.719 ms
+Process time: 1.006 ms
+Loop: count=22, trial=1, Duration=90.518 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 65.792 ms
+Transform color: 5.913 ms
+transform_frame: 71.802 ms
+get_partial_image: 0.049 ms
+apriltag_detector_detect: 10.205 ms
+Zarray time: 0.002 ms
+partial_search: 10.321 ms
+Part search time: tag#=5, time=10.324 ms
+Fast search time: 10.338 ms
+Fast search in fast thread: 10.351 ms
+Process time: 0.615 ms
+Loop: count=23, trial=1, Duration=86.022 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 74.739 ms
+Transform color: 4.426 ms
+transform_frame: 79.21 ms
+get_partial_image: 0.043 ms
+apriltag_detector_detect: 10.889 ms
+Zarray time: 0.002 ms
+partial_search: 10.996 ms
+Part search time: tag#=5, time=10.999 ms
+Fast search time: 11.015 ms
+Fast search in fast thread: 11.027 ms
+Process time: 0.917 ms
+Loop: count=24, trial=1, Duration=131.919 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 78.275 ms
+Transform color: 7.674 ms
+transform_frame: 86.002 ms
+get_partial_image: 0.055 ms
+apriltag_detector_detect: 7.084 ms
+Zarray time: 0.001 ms
+partial_search: 7.192 ms
+Part search time: tag#=5, time=7.195 ms
+Fast search time: 7.208 ms
+Fast search in fast thread: 7.215 ms
+Process time: 0.599 ms
+Loop: count=25, trial=1, Duration=111.922 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 72.898 ms
+Transform color: 7.223 ms
+transform_frame: 80.163 ms
+get_partial_image: 0.044 ms
+apriltag_detector_detect: 9.08 ms
+Zarray time: 0.001 ms
+partial_search: 9.165 ms
+Part search time: tag#=5, time=9.168 ms
+Fast search time: 9.178 ms
+Fast search in fast thread: 9.183 ms
+Process time: 0.94 ms
+Loop: count=26, trial=1, Duration=92.267 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 67.788 ms
+Transform color: 8.52 ms
+transform_frame: 76.386 ms
+get_partial_image: 0.039 ms
+apriltag_detector_detect: 9.792 ms
+Zarray time: 0.002 ms
+partial_search: 9.87 ms
+Part search time: tag#=5, time=9.874 ms
+Fast search time: 9.886 ms
+Fast search in fast thread: 9.893 ms
+Process time: 0.911 ms
+Loop: count=27, trial=1, Duration=91.4 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 64.433 ms
+Transform color: 8.33 ms
+transform_frame: 72.831 ms
+get_partial_image: 0.046 ms
+apriltag_detector_detect: 10.567 ms
+Zarray time: 0.003 ms
+partial_search: 10.654 ms
+Part search time: tag#=5, time=10.658 ms
+Fast search time: 10.673 ms
+Fast search in fast thread: 10.684 ms
+Process time: 0.95 ms
+Loop: count=28, trial=1, Duration=88.436 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 77.695 ms
+Transform color: 4.68 ms
+transform_frame: 82.433 ms
+get_partial_image: 0.041 ms
+apriltag_detector_detect: 8.677 ms
+Zarray time: 0.001 ms
+partial_search: 8.762 ms
+Part search time: tag#=5, time=8.766 ms
+Fast search time: 8.778 ms
+Fast search in fast thread: 8.79 ms
+Process time: 0.906 ms
+Loop: count=29, trial=1, Duration=107.682 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 63.324 ms
+Transform color: 5.959 ms
+transform_frame: 69.342 ms
+get_partial_image: 0.053 ms
+apriltag_detector_detect: 9.898 ms
+Zarray time: 0.002 ms
+partial_search: 10.004 ms
+Part search time: tag#=5, time=10.009 ms
+Fast search time: 10.026 ms
+Fast search in fast thread: 10.033 ms
+Process time: 0.937 ms
+Loop: count=30, trial=1, Duration=83.469 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 67.901 ms
+Transform color: 1.671 ms
+transform_frame: 69.627 ms
+get_partial_image: 0.026 ms
+apriltag_detector_detect: 5.996 ms
+Zarray time: 0.001 ms
+partial_search: 6.055 ms
+Part search time: tag#=5, time=6.058 ms
+Fast search time: 6.066 ms
+Fast search in fast thread: 6.074 ms
+Process time: 0.56 ms
+Loop: count=31, trial=1, Duration=82.194 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 72.265 ms
+Transform color: 5.787 ms
+transform_frame: 78.166 ms
+get_partial_image: 0.033 ms
+apriltag_detector_detect: 12.263 ms
+Zarray time: 0.002 ms
+partial_search: 12.349 ms
+Part search time: tag#=5, time=12.355 ms
+Fast search time: 12.365 ms
+Fast search in fast thread: 12.377 ms
+Process time: 1 ms
+Loop: count=32, trial=1, Duration=102.704 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 53.034 ms
+Transform color: 1.215 ms
+transform_frame: 54.29 ms
+get_partial_image: 0.021 ms
+apriltag_detector_detect: 42.403 ms
+Part search time: tag#=5, time=42.473 ms
+Fast search time: 42.481 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 42.488 ms
+Process time: 0.003 ms
+Global search in fast thread: 0.003 ms
+Loop: count=33, trial=1, Duration=99.492 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 17.743 ms
+Transform color: 3.903 ms
+transform_frame: 21.712 ms
+get_partial_image: 0.109 ms
+apriltag_detector_detect: 45.487 ms
+Part search time: tag#=5, time=45.658 ms
+Fast search time: 45.67 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 45.681 ms
+Process time: 0.006 ms
+Global search in fast thread: 0.002 ms
+Loop: count=34, trial=1, Duration=70.809 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 82.309 ms
+Transform color: 4.773 ms
+transform_frame: 87.137 ms
+get_partial_image: 0.067 ms
+apriltag_detector_detect: 22.795 ms
+Part search time: tag#=5, time=22.918 ms
+Fast search time: 22.93 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 22.939 ms
+Process time: 0.005 ms
+Global search in fast thread: 556.955 ms
+Loop: count=35, trial=1, Duration=689.613 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 56.978 ms
+Transform color: 6.113 ms
+transform_frame: 63.179 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Loop: count=36, trial=1, Duration=88.518 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 62.437 ms
+Transform color: 7.178 ms
+transform_frame: 69.761 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.005 ms
+Loop: count=37, trial=1, Duration=72.675 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 54.565 ms
+Transform color: 1.215 ms
+transform_frame: 55.813 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=38, trial=1, Duration=77.579 ms
+Core number: 4
+Fast thread waiting for producer: 10.054 ms
+Remap: 70.195 ms
+Transform color: 5.013 ms
+transform_frame: 75.248 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.003 ms
+Loop: count=39, trial=1, Duration=100.912 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 71.015 ms
+Transform color: 3.01 ms
+transform_frame: 74.077 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=40, trial=1, Duration=78.168 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 75.638 ms
+Transform color: 5.905 ms
+transform_frame: 81.611 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=41, trial=1, Duration=85.939 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 72.097 ms
+Transform color: 6.422 ms
+transform_frame: 78.655 ms
+Fast search in fast thread: 0.015 ms
+Process time: 0.005 ms
+Loop: count=42, trial=1, Duration=95.398 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 76.874 ms
+Transform color: 5.16 ms
+transform_frame: 82.093 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=43, trial=1, Duration=84.564 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 48.169 ms
+Transform color: 3.188 ms
+transform_frame: 51.388 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=44, trial=1, Duration=307.68 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 72.849 ms
+Transform color: 1.785 ms
+transform_frame: 74.673 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=45, trial=1, Duration=101.681 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 73.916 ms
+Transform color: 5.02 ms
+transform_frame: 78.983 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=46, trial=1, Duration=81.597 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 49.391 ms
+Transform color: 1.033 ms
+transform_frame: 50.448 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Loop: count=47, trial=1, Duration=80.826 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 71.603 ms
+Transform color: 8.345 ms
+transform_frame: 80.015 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.005 ms
+Loop: count=48, trial=1, Duration=83.06 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 73.217 ms
+Transform color: 7.137 ms
+transform_frame: 80.46 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.004 ms
+Loop: count=49, trial=1, Duration=83.745 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 71.916 ms
+Transform color: 5.497 ms
+transform_frame: 77.492 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.006 ms
+Loop: count=50, trial=1, Duration=83.6 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 27.266 ms
+Transform color: 3.441 ms
+transform_frame: 30.77 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.003 ms
+Global search in fast thread: 0.002 ms
+Loop: count=51, trial=1, Duration=33.413 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 91.377 ms
+Transform color: 84.067 ms
+transform_frame: 175.533 ms
+get_partial_image: 0.135 ms
+apriltag_detector_detect: 33.38 ms
+Part search time: tag#=5, time=33.602 ms
+Fast search time: 33.616 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 33.628 ms
+Process time: 0.008 ms
+Global search in fast thread: 0.002 ms
+Loop: count=52, trial=1, Duration=247.093 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 68.165 ms
+Transform color: 2.415 ms
+transform_frame: 70.624 ms
+get_partial_image: 0.064 ms
+apriltag_detector_detect: 15.921 ms
+Zarray time: 0.002 ms
+partial_search: 16.039 ms
+Part search time: tag#=5, time=16.043 ms
+Fast search time: 16.05 ms
+Fast search in fast thread: 16.058 ms
+Process time: 0.587 ms
+Loop: count=53, trial=1, Duration=270.456 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 62.306 ms
+Transform color: 68.303 ms
+transform_frame: 130.677 ms
+get_partial_image: 0.028 ms
+apriltag_detector_detect: 5.97 ms
+Zarray time: 0.001 ms
+partial_search: 6.023 ms
+Part search time: tag#=5, time=6.026 ms
+Fast search time: 6.032 ms
+Fast search in fast thread: 6.037 ms
+Process time: 0.555 ms
+Loop: count=54, trial=1, Duration=183.428 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 23.793 ms
+Transform color: 4.024 ms
+transform_frame: 27.93 ms
+get_partial_image: 0.062 ms
+apriltag_detector_detect: 10.916 ms
+Zarray time: 0.001 ms
+partial_search: 11.03 ms
+Part search time: tag#=5, time=11.034 ms
+Fast search time: 11.048 ms
+Fast search in fast thread: 11.061 ms
+Process time: 0.983 ms
+Loop: count=55, trial=1, Duration=69.525 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 20.128 ms
+Transform color: 2.516 ms
+transform_frame: 22.717 ms
+get_partial_image: 0.038 ms
+apriltag_detector_detect: 13.842 ms
+Zarray time: 0.005 ms
+partial_search: 14 ms
+Part search time: tag#=5, time=14.007 ms
+Fast search time: 14.021 ms
+Fast search in fast thread: 14.036 ms
+Process time: 1.156 ms
+Loop: count=56, trial=1, Duration=40.494 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 54.722 ms
+Transform color: 2.734 ms
+transform_frame: 57.569 ms
+get_partial_image: 0.035 ms
+apriltag_detector_detect: 15.003 ms
+Zarray time: 0.002 ms
+partial_search: 15.129 ms
+Part search time: tag#=5, time=15.135 ms
+Fast search time: 15.152 ms
+Fast search in fast thread: 15.165 ms
+Process time: 0.982 ms
+Loop: count=57, trial=1, Duration=103.794 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 94.02 ms
+Transform color: 2.429 ms
+transform_frame: 96.517 ms
+get_partial_image: 0.029 ms
+apriltag_detector_detect: 6.848 ms
+Zarray time: 0.002 ms
+partial_search: 6.92 ms
+Part search time: tag#=5, time=6.924 ms
+Fast search time: 6.936 ms
+Fast search in fast thread: 6.948 ms
+Process time: 0.875 ms
+Loop: count=58, trial=1, Duration=107.548 ms
+Core number: 4
+Fast thread waiting for producer: 0.001 ms
+Remap: 58.77 ms
+Transform color: 3.561 ms
+transform_frame: 62.385 ms
+get_partial_image: 0.031 ms
+apriltag_detector_detect: 8.005 ms
+Zarray time: 0.002 ms
+partial_search: 8.073 ms
+Part search time: tag#=5, time=8.078 ms
+Fast search time: 8.088 ms
+Fast search in fast thread: 8.097 ms
+Process time: 0.88 ms
+Loop: count=59, trial=1, Duration=109.219 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 27.9 ms
+Transform color: 2.73 ms
+transform_frame: 30.699 ms
+get_partial_image: 0.034 ms
+apriltag_detector_detect: 11.013 ms
+Zarray time: 0.001 ms
+partial_search: 11.092 ms
+Part search time: tag#=5, time=11.095 ms
+Fast search time: 11.106 ms
+Fast search in fast thread: 11.115 ms
+Process time: 0.953 ms
+Loop: count=60, trial=1, Duration=53.285 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 22.2 ms
+Transform color: 2.921 ms
+transform_frame: 25.182 ms
+get_partial_image: 0.041 ms
+apriltag_detector_detect: 12.078 ms
+Zarray time: 0.005 ms
+partial_search: 12.211 ms
+Part search time: tag#=5, time=12.221 ms
+Fast search time: 12.241 ms
+Fast search in fast thread: 12.257 ms
+Process time: 0.957 ms
+Loop: count=61, trial=1, Duration=44.741 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 60.252 ms
+Transform color: 4.824 ms
+transform_frame: 65.164 ms
+get_partial_image: 0.039 ms
+apriltag_detector_detect: 7.972 ms
+Zarray time: 0.002 ms
+partial_search: 8.05 ms
+Part search time: tag#=5, time=8.054 ms
+Fast search time: 8.07 ms
+Fast search in fast thread: 8.082 ms
+Process time: 0.857 ms
+Loop: count=62, trial=1, Duration=85.499 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 27.186 ms
+Transform color: 2.936 ms
+transform_frame: 30.23 ms
+get_partial_image: 0.041 ms
+apriltag_detector_detect: 9.758 ms
+Zarray time: 0.001 ms
+partial_search: 9.857 ms
+Part search time: tag#=5, time=9.86 ms
+Fast search time: 9.875 ms
+Fast search in fast thread: 9.887 ms
+Process time: 0.911 ms
+Loop: count=63, trial=1, Duration=64.324 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 22.87 ms
+Transform color: 4.486 ms
+transform_frame: 27.453 ms
+get_partial_image: 0.034 ms
+apriltag_detector_detect: 16.031 ms
+Zarray time: 0.002 ms
+partial_search: 16.144 ms
+Part search time: tag#=5, time=16.15 ms
+Fast search time: 16.167 ms
+Fast search in fast thread: 16.181 ms
+Process time: 1.034 ms
+Loop: count=64, trial=1, Duration=47.309 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 89.316 ms
+Transform color: 9.026 ms
+transform_frame: 98.468 ms
+get_partial_image: 0.067 ms
+apriltag_detector_detect: 12.106 ms
+Zarray time: 0.001 ms
+partial_search: 12.199 ms
+Part search time: tag#=5, time=12.203 ms
+Fast search time: 12.222 ms
+Fast search in fast thread: 12.237 ms
+Process time: 0.853 ms
+Loop: count=65, trial=1, Duration=113.413 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 69.972 ms
+Transform color: 5.716 ms
+transform_frame: 75.745 ms
+get_partial_image: 0.022 ms
+apriltag_detector_detect: 5.749 ms
+Zarray time: 0.001 ms
+partial_search: 5.795 ms
+Part search time: tag#=5, time=5.797 ms
+Fast search time: 5.803 ms
+Fast search in fast thread: 5.808 ms
+Process time: 0.551 ms
+Loop: count=66, trial=1, Duration=85.902 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 70.745 ms
+Transform color: 78.899 ms
+transform_frame: 149.718 ms
+get_partial_image: 0.036 ms
+apriltag_detector_detect: 11.257 ms
+Zarray time: 0.002 ms
+partial_search: 11.372 ms
+Part search time: tag#=5, time=11.378 ms
+Fast search time: 11.388 ms
+Fast search in fast thread: 11.396 ms
+Process time: 0.958 ms
+Loop: count=67, trial=1, Duration=166.01 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 71.992 ms
+Transform color: 6.789 ms
+transform_frame: 78.902 ms
+get_partial_image: 0.066 ms
+apriltag_detector_detect: 13.856 ms
+Zarray time: 0.001 ms
+partial_search: 13.963 ms
+Part search time: tag#=5, time=13.967 ms
+Fast search time: 13.982 ms
+Fast search in fast thread: 13.995 ms
+Process time: 0.604 ms
+Global search in fast thread: 0.002 ms
+Loop: count=68, trial=1, Duration=98.928 ms
+Core number: 4
+Fast thread waiting for producer: 0.011 ms
+Remap: 74.877 ms
+Transform color: 2.149 ms
+transform_frame: 77.082 ms
+get_partial_image: 0.061 ms
+apriltag_detector_detect: 30.418 ms
+Part search time: tag#=5, time=30.61 ms
+Fast search time: 30.627 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 30.638 ms
+Process time: 0.011 ms
+Global search in fast thread: 607.643 ms
+Loop: count=69, trial=1, Duration=721.396 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 65.45 ms
+Transform color: 1.055 ms
+transform_frame: 66.55 ms
+get_partial_image: 0.041 ms
+apriltag_detector_detect: 20.72 ms
+Part search time: tag#=5, time=20.843 ms
+Fast search time: 20.854 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 20.863 ms
+Process time: 0.006 ms
+Global search in fast thread: 753.013 ms
+Loop: count=70, trial=1, Duration=863.708 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 66.803 ms
+Transform color: 3.949 ms
+transform_frame: 70.802 ms
+get_partial_image: 0.061 ms
+apriltag_detector_detect: 24.966 ms
+Part search time: tag#=5, time=25.107 ms
+Fast search time: 25.12 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 25.13 ms
+Process time: 0.006 ms
+Global search in fast thread: 677.218 ms
+Loop: count=71, trial=1, Duration=778.103 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 88.279 ms
+Transform color: 4.863 ms
+transform_frame: 93.232 ms
+get_partial_image: 0.096 ms
+apriltag_detector_detect: 32.332 ms
+Part search time: tag#=5, time=32.5 ms
+Fast search time: 32.518 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 32.532 ms
+Process time: 0.006 ms
+Global search in fast thread: 723.121 ms
+Loop: count=72, trial=1, Duration=853.738 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 76.444 ms
+Transform color: 9.209 ms
+transform_frame: 85.75 ms
+get_partial_image: 0.09 ms
+apriltag_detector_detect: 24.793 ms
+Part search time: tag#=5, time=24.931 ms
+Fast search time: 24.948 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 24.956 ms
+Process time: 0.005 ms
+Global search in fast thread: 692.447 ms
+Loop: count=73, trial=1, Duration=806.426 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 82.485 ms
+Transform color: 8.538 ms
+transform_frame: 91.072 ms
+get_partial_image: 0.066 ms
+apriltag_detector_detect: 20.963 ms
+Part search time: tag#=5, time=21.108 ms
+Fast search time: 21.123 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 21.13 ms
+Process time: 0.006 ms
+Global search in fast thread: 823.42 ms
+Loop: count=74, trial=1, Duration=951.255 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 77.939 ms
+Transform color: 5.948 ms
+transform_frame: 83.996 ms
+get_partial_image: 0.089 ms
+apriltag_detector_detect: 28.757 ms
+Part search time: tag#=5, time=28.945 ms
+Fast search time: 28.964 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 28.98 ms
+Process time: 0.01 ms
+Global search in fast thread: 763.192 ms
+Loop: count=75, trial=1, Duration=879.328 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 76.687 ms
+Transform color: 4.482 ms
+transform_frame: 81.236 ms
+get_partial_image: 0.079 ms
+apriltag_detector_detect: 25.074 ms
+Part search time: tag#=5, time=25.184 ms
+Fast search time: 25.201 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 25.217 ms
+Process time: 0.005 ms
+Global search in fast thread: 692.73 ms
+Loop: count=76, trial=1, Duration=819.137 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 27.932 ms
+Transform color: 3.227 ms
+transform_frame: 31.234 ms
+get_partial_image: 0.059 ms
+apriltag_detector_detect: 26.728 ms
+Part search time: tag#=5, time=26.877 ms
+Fast search time: 26.89 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 26.901 ms
+Process time: 0.007 ms
+Global search in fast thread: 758.399 ms
+Loop: count=77, trial=1, Duration=819.229 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 55.304 ms
+Transform color: 6.09 ms
+transform_frame: 61.472 ms
+get_partial_image: 0.074 ms
+apriltag_detector_detect: 18.041 ms
+Part search time: tag#=5, time=18.181 ms
+Fast search time: 18.196 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 18.205 ms
+Process time: 0.007 ms
+Global search in fast thread: 712.45 ms
+Loop: count=78, trial=1, Duration=796.175 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 76.618 ms
+Transform color: 5.771 ms
+transform_frame: 82.473 ms
+get_partial_image: 0.086 ms
+apriltag_detector_detect: 24.797 ms
+Part search time: tag#=5, time=24.932 ms
+Fast search time: 24.946 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 24.957 ms
+Process time: 0.003 ms
+Global search in fast thread: 702.754 ms
+Loop: count=79, trial=1, Duration=815.169 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 82.291 ms
+Transform color: 2.025 ms
+transform_frame: 84.372 ms
+get_partial_image: 0.062 ms
+apriltag_detector_detect: 22.434 ms
+Part search time: tag#=5, time=22.567 ms
+Fast search time: 22.578 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 22.587 ms
+Process time: 0.007 ms
+Global search in fast thread: 732.917 ms
+Loop: count=80, trial=1, Duration=843.735 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 80.378 ms
+Transform color: 2.308 ms
+transform_frame: 82.77 ms
+get_partial_image: 0.077 ms
+apriltag_detector_detect: 29.492 ms
+Part search time: tag#=5, time=29.603 ms
+Fast search time: 29.615 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 29.629 ms
+Process time: 0.002 ms
+Global search in fast thread: 647.497 ms
+Loop: count=81, trial=1, Duration=764.53 ms
+Core number: 4
+Fast thread waiting for producer: 0.012 ms
+Remap: 71.31 ms
+Transform color: 1.09 ms
+transform_frame: 72.425 ms
+get_partial_image: 0.04 ms
+apriltag_detector_detect: 12.671 ms
+Zarray time: 0.001 ms
+partial_search: 12.73 ms
+Part search time: tag#=5, time=12.732 ms
+Fast search time: 12.74 ms
+Fast search in fast thread: 12.745 ms
+Process time: 0.538 ms
+Loop: count=82, trial=1, Duration=117.457 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 77.369 ms
+Transform color: 9.032 ms
+transform_frame: 86.504 ms
+get_partial_image: 0.058 ms
+apriltag_detector_detect: 15.972 ms
+Zarray time: 0.001 ms
+partial_search: 16.076 ms
+Part search time: tag#=5, time=16.08 ms
+Fast search time: 16.092 ms
+Fast search in fast thread: 16.106 ms
+Process time: 0.949 ms
+Loop: count=83, trial=1, Duration=105.466 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 74.569 ms
+Transform color: 4.275 ms
+transform_frame: 78.897 ms
+get_partial_image: 0.038 ms
+apriltag_detector_detect: 12.216 ms
+Zarray time: 0.003 ms
+partial_search: 12.341 ms
+Part search time: tag#=5, time=12.347 ms
+Fast search time: 12.36 ms
+Fast search in fast thread: 12.37 ms
+Process time: 0.993 ms
+Loop: count=84, trial=1, Duration=133.195 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 25.132 ms
+Transform color: 4.214 ms
+transform_frame: 29.445 ms
+get_partial_image: 0.054 ms
+apriltag_detector_detect: 12.183 ms
+Zarray time: 0.001 ms
+partial_search: 12.278 ms
+Part search time: tag#=5, time=12.282 ms
+Fast search time: 12.303 ms
+Fast search in fast thread: 12.316 ms
+Process time: 0.939 ms
+Loop: count=85, trial=1, Duration=50.751 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 85.262 ms
+Transform color: 8.192 ms
+transform_frame: 93.542 ms
+get_partial_image: 0.046 ms
+apriltag_detector_detect: 11.234 ms
+Zarray time: 0.004 ms
+partial_search: 11.385 ms
+Part search time: tag#=5, time=11.391 ms
+Fast search time: 11.409 ms
+Fast search in fast thread: 11.421 ms
+Process time: 1.017 ms
+Loop: count=86, trial=1, Duration=185.497 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 25.615 ms
+Transform color: 3.251 ms
+transform_frame: 28.964 ms
+get_partial_image: 0.038 ms
+apriltag_detector_detect: 9.746 ms
+Zarray time: 0.001 ms
+partial_search: 9.842 ms
+Part search time: tag#=5, time=9.845 ms
+Fast search time: 9.856 ms
+Fast search in fast thread: 9.865 ms
+Process time: 0.932 ms
+Loop: count=87, trial=1, Duration=49.237 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 24.202 ms
+Transform color: 3.124 ms
+transform_frame: 27.399 ms
+get_partial_image: 0.04 ms
+apriltag_detector_detect: 12.089 ms
+Zarray time: 0.002 ms
+partial_search: 12.177 ms
+Part search time: tag#=5, time=12.181 ms
+Fast search time: 12.213 ms
+Fast search in fast thread: 12.226 ms
+Process time: 0.644 ms
+Loop: count=88, trial=1, Duration=46.304 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 88.06 ms
+Transform color: 3.663 ms
+transform_frame: 91.811 ms
+get_partial_image: 0.036 ms
+apriltag_detector_detect: 8.378 ms
+Zarray time: 0.002 ms
+partial_search: 8.463 ms
+Part search time: tag#=5, time=8.467 ms
+Fast search time: 8.486 ms
+Fast search in fast thread: 8.499 ms
+Process time: 0.701 ms
+Loop: count=89, trial=1, Duration=118.602 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 75.277 ms
+Transform color: 2.064 ms
+transform_frame: 77.398 ms
+get_partial_image: 0.023 ms
+apriltag_detector_detect: 7.825 ms
+Zarray time: 0.003 ms
+partial_search: 7.955 ms
+Part search time: tag#=5, time=7.962 ms
+Fast search time: 7.971 ms
+Fast search in fast thread: 7.98 ms
+Process time: 1.079 ms
+Loop: count=90, trial=1, Duration=102.529 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 58.553 ms
+Transform color: 2.883 ms
+transform_frame: 61.541 ms
+get_partial_image: 0.034 ms
+apriltag_detector_detect: 7.334 ms
+Zarray time: 0.002 ms
+partial_search: 7.412 ms
+Part search time: tag#=5, time=7.414 ms
+Fast search time: 7.424 ms
+Fast search in fast thread: 7.434 ms
+Process time: 0.573 ms
+Loop: count=91, trial=1, Duration=82.522 ms
+Core number: 4
+Fast thread waiting for producer: 0.01 ms
+Remap: 69.704 ms
+Transform color: 3.758 ms
+transform_frame: 73.504 ms
+get_partial_image: 0.021 ms
+apriltag_detector_detect: 5.712 ms
+Zarray time: 0.001 ms
+partial_search: 5.784 ms
+Part search time: tag#=5, time=5.79 ms
+Fast search time: 5.799 ms
+Fast search in fast thread: 5.804 ms
+Process time: 0.785 ms
+Loop: count=92, trial=1, Duration=103.567 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 83.634 ms
+Transform color: 10.315 ms
+transform_frame: 94.021 ms
+get_partial_image: 0.052 ms
+apriltag_detector_detect: 14.104 ms
+Zarray time: 0.003 ms
+partial_search: 14.242 ms
+Part search time: tag#=5, time=14.248 ms
+Fast search time: 14.262 ms
+Fast search in fast thread: 14.269 ms
+Process time: 1.054 ms
+Loop: count=93, trial=1, Duration=145.688 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 81.291 ms
+Transform color: 6.925 ms
+transform_frame: 88.307 ms
+get_partial_image: 0.059 ms
+apriltag_detector_detect: 16.981 ms
+Part search time: tag#=5, time=17.117 ms
+Fast search time: 17.137 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 17.148 ms
+Process time: 0.008 ms
+Global search in fast thread: 0.005 ms
+Loop: count=94, trial=1, Duration=109.661 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 88.301 ms
+Transform color: 5.407 ms
+transform_frame: 93.816 ms
+get_partial_image: 0.124 ms
+apriltag_detector_detect: 39.2 ms
+Part search time: tag#=5, time=39.387 ms
+Fast search time: 39.402 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 39.418 ms
+Process time: 0.005 ms
+Global search in fast thread: 130.602 ms
+Loop: count=95, trial=1, Duration=267.471 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 88.516 ms
+Transform color: 7.74 ms
+transform_frame: 96.356 ms
+get_partial_image: 0.095 ms
+apriltag_detector_detect: 23.027 ms
+Part search time: tag#=5, time=23.16 ms
+Fast search time: 23.174 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 23.189 ms
+Process time: 0.002 ms
+Global search in fast thread: 723.042 ms
+Loop: count=96, trial=1, Duration=847.074 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 88.286 ms
+Transform color: 12.961 ms
+transform_frame: 101.341 ms
+get_partial_image: 0.087 ms
+apriltag_detector_detect: 28.189 ms
+Part search time: tag#=5, time=28.341 ms
+Fast search time: 28.358 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 28.368 ms
+Process time: 0.006 ms
+Global search in fast thread: 728.127 ms
+Loop: count=97, trial=1, Duration=863.644 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 87.225 ms
+Transform color: 6.998 ms
+transform_frame: 94.294 ms
+get_partial_image: 0.073 ms
+apriltag_detector_detect: 26.787 ms
+Part search time: tag#=5, time=26.903 ms
+Fast search time: 26.915 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 26.924 ms
+Process time: 0.006 ms
+Global search in fast thread: 803.307 ms
+Loop: count=98, trial=1, Duration=928.33 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 57.848 ms
+Transform color: 6.019 ms
+transform_frame: 63.985 ms
+get_partial_image: 0.086 ms
+apriltag_detector_detect: 22.693 ms
+Part search time: tag#=5, time=22.847 ms
+Fast search time: 22.863 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 22.876 ms
+Process time: 0.006 ms
+Global search in fast thread: 682.938 ms
+Loop: count=99, trial=1, Duration=773.572 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 46.152 ms
+Transform color: 1.071 ms
+transform_frame: 47.26 ms
+get_partial_image: 0.038 ms
+apriltag_detector_detect: 11.826 ms
+Zarray time: 0.002 ms
+partial_search: 11.938 ms
+Part search time: tag#=5, time=11.941 ms
+Fast search time: 11.949 ms
+Fast search in fast thread: 11.959 ms
+Process time: 0.588 ms
+Loop: count=100, trial=1, Duration=62.273 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 79.079 ms
+Transform color: 7.783 ms
+transform_frame: 87.004 ms
+get_partial_image: 0.06 ms
+apriltag_detector_detect: 13.384 ms
+Zarray time: 0.003 ms
+partial_search: 13.535 ms
+Part search time: tag#=5, time=13.54 ms
+Fast search time: 13.56 ms
+Fast search in fast thread: 13.577 ms
+Process time: 0.961 ms
+Loop: count=101, trial=1, Duration=104.821 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 25.915 ms
+Transform color: 3.251 ms
+transform_frame: 29.273 ms
+get_partial_image: 0.034 ms
+apriltag_detector_detect: 11.369 ms
+Zarray time: 0.001 ms
+partial_search: 11.443 ms
+Part search time: tag#=5, time=11.446 ms
+Fast search time: 11.46 ms
+Fast search in fast thread: 11.473 ms
+Process time: 0.952 ms
+Loop: count=102, trial=1, Duration=56.125 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 22.753 ms
+Transform color: 3.343 ms
+transform_frame: 26.186 ms
+get_partial_image: 0.046 ms
+apriltag_detector_detect: 10.533 ms
+Zarray time: 0.002 ms
+partial_search: 10.642 ms
+Part search time: tag#=5, time=10.647 ms
+Fast search time: 10.672 ms
+Fast search in fast thread: 10.688 ms
+Process time: 0.942 ms
+Loop: count=103, trial=1, Duration=41.21 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 77.535 ms
+Transform color: 7.878 ms
+transform_frame: 85.478 ms
+get_partial_image: 0.063 ms
+apriltag_detector_detect: 12.536 ms
+Zarray time: 0.003 ms
+partial_search: 12.68 ms
+Part search time: tag#=5, time=12.686 ms
+Fast search time: 12.702 ms
+Fast search in fast thread: 12.712 ms
+Process time: 0.975 ms
+Loop: count=104, trial=1, Duration=102.441 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 76.273 ms
+Transform color: 7.913 ms
+transform_frame: 84.346 ms
+get_partial_image: 0.057 ms
+apriltag_detector_detect: 11.461 ms
+Zarray time: 0.002 ms
+partial_search: 11.595 ms
+Part search time: tag#=5, time=11.599 ms
+Fast search time: 11.614 ms
+Fast search in fast thread: 11.63 ms
+Process time: 0.881 ms
+Loop: count=105, trial=1, Duration=101.889 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 60.096 ms
+Transform color: 5.155 ms
+transform_frame: 65.345 ms
+get_partial_image: 0.065 ms
+apriltag_detector_detect: 12.674 ms
+Zarray time: 0.002 ms
+partial_search: 12.809 ms
+Part search time: tag#=5, time=12.813 ms
+Fast search time: 12.833 ms
+Fast search in fast thread: 12.847 ms
+Process time: 0.966 ms
+Loop: count=106, trial=1, Duration=82.416 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 88.803 ms
+Transform color: 4.129 ms
+transform_frame: 93.037 ms
+get_partial_image: 0.051 ms
+apriltag_detector_detect: 12.838 ms
+Zarray time: 0.002 ms
+partial_search: 12.979 ms
+Part search time: tag#=5, time=12.984 ms
+Fast search time: 12.998 ms
+Fast search in fast thread: 13.012 ms
+Process time: 0.977 ms
+Loop: count=107, trial=1, Duration=110.267 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 72.361 ms
+Transform color: 2.04 ms
+transform_frame: 74.477 ms
+get_partial_image: 0.04 ms
+apriltag_detector_detect: 10.893 ms
+Zarray time: 0.002 ms
+partial_search: 11 ms
+Part search time: tag#=5, time=11.005 ms
+Fast search time: 11.017 ms
+Fast search in fast thread: 11.031 ms
+Process time: 0.992 ms
+Loop: count=108, trial=1, Duration=89.798 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 83.013 ms
+Transform color: 4.213 ms
+transform_frame: 87.376 ms
+get_partial_image: 0.058 ms
+apriltag_detector_detect: 10.661 ms
+Zarray time: 0.001 ms
+partial_search: 10.763 ms
+Part search time: tag#=5, time=10.767 ms
+Fast search time: 10.782 ms
+Fast search in fast thread: 10.795 ms
+Process time: 0.941 ms
+Loop: count=109, trial=1, Duration=101.804 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 21.667 ms
+Transform color: 4.616 ms
+transform_frame: 26.341 ms
+get_partial_image: 0.046 ms
+apriltag_detector_detect: 11.494 ms
+Zarray time: 0.002 ms
+partial_search: 11.597 ms
+Part search time: tag#=5, time=11.601 ms
+Fast search time: 11.617 ms
+Fast search in fast thread: 11.63 ms
+Process time: 0.997 ms
+Loop: count=110, trial=1, Duration=41.159 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 64.365 ms
+Transform color: 6.632 ms
+transform_frame: 71.153 ms
+get_partial_image: 0.041 ms
+apriltag_detector_detect: 9.775 ms
+Zarray time: 0.002 ms
+partial_search: 9.845 ms
+Part search time: tag#=5, time=9.848 ms
+Fast search time: 9.859 ms
+Fast search in fast thread: 9.868 ms
+Process time: 0.608 ms
+Loop: count=111, trial=1, Duration=116.084 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 45.33 ms
+Transform color: 1.749 ms
+transform_frame: 47.126 ms
+get_partial_image: 0.027 ms
+apriltag_detector_detect: 6.658 ms
+Zarray time: 0.001 ms
+partial_search: 6.725 ms
+Part search time: tag#=5, time=6.728 ms
+Fast search time: 6.737 ms
+Fast search in fast thread: 6.743 ms
+Process time: 0.562 ms
+Loop: count=112, trial=1, Duration=94.506 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 57.417 ms
+Transform color: 4.029 ms
+transform_frame: 61.498 ms
+get_partial_image: 0.025 ms
+apriltag_detector_detect: 8.901 ms
+Zarray time: 0.003 ms
+partial_search: 9 ms
+Part search time: tag#=5, time=9.005 ms
+Fast search time: 9.015 ms
+Fast search in fast thread: 9.024 ms
+Process time: 0.91 ms
+Loop: count=113, trial=1, Duration=74.306 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 76.491 ms
+Transform color: 4.596 ms
+transform_frame: 81.16 ms
+get_partial_image: 0.027 ms
+apriltag_detector_detect: 11.206 ms
+Zarray time: 0.002 ms
+partial_search: 11.279 ms
+Part search time: tag#=5, time=11.284 ms
+Fast search time: 11.295 ms
+Fast search in fast thread: 11.304 ms
+Process time: 1.035 ms
+Loop: count=114, trial=1, Duration=95.674 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 79.646 ms
+Transform color: 7.326 ms
+transform_frame: 87.097 ms
+get_partial_image: 0.06 ms
+apriltag_detector_detect: 11.572 ms
+Zarray time: 0.001 ms
+partial_search: 11.665 ms
+Part search time: tag#=5, time=11.67 ms
+Fast search time: 11.685 ms
+Fast search in fast thread: 11.7 ms
+Process time: 1.155 ms
+Global search in fast thread: 0.002 ms
+Loop: count=115, trial=1, Duration=116.265 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 68.311 ms
+Transform color: 7.08 ms
+transform_frame: 75.548 ms
+get_partial_image: 0.133 ms
+apriltag_detector_detect: 33.842 ms
+Part search time: tag#=5, time=34.048 ms
+Fast search time: 34.065 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 34.084 ms
+Process time: 0.005 ms
+Global search in fast thread: 175.906 ms
+Loop: count=116, trial=1, Duration=288.171 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 74.098 ms
+Transform color: 4.15 ms
+transform_frame: 78.316 ms
+get_partial_image: 0.06 ms
+apriltag_detector_detect: 27.403 ms
+Part search time: tag#=5, time=27.512 ms
+Fast search time: 27.525 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 27.534 ms
+Process time: 0.005 ms
+Global search in fast thread: 697.809 ms
+Loop: count=117, trial=1, Duration=811.806 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 90.267 ms
+Transform color: 6.673 ms
+transform_frame: 97.068 ms
+get_partial_image: 0.1 ms
+apriltag_detector_detect: 26.026 ms
+Part search time: tag#=5, time=26.158 ms
+Fast search time: 26.173 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 26.188 ms
+Process time: 0.002 ms
+Global search in fast thread: 612.43 ms
+Loop: count=118, trial=1, Duration=742.721 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 77.707 ms
+Transform color: 4.048 ms
+transform_frame: 81.867 ms
+get_partial_image: 0.133 ms
+apriltag_detector_detect: 25.89 ms
+Part search time: tag#=5, time=26.071 ms
+Fast search time: 26.086 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 26.102 ms
+Process time: 0.007 ms
+Global search in fast thread: 657.946 ms
+Loop: count=119, trial=1, Duration=769.95 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 41.204 ms
+Transform color: 1.138 ms
+transform_frame: 42.369 ms
+get_partial_image: 0.04 ms
+apriltag_detector_detect: 25.769 ms
+Part search time: tag#=5, time=25.835 ms
+Fast search time: 25.843 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 25.85 ms
+Process time: 0.003 ms
+Global search in fast thread: 773.155 ms
+Frequency: -2147483648 Hz
+Loop: count=120, trial=1, Duration=845.371 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 75.286 ms
+Transform color: 3.825 ms
+transform_frame: 79.176 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.005 ms
+Loop: count=121, trial=1, Duration=83.648 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 81.731 ms
+Transform color: 2.667 ms
+transform_frame: 84.419 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Loop: count=122, trial=1, Duration=107.142 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 77.366 ms
+Transform color: 9.979 ms
+transform_frame: 87.429 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.002 ms
+Loop: count=123, trial=1, Duration=92.525 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 82.835 ms
+Transform color: 6.304 ms
+transform_frame: 89.206 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.006 ms
+Loop: count=124, trial=1, Duration=159.558 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 28.965 ms
+Transform color: 2.829 ms
+transform_frame: 31.856 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=125, trial=1, Duration=64.619 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 20.828 ms
+Transform color: 4.106 ms
+transform_frame: 25.024 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.005 ms
+Loop: count=126, trial=1, Duration=27.808 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 99.146 ms
+Transform color: 89.901 ms
+transform_frame: 189.097 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=127, trial=1, Duration=194.664 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 73.592 ms
+Transform color: 3.082 ms
+transform_frame: 76.741 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=128, trial=1, Duration=94.029 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 23.522 ms
+Transform color: 3.25 ms
+transform_frame: 26.842 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.005 ms
+Loop: count=129, trial=1, Duration=29.725 ms
+Core number: 4
+Fast thread waiting for producer: 5.036 ms
+Remap: 26.746 ms
+Transform color: 2.598 ms
+transform_frame: 29.424 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=130, trial=1, Duration=36.529 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 22.15 ms
+Transform color: 4.005 ms
+transform_frame: 26.249 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=131, trial=1, Duration=28.572 ms
+Core number: 4
+Fast thread waiting for producer: 5.044 ms
+Remap: 85.161 ms
+Transform color: 3.462 ms
+transform_frame: 88.713 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=132, trial=1, Duration=95.986 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 21.967 ms
+Transform color: 2.803 ms
+transform_frame: 24.817 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.003 ms
+Loop: count=133, trial=1, Duration=27.129 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 25.548 ms
+Transform color: 2.882 ms
+transform_frame: 28.485 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=134, trial=1, Duration=30.434 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 82.405 ms
+Transform color: 3.592 ms
+transform_frame: 86.032 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Loop: count=135, trial=1, Duration=89.817 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 41.148 ms
+Transform color: 1.87 ms
+transform_frame: 43.079 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.004 ms
+Global search in fast thread: 0.001 ms
+Loop: count=136, trial=1, Duration=45.759 ms
+Core number: 4
+Fast thread waiting for producer: 20.091 ms
+Remap: 61.716 ms
+Transform color: 5.918 ms
+transform_frame: 67.731 ms
+get_partial_image: 0.089 ms
+apriltag_detector_detect: 22.392 ms
+Part search time: tag#=5, time=22.516 ms
+Fast search time: 22.528 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 22.541 ms
+Process time: 0.009 ms
+Global search in fast thread: 256.102 ms
+Loop: count=137, trial=1, Duration=385.672 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 58.21 ms
+Transform color: 66.403 ms
+transform_frame: 124.682 ms
+get_partial_image: 0.078 ms
+apriltag_detector_detect: 27.831 ms
+Part search time: tag#=5, time=27.979 ms
+Fast search time: 27.993 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 28.007 ms
+Process time: 0.006 ms
+Global search in fast thread: 617.775 ms
+Loop: count=138, trial=1, Duration=775.432 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 84.112 ms
+Transform color: 5.557 ms
+transform_frame: 89.781 ms
+get_partial_image: 0.077 ms
+apriltag_detector_detect: 28.279 ms
+Part search time: tag#=5, time=28.385 ms
+Fast search time: 28.397 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 28.409 ms
+Process time: 0.003 ms
+Global search in fast thread: 622.761 ms
+Loop: count=139, trial=1, Duration=746.201 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 26.866 ms
+Transform color: 3.983 ms
+transform_frame: 30.936 ms
+get_partial_image: 0.14 ms
+apriltag_detector_detect: 19.688 ms
+Part search time: tag#=5, time=19.868 ms
+Fast search time: 19.888 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 19.899 ms
+Process time: 0.002 ms
+Global search in fast thread: 758.732 ms
+Loop: count=140, trial=1, Duration=813.812 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 69.627 ms
+Transform color: 6.731 ms
+transform_frame: 76.436 ms
+get_partial_image: 0.072 ms
+apriltag_detector_detect: 22.992 ms
+Part search time: tag#=5, time=23.13 ms
+Fast search time: 23.147 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 23.155 ms
+Process time: 0.006 ms
+Global search in fast thread: 728.264 ms
+Loop: count=141, trial=1, Duration=832.272 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 84.529 ms
+Transform color: 4.247 ms
+transform_frame: 88.848 ms
+get_partial_image: 0.118 ms
+apriltag_detector_detect: 26.664 ms
+Part search time: tag#=5, time=26.858 ms
+Fast search time: 26.876 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 26.883 ms
+Process time: 0.006 ms
+Global search in fast thread: 667.697 ms
+Loop: count=142, trial=1, Duration=787.247 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 85.22 ms
+Transform color: 6.195 ms
+transform_frame: 91.492 ms
+get_partial_image: 0.097 ms
+apriltag_detector_detect: 25.048 ms
+Part search time: tag#=5, time=25.221 ms
+Fast search time: 25.234 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 25.243 ms
+Process time: 0.01 ms
+Global search in fast thread: 702.932 ms
+Loop: count=143, trial=1, Duration=824.579 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 80.054 ms
+Transform color: 5.282 ms
+transform_frame: 85.402 ms
+get_partial_image: 0.061 ms
+apriltag_detector_detect: 28.664 ms
+Part search time: tag#=5, time=28.82 ms
+Fast search time: 28.832 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 28.841 ms
+Process time: 0.007 ms
+Global search in fast thread: 657.938 ms
+Loop: count=144, trial=1, Duration=776.278 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 9.224 ms
+Transform color: 1.064 ms
+transform_frame: 10.321 ms
+get_partial_image: 0.033 ms
+apriltag_detector_detect: 19.229 ms
+Part search time: tag#=5, time=19.278 ms
+Fast search time: 19.288 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 19.297 ms
+Process time: 0.002 ms
+Global search in fast thread: 804.037 ms
+Loop: count=145, trial=1, Duration=844.888 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 23.589 ms
+Transform color: 4.373 ms
+transform_frame: 28.069 ms
+get_partial_image: 0.089 ms
+apriltag_detector_detect: 23.286 ms
+Part search time: tag#=5, time=23.467 ms
+Fast search time: 23.486 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 23.5 ms
+Process time: 0.007 ms
+Global search in fast thread: 778.178 ms
+Loop: count=146, trial=1, Duration=834.474 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 25.836 ms
+Transform color: 3.733 ms
+transform_frame: 29.65 ms
+get_partial_image: 0.081 ms
+apriltag_detector_detect: 27.024 ms
+Part search time: tag#=5, time=27.158 ms
+Fast search time: 27.174 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 27.181 ms
+Process time: 0.006 ms
+Global search in fast thread: 783.054 ms
+Loop: count=147, trial=1, Duration=843.824 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 59.063 ms
+Transform color: 3.32 ms
+transform_frame: 62.429 ms
+get_partial_image: 0.061 ms
+apriltag_detector_detect: 22.431 ms
+Part search time: tag#=5, time=22.551 ms
+Fast search time: 22.563 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 22.573 ms
+Process time: 0.007 ms
+Global search in fast thread: 758.152 ms
+Loop: count=148, trial=1, Duration=848.463 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 24.476 ms
+Transform color: 2.924 ms
+transform_frame: 27.462 ms
+get_partial_image: 0.082 ms
+apriltag_detector_detect: 27.564 ms
+Part search time: tag#=5, time=27.703 ms
+Fast search time: 27.715 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 27.727 ms
+Process time: 0.007 ms
+Global search in fast thread: 783.255 ms
+Loop: count=149, trial=1, Duration=843.116 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 77.599 ms
+Transform color: 2.731 ms
+transform_frame: 80.416 ms
+get_partial_image: 0.074 ms
+apriltag_detector_detect: 22.91 ms
+Part search time: tag#=5, time=23.058 ms
+Fast search time: 23.072 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 23.088 ms
+Process time: 0.006 ms
+Global search in fast thread: 768.305 ms
+Loop: count=150, trial=1, Duration=876.073 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 77.144 ms
+Transform color: 9.059 ms
+transform_frame: 86.315 ms
+get_partial_image: 0.095 ms
+apriltag_detector_detect: 29.212 ms
+Part search time: tag#=5, time=29.38 ms
+Fast search time: 29.396 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 29.411 ms
+Process time: 0.008 ms
+Global search in fast thread: 698.36 ms
+Loop: count=151, trial=1, Duration=818.551 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 86.378 ms
+Transform color: 6.106 ms
+transform_frame: 92.586 ms
+get_partial_image: 0.074 ms
+apriltag_detector_detect: 17.659 ms
+Part search time: tag#=5, time=17.749 ms
+Fast search time: 17.757 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 17.764 ms
+Process time: 0.002 ms
+Global search in fast thread: 752.915 ms
+Loop: count=152, trial=1, Duration=870.166 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 86.882 ms
+Transform color: 6.917 ms
+transform_frame: 93.905 ms
+get_partial_image: 0.151 ms
+apriltag_detector_detect: 29.103 ms
+Part search time: tag#=5, time=29.317 ms
+Fast search time: 29.334 ms
+Exceeded fast search time: limit=17 ms, tagID=5
+Fast search in fast thread: 29.344 ms
+Process time: 0.006 ms
+Global search in fast thread: 757.97 ms
+Loop: count=153, trial=1, Duration=884.126 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 83.355 ms
+Transform color: 5.372 ms
+transform_frame: 88.807 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=154, trial=1, Duration=106.134 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 59.902 ms
+Transform color: 7.175 ms
+transform_frame: 67.145 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=155, trial=1, Duration=69.655 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 81.168 ms
+Transform color: 6.51 ms
+transform_frame: 87.78 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=156, trial=1, Duration=90.861 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 75.809 ms
+Transform color: 4.89 ms
+transform_frame: 80.75 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=157, trial=1, Duration=83.393 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 65.883 ms
+Transform color: 5.113 ms
+transform_frame: 71.085 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.005 ms
+Loop: count=158, trial=1, Duration=74.313 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 81.184 ms
+Transform color: 4.667 ms
+transform_frame: 85.896 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=159, trial=1, Duration=88.268 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 27.353 ms
+Transform color: 3.552 ms
+transform_frame: 30.987 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=160, trial=1, Duration=61.838 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 27.262 ms
+Transform color: 4.574 ms
+transform_frame: 31.947 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.006 ms
+Loop: count=161, trial=1, Duration=34.471 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 81.307 ms
+Transform color: 2.123 ms
+transform_frame: 83.494 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=162, trial=1, Duration=96.801 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 68.769 ms
+Transform color: 7.721 ms
+transform_frame: 76.627 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=163, trial=1, Duration=79.911 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 65.043 ms
+Transform color: 5.217 ms
+transform_frame: 70.317 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=164, trial=1, Duration=76.257 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 83.633 ms
+Transform color: 6.698 ms
+transform_frame: 90.457 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.004 ms
+Loop: count=165, trial=1, Duration=98.585 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 30.26 ms
+Transform color: 2.592 ms
+transform_frame: 32.908 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=166, trial=1, Duration=45.422 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 85.036 ms
+Transform color: 5.797 ms
+transform_frame: 90.942 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=167, trial=1, Duration=93.705 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 89.045 ms
+Transform color: 4.404 ms
+transform_frame: 93.575 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=168, trial=1, Duration=101.89 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 54.749 ms
+Transform color: 5.176 ms
+transform_frame: 60.002 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Global search in fast thread: 0.002 ms
+Loop: count=169, trial=1, Duration=62.335 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 19.389 ms
+Transform color: 2.693 ms
+transform_frame: 22.137 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=170, trial=1, Duration=41.327 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 16.43 ms
+Transform color: 3.061 ms
+transform_frame: 19.563 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.004 ms
+Loop: count=171, trial=1, Duration=22.373 ms
+Core number: 4
+Fast thread waiting for producer: 10.043 ms
+Remap: 43.887 ms
+Transform color: 1.076 ms
+transform_frame: 44.996 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=172, trial=1, Duration=59.097 ms
+Core number: 4
+Fast thread waiting for producer: 30.082 ms
+Remap: 18.012 ms
+Transform color: 2.556 ms
+transform_frame: 20.618 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=173, trial=1, Duration=54.555 ms
+Core number: 4
+Fast thread waiting for producer: 10.031 ms
+Remap: 17.737 ms
+Transform color: 2.5 ms
+transform_frame: 20.29 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=174, trial=1, Duration=32.54 ms
+Core number: 4
+Fast thread waiting for producer: 5.016 ms
+Remap: 20.362 ms
+Transform color: 2.605 ms
+transform_frame: 22.999 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.003 ms
+Loop: count=175, trial=1, Duration=30.79 ms
+Core number: 4
+Fast thread waiting for producer: 10.061 ms
+Remap: 71.064 ms
+Transform color: 6.819 ms
+transform_frame: 77.979 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.005 ms
+Loop: count=176, trial=1, Duration=91.334 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 182.458 ms
+Transform color: 86.204 ms
+transform_frame: 268.742 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.007 ms
+Loop: count=177, trial=1, Duration=366.264 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 64.3 ms
+Transform color: 6.181 ms
+transform_frame: 70.553 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=178, trial=1, Duration=73.099 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 65.054 ms
+Transform color: 2.076 ms
+transform_frame: 67.187 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=179, trial=1, Duration=80.876 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 67.546 ms
+Transform color: 1.967 ms
+transform_frame: 69.543 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.003 ms
+Loop: count=180, trial=1, Duration=71.87 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 63.69 ms
+Transform color: 6.022 ms
+transform_frame: 69.806 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=181, trial=1, Duration=72.601 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 20.012 ms
+Transform color: 3.329 ms
+transform_frame: 23.383 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.003 ms
+Loop: count=182, trial=1, Duration=25.717 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 61.599 ms
+Transform color: 1.176 ms
+transform_frame: 62.798 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=183, trial=1, Duration=64.706 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 8.202 ms
+Transform color: 0.968 ms
+transform_frame: 9.205 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=184, trial=1, Duration=10.736 ms
+Core number: 4
+Fast thread waiting for producer: 25.413 ms
+Remap: 18.531 ms
+Transform color: 3.127 ms
+transform_frame: 21.732 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Global search in fast thread: 0.003 ms
+Loop: count=185, trial=1, Duration=61.62 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 21.323 ms
+Transform color: 3.283 ms
+transform_frame: 24.687 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.007 ms
+Loop: count=186, trial=1, Duration=27.066 ms
+Core number: 4
+Fast thread waiting for producer: 5.015 ms
+Remap: 18.551 ms
+Transform color: 3.529 ms
+transform_frame: 22.146 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=187, trial=1, Duration=31.218 ms
+Core number: 4
+Fast thread waiting for producer: 10.036 ms
+Remap: 19.008 ms
+Transform color: 3.295 ms
+transform_frame: 22.37 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=188, trial=1, Duration=55.189 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 20.647 ms
+Transform color: 2.575 ms
+transform_frame: 23.292 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=189, trial=1, Duration=25.009 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 16.223 ms
+Transform color: 2.464 ms
+transform_frame: 18.745 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.004 ms
+Loop: count=190, trial=1, Duration=25.322 ms
+Core number: 4
+Fast thread waiting for producer: 10.054 ms
+Remap: 72.909 ms
+Transform color: 2.587 ms
+transform_frame: 75.568 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.005 ms
+Loop: count=191, trial=1, Duration=88.421 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 65.433 ms
+Transform color: 6.995 ms
+transform_frame: 72.538 ms
+Fast search in fast thread: 0.015 ms
+Process time: 0.006 ms
+Loop: count=192, trial=1, Duration=75.882 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 17.866 ms
+Transform color: 3.2 ms
+transform_frame: 21.135 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Loop: count=193, trial=1, Duration=35.308 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 76.764 ms
+Transform color: 5.974 ms
+transform_frame: 82.858 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=194, trial=1, Duration=85.192 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 60.792 ms
+Transform color: 4.064 ms
+transform_frame: 64.907 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=195, trial=1, Duration=85.002 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 70.997 ms
+Transform color: 4.235 ms
+transform_frame: 75.313 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=196, trial=1, Duration=81.921 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 57.804 ms
+Transform color: 3.662 ms
+transform_frame: 61.516 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=197, trial=1, Duration=65.404 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 66.592 ms
+Transform color: 6.763 ms
+transform_frame: 73.466 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=198, trial=1, Duration=82.568 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 98.098 ms
+Transform color: 2.443 ms
+transform_frame: 100.596 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.004 ms
+Loop: count=199, trial=1, Duration=103.235 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 61.924 ms
+Transform color: 1.103 ms
+transform_frame: 63.052 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=200, trial=1, Duration=65.142 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 7.499 ms
+Transform color: 1.03 ms
+transform_frame: 8.553 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Global search in fast thread: 0.001 ms
+Loop: count=201, trial=1, Duration=30.758 ms
+Core number: 4
+Fast thread waiting for producer: 25.12 ms
+Remap: 19.889 ms
+Transform color: 2.814 ms
+transform_frame: 22.767 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=202, trial=1, Duration=51.824 ms
+Core number: 4
+Fast thread waiting for producer: 5.025 ms
+Remap: 18.504 ms
+Transform color: 2.797 ms
+transform_frame: 21.365 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=203, trial=1, Duration=29.608 ms
+Core number: 4
+Fast thread waiting for producer: 5.022 ms
+Remap: 64.289 ms
+Transform color: 7.544 ms
+transform_frame: 71.959 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.003 ms
+Loop: count=204, trial=1, Duration=88.961 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 74.468 ms
+Transform color: 3.549 ms
+transform_frame: 78.067 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=205, trial=1, Duration=81.314 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 48.803 ms
+Transform color: 4.51 ms
+transform_frame: 53.369 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=206, trial=1, Duration=57.226 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 69.719 ms
+Transform color: 5.325 ms
+transform_frame: 75.104 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=207, trial=1, Duration=90.745 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 72.627 ms
+Transform color: 4.498 ms
+transform_frame: 77.225 ms
+Fast search in fast thread: 0.016 ms
+Process time: 0.006 ms
+Loop: count=208, trial=1, Duration=82.864 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 71.774 ms
+Transform color: 2.56 ms
+transform_frame: 74.415 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=209, trial=1, Duration=87.986 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 72.713 ms
+Transform color: 4.857 ms
+transform_frame: 77.615 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=210, trial=1, Duration=81.04 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 36.915 ms
+Transform color: 2.502 ms
+transform_frame: 39.501 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=211, trial=1, Duration=64.5 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 70.031 ms
+Transform color: 5.355 ms
+transform_frame: 75.488 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.007 ms
+Loop: count=212, trial=1, Duration=81.431 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 65.385 ms
+Transform color: 5.842 ms
+transform_frame: 71.315 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.007 ms
+Loop: count=213, trial=1, Duration=75.769 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 22.941 ms
+Transform color: 3.648 ms
+transform_frame: 26.692 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Loop: count=214, trial=1, Duration=29.206 ms
+Core number: 4
+Fast thread waiting for producer: 5.011 ms
+Remap: 20.815 ms
+Transform color: 3.169 ms
+transform_frame: 24.089 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=215, trial=1, Duration=34.144 ms
+Core number: 4
+Fast thread waiting for producer: 5.011 ms
+Remap: 16.491 ms
+Transform color: 1.242 ms
+transform_frame: 17.765 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=216, trial=1, Duration=24.875 ms
+Core number: 4
+Fast thread waiting for producer: 60.715 ms
+Remap: 69.813 ms
+Transform color: 6.388 ms
+transform_frame: 76.287 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Global search in fast thread: 0.003 ms
+Loop: count=217, trial=1, Duration=140.029 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 73.17 ms
+Transform color: 6.005 ms
+transform_frame: 79.27 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.004 ms
+Loop: count=218, trial=1, Duration=82.178 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 70.256 ms
+Transform color: 7.058 ms
+transform_frame: 77.399 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=219, trial=1, Duration=80.991 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 85.308 ms
+Transform color: 5.621 ms
+transform_frame: 90.975 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=220, trial=1, Duration=96.157 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 28.541 ms
+Transform color: 3.117 ms
+transform_frame: 31.727 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.003 ms
+Loop: count=221, trial=1, Duration=54.142 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 23.326 ms
+Transform color: 3.253 ms
+transform_frame: 26.651 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=222, trial=1, Duration=28.838 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 28.002 ms
+Transform color: 3.491 ms
+transform_frame: 31.605 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.003 ms
+Loop: count=223, trial=1, Duration=34.302 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 24.575 ms
+Transform color: 3.621 ms
+transform_frame: 28.285 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=224, trial=1, Duration=30.594 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 20.26 ms
+Transform color: 3.566 ms
+transform_frame: 23.903 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=225, trial=1, Duration=26.366 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 21.316 ms
+Transform color: 3.391 ms
+transform_frame: 24.74 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Loop: count=226, trial=1, Duration=26.942 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 28.734 ms
+Transform color: 3.881 ms
+transform_frame: 32.684 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=227, trial=1, Duration=49.68 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 23.663 ms
+Transform color: 3.243 ms
+transform_frame: 26.986 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=228, trial=1, Duration=36.091 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 25.924 ms
+Transform color: 3.509 ms
+transform_frame: 29.531 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=229, trial=1, Duration=32.436 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 84.986 ms
+Transform color: 4.868 ms
+transform_frame: 89.947 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=230, trial=1, Duration=92.114 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 78.822 ms
+Transform color: 7.016 ms
+transform_frame: 85.949 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=231, trial=1, Duration=90.021 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 85.732 ms
+Transform color: 4.078 ms
+transform_frame: 89.852 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=232, trial=1, Duration=91.65 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 67.862 ms
+Transform color: 7.539 ms
+transform_frame: 75.597 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Global search in fast thread: 0.002 ms
+Loop: count=233, trial=1, Duration=78.639 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 75.008 ms
+Transform color: 4.679 ms
+transform_frame: 79.758 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=234, trial=1, Duration=81.968 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 83.371 ms
+Transform color: 6.764 ms
+transform_frame: 90.221 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.002 ms
+Loop: count=235, trial=1, Duration=92.306 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 76.298 ms
+Transform color: 5.066 ms
+transform_frame: 81.435 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=236, trial=1, Duration=83.828 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 27.126 ms
+Transform color: 2.564 ms
+transform_frame: 29.758 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=237, trial=1, Duration=39.866 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 26.44 ms
+Transform color: 2.69 ms
+transform_frame: 29.182 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=238, trial=1, Duration=31.724 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 66.875 ms
+Transform color: 6.141 ms
+transform_frame: 73.174 ms
+Fast search in fast thread: 0.015 ms
+Process time: 0.005 ms
+Loop: count=239, trial=1, Duration=82.828 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 27.059 ms
+Transform color: 3.696 ms
+transform_frame: 30.869 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.004 ms
+Frequency: -2147483648 Hz
+Loop: count=240, trial=1, Duration=35.844 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 28.347 ms
+Transform color: 4.124 ms
+transform_frame: 32.552 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.005 ms
+Loop: count=241, trial=1, Duration=35.119 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 92.214 ms
+Transform color: 7.601 ms
+transform_frame: 99.917 ms
+Fast search in fast thread: 0.016 ms
+Process time: 0.007 ms
+Loop: count=242, trial=1, Duration=102.89 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 82.853 ms
+Transform color: 3.561 ms
+transform_frame: 86.493 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.003 ms
+Loop: count=243, trial=1, Duration=89.579 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 21.337 ms
+Transform color: 1.922 ms
+transform_frame: 23.292 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=244, trial=1, Duration=25.021 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 16.848 ms
+Transform color: 3.288 ms
+transform_frame: 20.206 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=245, trial=1, Duration=22.645 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 77.841 ms
+Transform color: 7.394 ms
+transform_frame: 85.344 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.006 ms
+Loop: count=246, trial=1, Duration=109.692 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 67.931 ms
+Transform color: 1.638 ms
+transform_frame: 69.613 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=247, trial=1, Duration=96.169 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 8.905 ms
+Transform color: 1.053 ms
+transform_frame: 9.991 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=248, trial=1, Duration=11.649 ms
+Core number: 4
+Fast thread waiting for producer: 35.54 ms
+Remap: 14.8 ms
+Transform color: 2.958 ms
+transform_frame: 17.843 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.002 ms
+Global search in fast thread: 0.001 ms
+Loop: count=249, trial=1, Duration=59.965 ms
+Core number: 4
+Fast thread waiting for producer: 10.043 ms
+Remap: 63.048 ms
+Transform color: 5.273 ms
+transform_frame: 68.413 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=250, trial=1, Duration=81.106 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 275.973 ms
+Transform color: 172.63 ms
+transform_frame: 448.729 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=251, trial=1, Duration=451.346 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 70.603 ms
+Transform color: 5.616 ms
+transform_frame: 76.285 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=252, trial=1, Duration=78.792 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 67.283 ms
+Transform color: 2.743 ms
+transform_frame: 70.084 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.004 ms
+Loop: count=253, trial=1, Duration=75.286 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 22.091 ms
+Transform color: 2.663 ms
+transform_frame: 24.822 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=254, trial=1, Duration=27.167 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 15.337 ms
+Transform color: 2.428 ms
+transform_frame: 17.811 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=255, trial=1, Duration=33.224 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 14.653 ms
+Transform color: 2.271 ms
+transform_frame: 16.961 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=256, trial=1, Duration=19.699 ms
+Core number: 4
+Fast thread waiting for producer: 15.08 ms
+Remap: 73.977 ms
+Transform color: 2.191 ms
+transform_frame: 76.227 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=257, trial=1, Duration=93.527 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 16.421 ms
+Transform color: 2.968 ms
+transform_frame: 19.451 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=258, trial=1, Duration=35.504 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 15.645 ms
+Transform color: 1.067 ms
+transform_frame: 16.751 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=259, trial=1, Duration=18.735 ms
+Core number: 4
+Fast thread waiting for producer: 50.727 ms
+Remap: 139.391 ms
+Transform color: 6.62 ms
+transform_frame: 146.152 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=260, trial=1, Duration=199.954 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 19.067 ms
+Transform color: 3.688 ms
+transform_frame: 22.829 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.005 ms
+Loop: count=261, trial=1, Duration=25.274 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 21.557 ms
+Transform color: 2.287 ms
+transform_frame: 23.895 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=262, trial=1, Duration=47.367 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 23.634 ms
+Transform color: 36.114 ms
+transform_frame: 59.85 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=263, trial=1, Duration=65.657 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 23.17 ms
+Transform color: 3.002 ms
+transform_frame: 26.236 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=264, trial=1, Duration=28.186 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 25.809 ms
+Transform color: 2.453 ms
+transform_frame: 28.302 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Global search in fast thread: 0.002 ms
+Loop: count=265, trial=1, Duration=30.091 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 20.671 ms
+Transform color: 4.027 ms
+transform_frame: 24.789 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Loop: count=266, trial=1, Duration=27.272 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 20.128 ms
+Transform color: 2.997 ms
+transform_frame: 23.197 ms
+Fast search in fast thread: 0.015 ms
+Process time: 0.003 ms
+Loop: count=267, trial=1, Duration=29.109 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 25.124 ms
+Transform color: 2.983 ms
+transform_frame: 28.172 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=268, trial=1, Duration=30.791 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 22.961 ms
+Transform color: 2.491 ms
+transform_frame: 25.496 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=269, trial=1, Duration=27.84 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 20.225 ms
+Transform color: 4.068 ms
+transform_frame: 24.36 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=270, trial=1, Duration=29.438 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 85.202 ms
+Transform color: 2.305 ms
+transform_frame: 87.594 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=271, trial=1, Duration=107.119 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 24.7 ms
+Transform color: 3.324 ms
+transform_frame: 28.099 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=272, trial=1, Duration=35.629 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 22.319 ms
+Transform color: 3.476 ms
+transform_frame: 25.878 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=273, trial=1, Duration=29.06 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 21.074 ms
+Transform color: 3.773 ms
+transform_frame: 24.962 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.007 ms
+Loop: count=274, trial=1, Duration=27.627 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 22.356 ms
+Transform color: 2.93 ms
+transform_frame: 25.342 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=275, trial=1, Duration=27.439 ms
+Core number: 4
+Fast thread waiting for producer: 5.03 ms
+Remap: 22.699 ms
+Transform color: 3.266 ms
+transform_frame: 26.027 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=276, trial=1, Duration=33.306 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 22.562 ms
+Transform color: 3.473 ms
+transform_frame: 26.143 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.003 ms
+Loop: count=277, trial=1, Duration=28.415 ms
+Core number: 4
+Fast thread waiting for producer: 5.029 ms
+Remap: 83.551 ms
+Transform color: 6.504 ms
+transform_frame: 90.146 ms
+Fast search in fast thread: 0.014 ms
+Process time: 0.004 ms
+Loop: count=278, trial=1, Duration=99.046 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 76.126 ms
+Transform color: 1.223 ms
+transform_frame: 77.375 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=279, trial=1, Duration=79.59 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 7.823 ms
+Transform color: 1.094 ms
+transform_frame: 8.943 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=280, trial=1, Duration=10.587 ms
+Core number: 4
+Fast thread waiting for producer: 35.622 ms
+Remap: 70.773 ms
+Transform color: 2.876 ms
+transform_frame: 73.696 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Global search in fast thread: 0.001 ms
+Loop: count=281, trial=1, Duration=111.635 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 83.308 ms
+Transform color: 8.753 ms
+transform_frame: 92.178 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.005 ms
+Loop: count=282, trial=1, Duration=96.026 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 23.509 ms
+Transform color: 3.128 ms
+transform_frame: 26.722 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=283, trial=1, Duration=28.962 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 27.099 ms
+Transform color: 3.531 ms
+transform_frame: 30.718 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=284, trial=1, Duration=45.801 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 75.484 ms
+Transform color: 2.385 ms
+transform_frame: 77.929 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.002 ms
+Loop: count=285, trial=1, Duration=86.727 ms
+Core number: 4
+Fast thread waiting for producer: 0.01 ms
+Remap: 83.992 ms
+Transform color: 6.056 ms
+transform_frame: 90.161 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.005 ms
+Loop: count=286, trial=1, Duration=93.531 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 21.748 ms
+Transform color: 3.346 ms
+transform_frame: 25.168 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=287, trial=1, Duration=35.629 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 22.061 ms
+Transform color: 3.094 ms
+transform_frame: 25.226 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=288, trial=1, Duration=28.185 ms
+Core number: 4
+Fast thread waiting for producer: 10.082 ms
+Remap: 92.212 ms
+Transform color: 4.957 ms
+transform_frame: 97.259 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=289, trial=1, Duration=117.074 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 91.814 ms
+Transform color: 3.021 ms
+transform_frame: 94.905 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=290, trial=1, Duration=97.105 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 21.192 ms
+Transform color: 4.366 ms
+transform_frame: 25.638 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=291, trial=1, Duration=39.788 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 38.971 ms
+Transform color: 2.445 ms
+transform_frame: 41.476 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.005 ms
+Loop: count=292, trial=1, Duration=43.527 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 23.99 ms
+Transform color: 3.102 ms
+transform_frame: 27.172 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.003 ms
+Loop: count=293, trial=1, Duration=29.155 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 21.129 ms
+Transform color: 3.802 ms
+transform_frame: 25.005 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=294, trial=1, Duration=27.472 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 21.778 ms
+Transform color: 4.065 ms
+transform_frame: 25.912 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=295, trial=1, Duration=28.595 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 26.019 ms
+Transform color: 2.336 ms
+transform_frame: 28.405 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=296, trial=1, Duration=50.21 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 18.313 ms
+Transform color: 1.19 ms
+transform_frame: 19.537 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Global search in fast thread: 0.001 ms
+Loop: count=297, trial=1, Duration=37.817 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 8.838 ms
+Transform color: 1.244 ms
+transform_frame: 10.122 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=298, trial=1, Duration=11.691 ms
+Core number: 4
+Fast thread waiting for producer: 40.114 ms
+Remap: 21.685 ms
+Transform color: 2.336 ms
+transform_frame: 24.104 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=299, trial=1, Duration=75.227 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 86.258 ms
+Transform color: 5.108 ms
+transform_frame: 91.466 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.005 ms
+Loop: count=300, trial=1, Duration=114.468 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 25.193 ms
+Transform color: 2.912 ms
+transform_frame: 28.165 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=301, trial=1, Duration=30.473 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 85.315 ms
+Transform color: 6.51 ms
+transform_frame: 91.905 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=302, trial=1, Duration=96.081 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 26.853 ms
+Transform color: 2.875 ms
+transform_frame: 29.788 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=303, trial=1, Duration=50.5 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 78.876 ms
+Transform color: 2.146 ms
+transform_frame: 81.065 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=304, trial=1, Duration=91.457 ms
+Core number: 4
+Fast thread waiting for producer: 0.01 ms
+Remap: 93.173 ms
+Transform color: 5.736 ms
+transform_frame: 99.03 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=305, trial=1, Duration=101.778 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 23.111 ms
+Transform color: 3.692 ms
+transform_frame: 26.839 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.005 ms
+Loop: count=306, trial=1, Duration=30.407 ms
+Core number: 4
+Fast thread waiting for producer: 5.025 ms
+Remap: 73.296 ms
+Transform color: 4.418 ms
+transform_frame: 77.775 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=307, trial=1, Duration=93.317 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 82.898 ms
+Transform color: 6.601 ms
+transform_frame: 89.635 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=308, trial=1, Duration=91.851 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 77.162 ms
+Transform color: 7.569 ms
+transform_frame: 84.807 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.004 ms
+Loop: count=309, trial=1, Duration=87.071 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 79.527 ms
+Transform color: 11.338 ms
+transform_frame: 90.936 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.005 ms
+Loop: count=310, trial=1, Duration=93.546 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 60.319 ms
+Transform color: 9.49 ms
+transform_frame: 69.885 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.006 ms
+Loop: count=311, trial=1, Duration=91.153 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 26.298 ms
+Transform color: 3.024 ms
+transform_frame: 29.4 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=312, trial=1, Duration=31.344 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 18.993 ms
+Transform color: 3.262 ms
+transform_frame: 22.322 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Global search in fast thread: 0.003 ms
+Loop: count=313, trial=1, Duration=24.601 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 21.35 ms
+Transform color: 3.207 ms
+transform_frame: 24.633 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.006 ms
+Loop: count=314, trial=1, Duration=27.165 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 25.234 ms
+Transform color: 4.234 ms
+transform_frame: 29.559 ms
+Fast search in fast thread: 0.018 ms
+Process time: 0.005 ms
+Loop: count=315, trial=1, Duration=48.417 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 21.596 ms
+Transform color: 3.583 ms
+transform_frame: 25.244 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=316, trial=1, Duration=38.181 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 85.996 ms
+Transform color: 5.946 ms
+transform_frame: 92.029 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=317, trial=1, Duration=95.268 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 77.988 ms
+Transform color: 3.209 ms
+transform_frame: 81.271 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.004 ms
+Loop: count=318, trial=1, Duration=83.578 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 88.676 ms
+Transform color: 190.241 ms
+transform_frame: 279.001 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=319, trial=1, Duration=281.229 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 19.35 ms
+Transform color: 4.517 ms
+transform_frame: 23.967 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.005 ms
+Loop: count=320, trial=1, Duration=44.616 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 88.856 ms
+Transform color: 3.861 ms
+transform_frame: 92.815 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.005 ms
+Loop: count=321, trial=1, Duration=133.156 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 78.796 ms
+Transform color: 5.281 ms
+transform_frame: 84.141 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=322, trial=1, Duration=86.007 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 68.635 ms
+Transform color: 3.843 ms
+transform_frame: 72.517 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=323, trial=1, Duration=78.396 ms
+Core number: 4
+Fast thread waiting for producer: 5.038 ms
+Remap: 79.86 ms
+Transform color: 9.333 ms
+transform_frame: 89.286 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.004 ms
+Loop: count=324, trial=1, Duration=99.064 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 80.455 ms
+Transform color: 6.68 ms
+transform_frame: 87.218 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=325, trial=1, Duration=90.299 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 60.679 ms
+Transform color: 4.759 ms
+transform_frame: 65.499 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=326, trial=1, Duration=67.37 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 78.355 ms
+Transform color: 3.177 ms
+transform_frame: 81.631 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.003 ms
+Loop: count=327, trial=1, Duration=106.077 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 68.112 ms
+Transform color: 3.659 ms
+transform_frame: 71.818 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=328, trial=1, Duration=74.148 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 63.473 ms
+Transform color: 5.316 ms
+transform_frame: 68.861 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Global search in fast thread: 0.002 ms
+Loop: count=329, trial=1, Duration=74.301 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 75.883 ms
+Transform color: 6.962 ms
+transform_frame: 82.929 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.006 ms
+Loop: count=330, trial=1, Duration=87.655 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 89.328 ms
+Transform color: 1.85 ms
+transform_frame: 91.23 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=331, trial=1, Duration=127.643 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 79.668 ms
+Transform color: 8.471 ms
+transform_frame: 88.195 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=332, trial=1, Duration=111.572 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 25.008 ms
+Transform color: 2.837 ms
+transform_frame: 27.903 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=333, trial=1, Duration=40.15 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 24.655 ms
+Transform color: 3.657 ms
+transform_frame: 28.402 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.005 ms
+Loop: count=334, trial=1, Duration=49.924 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 21.801 ms
+Transform color: 1.112 ms
+transform_frame: 22.956 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=335, trial=1, Duration=37.15 ms
+Core number: 4
+Fast thread waiting for producer: 30.08 ms
+Remap: 82.605 ms
+Transform color: 6.083 ms
+transform_frame: 88.754 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=336, trial=1, Duration=132.39 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 73.502 ms
+Transform color: 8.111 ms
+transform_frame: 81.748 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.006 ms
+Loop: count=337, trial=1, Duration=85.772 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 69.187 ms
+Transform color: 12.535 ms
+transform_frame: 81.841 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.006 ms
+Loop: count=338, trial=1, Duration=86.177 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 64.341 ms
+Transform color: 5.572 ms
+transform_frame: 69.981 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=339, trial=1, Duration=76.815 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 68.731 ms
+Transform color: 4.651 ms
+transform_frame: 73.533 ms
+Fast search in fast thread: 0.015 ms
+Process time: 0.005 ms
+Loop: count=340, trial=1, Duration=76.633 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 20.658 ms
+Transform color: 3.579 ms
+transform_frame: 24.324 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.006 ms
+Loop: count=341, trial=1, Duration=27.143 ms
+Core number: 4
+Fast thread waiting for producer: 5.031 ms
+Remap: 22.105 ms
+Transform color: 3.453 ms
+transform_frame: 25.645 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=342, trial=1, Duration=33.144 ms
+Core number: 4
+Fast thread waiting for producer: 10.063 ms
+Remap: 85.77 ms
+Transform color: 1.859 ms
+transform_frame: 87.691 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=343, trial=1, Duration=117.55 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 79.222 ms
+Transform color: 4.089 ms
+transform_frame: 83.399 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=344, trial=1, Duration=97.465 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 78.024 ms
+Transform color: 2.78 ms
+transform_frame: 80.864 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.005 ms
+Global search in fast thread: 0.002 ms
+Loop: count=345, trial=1, Duration=87.881 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 76.895 ms
+Transform color: 3.001 ms
+transform_frame: 79.985 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=346, trial=1, Duration=92.723 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 85.161 ms
+Transform color: 1.171 ms
+transform_frame: 86.364 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=347, trial=1, Duration=88.69 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 7.595 ms
+Transform color: 1.05 ms
+transform_frame: 8.68 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=348, trial=1, Duration=28.054 ms
+Core number: 4
+Fast thread waiting for producer: 15.028 ms
+Remap: 53.941 ms
+Transform color: 4.183 ms
+transform_frame: 58.183 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=349, trial=1, Duration=75.889 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 57.965 ms
+Transform color: 4.257 ms
+transform_frame: 62.288 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=350, trial=1, Duration=72.594 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 64.339 ms
+Transform color: 5.169 ms
+transform_frame: 69.56 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=351, trial=1, Duration=72.764 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 59.954 ms
+Transform color: 4.103 ms
+transform_frame: 64.114 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=352, trial=1, Duration=77.794 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 59.489 ms
+Transform color: 5.416 ms
+transform_frame: 64.979 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.002 ms
+Loop: count=353, trial=1, Duration=83.822 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 59.855 ms
+Transform color: 6.645 ms
+transform_frame: 66.582 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=354, trial=1, Duration=83.072 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 74.922 ms
+Transform color: 4.054 ms
+transform_frame: 79.071 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.003 ms
+Loop: count=355, trial=1, Duration=108.642 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 22.713 ms
+Transform color: 6.211 ms
+transform_frame: 29.015 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=356, trial=1, Duration=31.975 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 21.517 ms
+Transform color: 3.914 ms
+transform_frame: 25.54 ms
+Fast search in fast thread: 0.017 ms
+Process time: 0.004 ms
+Loop: count=357, trial=1, Duration=28.147 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 91.448 ms
+Transform color: 6.659 ms
+transform_frame: 98.198 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.005 ms
+Loop: count=358, trial=1, Duration=101.521 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 90.897 ms
+Transform color: 5.635 ms
+transform_frame: 102.866 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=359, trial=1, Duration=129.007 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 70.898 ms
+Transform color: 4.356 ms
+transform_frame: 75.305 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Frequency: -2147483648 Hz
+Loop: count=360, trial=1, Duration=79.086 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 47.729 ms
+Transform color: 2.937 ms
+transform_frame: 50.691 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.001 ms
+Global search in fast thread: 0.001 ms
+Loop: count=361, trial=1, Duration=56.183 ms
+Core number: 4
+Fast thread waiting for producer: 20.141 ms
+Remap: 83.447 ms
+Transform color: 5.064 ms
+transform_frame: 88.563 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=362, trial=1, Duration=119.328 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 28.392 ms
+Transform color: 2.238 ms
+transform_frame: 30.675 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=363, trial=1, Duration=51.11 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 77.782 ms
+Transform color: 2.476 ms
+transform_frame: 80.313 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=364, trial=1, Duration=83.816 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 72.546 ms
+Transform color: 6.285 ms
+transform_frame: 78.921 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.006 ms
+Loop: count=365, trial=1, Duration=110.615 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 30.621 ms
+Transform color: 3.073 ms
+transform_frame: 33.784 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=366, trial=1, Duration=41.316 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 28.521 ms
+Transform color: 3.592 ms
+transform_frame: 32.182 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=367, trial=1, Duration=34.256 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 28.39 ms
+Transform color: 4.212 ms
+transform_frame: 32.681 ms
+Fast search in fast thread: 0.014 ms
+Process time: 0.004 ms
+Loop: count=368, trial=1, Duration=36.561 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 87.863 ms
+Transform color: 6.947 ms
+transform_frame: 94.95 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Loop: count=369, trial=1, Duration=99.11 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 89.713 ms
+Transform color: 6.615 ms
+transform_frame: 96.391 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=370, trial=1, Duration=98.754 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 81.256 ms
+Transform color: 8.316 ms
+transform_frame: 89.637 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.005 ms
+Loop: count=371, trial=1, Duration=125.97 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 27.326 ms
+Transform color: 2.98 ms
+transform_frame: 30.387 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=372, trial=1, Duration=67.295 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 27.172 ms
+Transform color: 10.426 ms
+transform_frame: 37.691 ms
+Fast search in fast thread: 0.017 ms
+Process time: 0.005 ms
+Loop: count=373, trial=1, Duration=41.144 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 72.424 ms
+Transform color: 1.02 ms
+transform_frame: 73.468 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=374, trial=1, Duration=92.214 ms
+Core number: 4
+Fast thread waiting for producer: 0.013 ms
+Remap: 75.824 ms
+Transform color: 3.567 ms
+transform_frame: 79.477 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=375, trial=1, Duration=81.566 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 20.694 ms
+Transform color: 3.976 ms
+transform_frame: 24.77 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.004 ms
+Loop: count=376, trial=1, Duration=29.149 ms
+Core number: 4
+Fast thread waiting for producer: 10.061 ms
+Remap: 84.95 ms
+Transform color: 10.265 ms
+transform_frame: 95.338 ms
+Fast search in fast thread: 0.014 ms
+Process time: 0.005 ms
+Global search in fast thread: 0.005 ms
+Loop: count=377, trial=1, Duration=110.018 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 80.131 ms
+Transform color: 8.562 ms
+transform_frame: 88.823 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=378, trial=1, Duration=93.224 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 77.161 ms
+Transform color: 2.526 ms
+transform_frame: 79.739 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=379, trial=1, Duration=106.612 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 73.103 ms
+Transform color: 4.578 ms
+transform_frame: 77.781 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=380, trial=1, Duration=89.02 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 76.843 ms
+Transform color: 2.521 ms
+transform_frame: 79.436 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=381, trial=1, Duration=84.509 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 78.545 ms
+Transform color: 7.887 ms
+transform_frame: 86.558 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=382, trial=1, Duration=103.091 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 75.199 ms
+Transform color: 2.103 ms
+transform_frame: 77.357 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=383, trial=1, Duration=89.245 ms
+Core number: 4
+Fast thread waiting for producer: 0.012 ms
+Remap: 89.111 ms
+Transform color: 3.081 ms
+transform_frame: 92.257 ms
+Fast search in fast thread: 0.016 ms
+Process time: 0.004 ms
+Loop: count=384, trial=1, Duration=94.423 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 22.47 ms
+Transform color: 3.73 ms
+transform_frame: 26.291 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=385, trial=1, Duration=29.151 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 75.587 ms
+Transform color: 4.071 ms
+transform_frame: 79.69 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=386, trial=1, Duration=87.073 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 90.879 ms
+Transform color: 55.841 ms
+transform_frame: 146.785 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=387, trial=1, Duration=163.849 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 87.643 ms
+Transform color: 9.535 ms
+transform_frame: 97.236 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=388, trial=1, Duration=101.072 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 86.92 ms
+Transform color: 8.221 ms
+transform_frame: 95.223 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=389, trial=1, Duration=98.337 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 88.297 ms
+Transform color: 9.502 ms
+transform_frame: 97.887 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=390, trial=1, Duration=100.808 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 80.444 ms
+Transform color: 9.051 ms
+transform_frame: 89.666 ms
+Fast search in fast thread: 0.017 ms
+Process time: 0.005 ms
+Loop: count=391, trial=1, Duration=93.846 ms
+Core number: 4
+Fast thread waiting for producer: 0.011 ms
+Remap: 19.241 ms
+Transform color: 2.016 ms
+transform_frame: 21.3 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.003 ms
+Loop: count=392, trial=1, Duration=23.073 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 21.786 ms
+Transform color: 2.689 ms
+transform_frame: 24.546 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Global search in fast thread: 0.002 ms
+Loop: count=393, trial=1, Duration=26.228 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 15.37 ms
+Transform color: 2.449 ms
+transform_frame: 17.895 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=394, trial=1, Duration=20.221 ms
+Core number: 4
+Fast thread waiting for producer: 15.096 ms
+Remap: 16.288 ms
+Transform color: 2.253 ms
+transform_frame: 18.604 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.002 ms
+Loop: count=395, trial=1, Duration=66.096 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 26.113 ms
+Transform color: 3.589 ms
+transform_frame: 29.782 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=396, trial=1, Duration=39.722 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 25.706 ms
+Transform color: 3.011 ms
+transform_frame: 28.791 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=397, trial=1, Duration=65.574 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 20.575 ms
+Transform color: 4.82 ms
+transform_frame: 25.472 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.007 ms
+Loop: count=398, trial=1, Duration=29.683 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 84.187 ms
+Transform color: 1.948 ms
+transform_frame: 86.197 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=399, trial=1, Duration=101.93 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 51.105 ms
+Transform color: 1.058 ms
+transform_frame: 52.187 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=400, trial=1, Duration=53.775 ms
+Core number: 4
+Fast thread waiting for producer: 35.354 ms
+Remap: 74.297 ms
+Transform color: 2.498 ms
+transform_frame: 76.87 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.003 ms
+Loop: count=401, trial=1, Duration=116.033 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 90.041 ms
+Transform color: 6.206 ms
+transform_frame: 96.367 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=402, trial=1, Duration=99.621 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 87.825 ms
+Transform color: 3.262 ms
+transform_frame: 91.196 ms
+Fast search in fast thread: 0.015 ms
+Process time: 0.004 ms
+Loop: count=403, trial=1, Duration=93.257 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 18.448 ms
+Transform color: 3.168 ms
+transform_frame: 21.711 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.006 ms
+Loop: count=404, trial=1, Duration=24.487 ms
+Core number: 4
+Fast thread waiting for producer: 10.165 ms
+Remap: 15.155 ms
+Transform color: 2.347 ms
+transform_frame: 17.567 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=405, trial=1, Duration=31.112 ms
+Core number: 4
+Fast thread waiting for producer: 20.144 ms
+Remap: 69.884 ms
+Transform color: 1.891 ms
+transform_frame: 71.827 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=406, trial=1, Duration=94.906 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 82.525 ms
+Transform color: 2.508 ms
+transform_frame: 85.106 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.004 ms
+Loop: count=407, trial=1, Duration=87.661 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 87.09 ms
+Transform color: 6.17 ms
+transform_frame: 93.37 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=408, trial=1, Duration=96.187 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 82.865 ms
+Transform color: 6.252 ms
+transform_frame: 89.197 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.006 ms
+Global search in fast thread: 0.002 ms
+Loop: count=409, trial=1, Duration=92.606 ms
+Core number: 4
+Fast thread waiting for producer: 0.009 ms
+Remap: 85.964 ms
+Transform color: 3.464 ms
+transform_frame: 89.492 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=410, trial=1, Duration=92.544 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 77.39 ms
+Transform color: 53.279 ms
+transform_frame: 130.744 ms
+Fast search in fast thread: 0.01 ms
+Process time: 0.004 ms
+Loop: count=411, trial=1, Duration=136.881 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 10.024 ms
+Transform color: 7.891 ms
+transform_frame: 17.947 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=412, trial=1, Duration=19.554 ms
+Core number: 4
+Fast thread waiting for producer: 50.19 ms
+Remap: 72.394 ms
+Transform color: 3.519 ms
+transform_frame: 75.988 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.002 ms
+Loop: count=413, trial=1, Duration=147.11 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 75.725 ms
+Transform color: 5.187 ms
+transform_frame: 80.979 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.004 ms
+Loop: count=414, trial=1, Duration=86.452 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 83.022 ms
+Transform color: 7.402 ms
+transform_frame: 90.533 ms
+Fast search in fast thread: 0.013 ms
+Process time: 0.006 ms
+Loop: count=415, trial=1, Duration=94.084 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 77.413 ms
+Transform color: 5.448 ms
+transform_frame: 82.97 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=416, trial=1, Duration=95.868 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 22.622 ms
+Transform color: 3.009 ms
+transform_frame: 25.72 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=417, trial=1, Duration=27.928 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 22.362 ms
+Transform color: 204.43 ms
+transform_frame: 226.856 ms
+Fast search in fast thread: 0.006 ms
+Process time: 0.002 ms
+Loop: count=418, trial=1, Duration=256.91 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 77.313 ms
+Transform color: 4.273 ms
+transform_frame: 81.618 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=419, trial=1, Duration=87.828 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 85.475 ms
+Transform color: 6.735 ms
+transform_frame: 92.253 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.002 ms
+Loop: count=420, trial=1, Duration=97.97 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 79.33 ms
+Transform color: 4.648 ms
+transform_frame: 84.027 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=421, trial=1, Duration=87.623 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 47.501 ms
+Transform color: 8.859 ms
+transform_frame: 56.492 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.007 ms
+Loop: count=422, trial=1, Duration=59.902 ms
+Core number: 4
+Fast thread waiting for producer: 10.065 ms
+Remap: 64.391 ms
+Transform color: 2.046 ms
+transform_frame: 66.519 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.004 ms
+Loop: count=423, trial=1, Duration=89.493 ms
+Core number: 4
+Fast thread waiting for producer: 0.012 ms
+Remap: 86.422 ms
+Transform color: 9.644 ms
+transform_frame: 96.122 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.004 ms
+Loop: count=424, trial=1, Duration=100.416 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 88.27 ms
+Transform color: 9.217 ms
+transform_frame: 97.557 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.004 ms
+Global search in fast thread: 0.002 ms
+Loop: count=425, trial=1, Duration=101.036 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 84.414 ms
+Transform color: 4.877 ms
+transform_frame: 89.377 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.003 ms
+Loop: count=426, trial=1, Duration=92.06 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 20.352 ms
+Transform color: 2.404 ms
+transform_frame: 22.844 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Loop: count=427, trial=1, Duration=37.181 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 86.606 ms
+Transform color: 5.636 ms
+transform_frame: 92.314 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.002 ms
+Loop: count=428, trial=1, Duration=99.907 ms
+Core number: 4
+Fast thread waiting for producer: 0.01 ms
+Remap: 87.438 ms
+Transform color: 8.146 ms
+transform_frame: 95.68 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.005 ms
+Loop: count=429, trial=1, Duration=99.826 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 80.914 ms
+Transform color: 11.313 ms
+transform_frame: 92.306 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.004 ms
+Loop: count=430, trial=1, Duration=94.982 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 78.023 ms
+Transform color: 4.818 ms
+transform_frame: 82.91 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.002 ms
+Loop: count=431, trial=1, Duration=102.687 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 87.952 ms
+Transform color: 10.592 ms
+transform_frame: 98.594 ms
+Fast search in fast thread: 0.002 ms
+Process time: 0.001 ms
+Loop: count=432, trial=1, Duration=102.394 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 49.807 ms
+Transform color: 1.24 ms
+transform_frame: 51.082 ms
+Fast search in fast thread: 0.003 ms
+Process time: 0.001 ms
+Loop: count=433, trial=1, Duration=64.637 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 83.735 ms
+Transform color: 3.017 ms
+transform_frame: 86.814 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.001 ms
+Loop: count=434, trial=1, Duration=92.763 ms
+Core number: 4
+Fast thread waiting for producer: 0.011 ms
+Remap: 87.405 ms
+Transform color: 7.68 ms
+transform_frame: 95.16 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.002 ms
+Loop: count=435, trial=1, Duration=99.971 ms
+Core number: 4
+Fast thread waiting for producer: 0.007 ms
+Remap: 89.471 ms
+Transform color: 7.785 ms
+transform_frame: 97.349 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.005 ms
+Loop: count=436, trial=1, Duration=100.987 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 23.302 ms
+Transform color: 2.973 ms
+transform_frame: 26.364 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.005 ms
+Loop: count=437, trial=1, Duration=42.503 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+Remap: 84.365 ms
+Transform color: 2.722 ms
+transform_frame: 87.166 ms
+Fast search in fast thread: 0.007 ms
+Process time: 0.003 ms
+Loop: count=438, trial=1, Duration=102.586 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 81.909 ms
+Transform color: 1.941 ms
+transform_frame: 83.9 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.003 ms
+Loop: count=439, trial=1, Duration=92.047 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 76.08 ms
+Transform color: 5.218 ms
+transform_frame: 81.369 ms
+Fast search in fast thread: 0.011 ms
+Process time: 0.005 ms
+Loop: count=440, trial=1, Duration=84.146 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 64.17 ms
+Transform color: 2.171 ms
+transform_frame: 66.41 ms
+Fast search in fast thread: 0.008 ms
+Process time: 0.003 ms
+Global search in fast thread: 0.001 ms
+Loop: count=441, trial=1, Duration=87.018 ms
+Core number: 4
+Fast thread waiting for producer: 0.004 ms
+Remap: 78.2 ms
+Transform color: 8.128 ms
+transform_frame: 86.4 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.006 ms
+Loop: count=442, trial=1, Duration=88.994 ms
+Core number: 4
+Fast thread waiting for producer: 0.005 ms
+Remap: 61.705 ms
+Transform color: 6.424 ms
+transform_frame: 68.199 ms
+Fast search in fast thread: 0.005 ms
+Process time: 0.004 ms
+Loop: count=443, trial=1, Duration=77.763 ms
+Core number: 4
+Fast thread waiting for producer: 0.008 ms
+Remap: 76.689 ms
+Transform color: 11.885 ms
+transform_frame: 88.618 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=444, trial=1, Duration=90.313 ms
+Core number: 4
+Fast thread waiting for producer: 0.002 ms
+Remap: 8.308 ms
+Transform color: 1.19 ms
+transform_frame: 9.532 ms
+Fast search in fast thread: 0.004 ms
+Process time: 0.002 ms
+Loop: count=445, trial=1, Duration=11.034 ms
+Core number: 4
+Fast thread waiting for producer: 50.367 ms
+Remap: 70.923 ms
+Transform color: 6.777 ms
+transform_frame: 77.865 ms
+Fast search in fast thread: 0.012 ms
+Process time: 0.005 ms
+Loop: count=446, trial=1, Duration=131.303 ms
+Core number: 4
+Fast thread waiting for producer: 0.003 ms
+Remap: 72.175 ms
+Transform color: 1.71 ms
+transform_frame: 73.933 ms
+Fast search in fast thread: 0.009 ms
+Process time: 0.003 ms
+Loop: count=447, trial=1, Duration=79.318 ms
+Core number: 4
+Fast thread waiting for producer: 0.006 ms
+ess time, Value: 0.01, Counter: 127, Timestamp: 1745500757
+Reason: loop time, Value: 131.29, Counter: 127, Timestamp: 1745500757
+----------------------------------------

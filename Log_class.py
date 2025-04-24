@@ -92,7 +92,7 @@ class Log:
     # version of code as identifier
     def return_identifier(self):
         try:
-            return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"]) + "\n" + self.general_data["COMMENT"]
+            return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"]) + "\n" + self.general_data["COMMENT"] + "\n" + self.general_data["RECORDING_FOLDER"]
         except KeyError:
             return "No version data"
 
