@@ -65,15 +65,9 @@ class Log:
             self.keys += list(self.agg_data[filename].keys())
         self.keys = list(dict.fromkeys(self.keys))
 
-        # If we want progress bar or not for aggregating all
-        if show_progress:
-            iterator = tqdm(self.keys, "Aggrigating")
-        else:
-            iterator = self.keys
-
         # Combine all data into one dict and aggregate all
         combined_values = {}
-        for key in iterator:
+        for key in self.keys:
             combined_values[key] = []
             for filename in values:
                 if key in values[filename].keys():
