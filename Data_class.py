@@ -27,6 +27,7 @@ from tabulate import tabulate
 import matplotlib.pyplot as plt
 from matplotlib.patches import Rectangle
 import numpy as np
+import configparser
 
 #%% Custom modules
 from functions import user_acknowledge
@@ -47,21 +48,21 @@ class Data:
             print("\nDebug mode\n")
 
         # Init variables
-        self.ssh_host   = "192.168.50.205"
-        self.ssh_user   = "gulliview"
-        self.ssh_pwd    = "Chalmers"
-        self.ssh_folder = "/home/gulliview/advanced_mobility_model/build/output/"
+        config = configparser.ConfigParser()
+        config.read('config.ini')
 
-        self.general_log_filename = "general.log"
-        
-        self.data_folder = "data"
+        self.ssh_host   = config['SSH']['host']
+        self.ssh_user   = config['SSH']['user']
+        self.ssh_pwd    = config['SSH']['password']
+        self.ssh_folder = config['SSH']['folder']
+
+        self.general_log_filename = config['General']['log_filename']
+        self.data_folder = config['General']['data_folder']
         if __debug__:
             self.data_folder = "debug_" + self.data_folder
-            self.debug_backup   = "manual_copy_logs"
         
         filepath = os.path.realpath(__file__)
         folderpath = os.path.dirname(filepath)
-        # folderpath = "C:/GulliView"
         self.data_folder = os.path.join(folderpath, self.data_folder)
 
         self.archive_folder = os.path.join(self.data_folder, "archive")
@@ -74,9 +75,8 @@ class Data:
                          "list"     : self.display_data,
                          "reimport" : self.reimport_all}
 
-        debug_commands = {"ssl"     : self.copy_files_to_local,
-                          "import"  : self.read_data,
-                          "fetch"   : self.fetch_from_debug_backup}
+        debug_commands = {"ssh"     : self.copy_files_to_local,
+                          "import"  : self.read_data}
         if __debug__:
             self.commands["debug"] = debug_commands
 
@@ -196,11 +196,6 @@ class Data:
     def fetch_new_logs(self):
         if self.copy_files_to_local():
             return
-        self.read_data()
-
-    # copies logs from debug_backup folder to test everything when ssl not available
-    def fetch_from_debug_backup(self):
-        shutil.copytree(self.debug_backup, self.input_folder)
         self.read_data()
 
     # imports all data from archive folder, if something has been updated
