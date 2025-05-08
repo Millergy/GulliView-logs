@@ -1,4 +1,4 @@
-Run in visualize_GulliView_log in optimized mode to not enter debug mode, this is done by run.bat as well.
+Run in visualize_GulliView_log in optimized mode to not enter debug mode, this is done by run.bat as well. Built for windows.
 
 Needs a config.ini file with following format:
 
