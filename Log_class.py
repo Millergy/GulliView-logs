@@ -92,6 +92,12 @@ class Log:
                 return self.general_data["VERSION"] + "\n" + str(self.general_data["TIME"]) + "\n" + self.general_data["COMMENT"]
         except KeyError:
             return "Version data missing" + str(self.general_data["TIME"])
+    
+    def return_short_identifier(self):
+        try:
+            return self.general_data["COMMENT"]
+        except KeyError:
+            return "Version data missing" + str(self.general_data["TIME"])
 
     # general log attributes
     def return_attributes(self):
@@ -133,7 +139,6 @@ class Log:
                     # For every key there is a list with the values
                     key, value = line.strip().split(":", 1)
 
-                    # If filter is used only add keys from filter
                     data.setdefault(key, []).append(value.strip())
 
                 # If log data does not follow expected fomrat it is put in "other"
@@ -203,8 +208,21 @@ class Log:
             # Assume the second is a unit
             elif len(first_split_space) == 2 and is_int_or_float:
                 unit = first_split_space[1]
-                values[f"{key} ({unit})"] = self.convert_units_to_float(data[key])
+                factor = 1
+                if unit == "us":
+                    factor = 1000
+                    unit = "ms"
+                if unit == "ns":
+                    factor = 1000000
+                    unit = "ms"
+                values[f"{key} ({unit})"] = self.convert_units_to_float(data[key], factor)
         
+        # Calculate framerate with loop time
+        if "Loop, Duration (ms)" in values.keys():
+            for i in values["Loop, Duration (ms)"]:
+                framerate = 1000 / i
+                values.setdefault("Framerate (Hz)", []).append(framerate)
+
         return values
 
     # Aggregate data (calculate percentiles)

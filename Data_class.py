@@ -58,8 +58,8 @@ class Data:
 
         self.general_log_filename = config['General']['log_filename']
         self.data_folder = config['General']['data_folder']
-        if __debug__:
-            self.data_folder = "debug_" + self.data_folder
+        # if __debug__:
+        #     self.data_folder = "debug_" + self.data_folder
         
         filepath = os.path.realpath(__file__)
         folderpath = os.path.dirname(filepath)
@@ -298,6 +298,28 @@ class Data:
 
     # Combine data from all cameras and display box diagram
     def display_combined(self, comp, keys):
+
+        if __debug__: # Change colors and language for report
+            units = {
+                "Time" : "Tid",
+                "Frequency" : "Frekvens"
+            }
+            colors = {
+                "median" : "black",
+                "box" : "gray",
+                "outliers" : "gray"
+            }
+        else:
+            units = {
+                "Time" : "Time",
+                "Frequency" : "Frequency"
+            }
+            colors = {
+                "median" : "red",
+                "box" : "blue",
+                "outliers" : "orange"
+            }
+        
         # Prepare data for plotting
         data = {key: [] for key in keys}
         outliers = {key: [] for key in keys}
@@ -305,7 +327,10 @@ class Data:
         labels = []  # Store log version labels
         for log in comp:
             # Get the version label for x axis
-            labels.append(log.return_identifier())
+            if __debug__: # Remove some information for the report
+                labels.append(log.return_short_identifier())
+            else:
+                labels.append(log.return_identifier())
         
         for key in tqdm(keys, "Reformatting data for plots"):
             for log in comp:
@@ -341,15 +366,19 @@ class Data:
             q3s = aggregated_data[:, 3]
             maxs = aggregated_data[:, 4]
 
-            plot_data = zip(mins, q1s, medians, q3s, maxs, outliers[key])
+            plot_data = zip(labels, mins, q1s, medians, q3s, maxs, outliers[key])
 
             # Plot box for each key
-            for j, (min_val, q1, median, q3, max_val, log_outliers) in enumerate(plot_data):
+            for j, (label, min_val, q1, median, q3, max_val, log_outliers) in enumerate(plot_data):
+
+                if any(x is None for x in [min_val, q1, median, q3, max_val]):
+                    continue
+
                 # Draw the box
-                box = Rectangle((j - 0.3, q1), 0.3 * 2, q3 - q1, color="blue")
+                box = Rectangle((j - 0.3, q1), 0.3 * 2, q3 - q1, color=colors["box"])
                 ax.add_patch(box)
                 # Draw the median
-                ax.plot([j - 0.45, j + 0.45], [median, median], color="red", linewidth=2)
+                ax.plot([j - 0.45, j + 0.45], [median, median], color=colors["median"], linewidth=2)
                 # Draw the lower whisker
                 ax.plot([j, j], [min_val, q1], color="black", linestyle="-")
                 ax.plot([j - 0.3, j + 0.3], [min_val, min_val], color="black", linestyle="-")
@@ -358,14 +387,18 @@ class Data:
                 ax.plot([j - 0.3, j + 0.3], [max_val, max_val], color="black", linestyle="-")
 
                 # Plot outliers as individual points
-                ax.scatter([j] * len(log_outliers), log_outliers, color="orange", label="Outliers" if i == 0 and j == 0 else "")
+                ax.scatter([j] * len(log_outliers), log_outliers, color=colors["outliers"], label="Outliers" if i == 0 and j == 0 else "")
+
+                if __debug__:
+                    print(label, min_val, q1, median, q3, max_val)
             
             # Tidying plots
-            if "(" in key:
-                title = key.split("(")[0].strip()
-                ax.set_title(title)
-            else:
-                ax.set_title(key)
+            if not __debug__: # Remove titles for report
+                if "(" in key:
+                    title = key.split("(")[0].strip()
+                    ax.set_title(title)
+                else:
+                    ax.set_title(key)
 
             ax.set_xticks(range(len(labels)))  # Set tick positions correctly
             ax.set_xticklabels(labels, rotation=30, ha="right")  # Set log version labels
@@ -377,9 +410,9 @@ class Data:
                 continue
 
             if label[-1] == "s":
-                label = f"Time ({label})"
+                label = f"{units["Time"]} ({label})"
             elif label == "Hz":
-                label = f"Frequency ({label})"
+                label = f"{units["Frequency"]} ({label})"
             ax.set_ylabel(label)
 
         # Show the plot
